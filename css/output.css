@@ -760,11 +760,6 @@ hr {
   margin-right: 0.75rem;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -783,26 +778,6 @@ hr {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-4 {
@@ -847,10 +822,6 @@ hr {
 
 .mt-\[101px\] {
   margin-top: 101px;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .block {
@@ -901,20 +872,12 @@ hr {
   height: 120px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
 .h-\[350px\] {
   height: 350px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-10 {
@@ -980,6 +943,10 @@ hr {
 
 .max-w-screen-lg {
   max-width: 1024px;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
 }
 
 .translate-y-full {
@@ -1157,26 +1124,6 @@ hr {
   background-color: rgb(250 247 245 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-pink-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 242 248 / var(--tw-bg-opacity));
-}
-
-.bg-pink-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -1289,11 +1236,6 @@ hr {
   padding-bottom: 1.25rem;
 }
 
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1304,10 +1246,6 @@ hr {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .text-center {
@@ -1785,14 +1723,14 @@ hr {
     margin-right: 0px;
   }
 
-  .md\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .md\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .md\:ml-64 {
