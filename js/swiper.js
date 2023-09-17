@@ -26,6 +26,7 @@ let TreatmentPilihanSwiper = new Swiper(".treatment-pilihan-content ", {
   slidesPerView: 1.2,
   spaceBetween:10,
   grabCursor: true,
+  
 
   
   // If we need pagination
@@ -42,7 +43,7 @@ let TreatmentPilihanSwiper = new Swiper(".treatment-pilihan-content ", {
       slidesPerView: 2.3,
     },
     968: {
-      slidesPerView: 2.1,
+      slidesPerView: 2.2,
     },
   }
 });
