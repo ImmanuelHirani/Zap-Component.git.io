@@ -42,7 +42,7 @@ let TreatmentPilihanSwiper = new Swiper(".treatment-pilihan-content ", {
       slidesPerView: 2.3,
     },
     968: {
-      slidesPerView: 2.2,
+      slidesPerView: 2.1,
     },
   }
 });
