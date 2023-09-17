@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["../Zap-Component-CleanCode/*.{html,js}"],
   theme: {
     container: {
       center: true,
