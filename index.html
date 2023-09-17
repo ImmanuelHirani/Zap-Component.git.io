@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="website icon" type="png" href="temp-asset/statis-asset/Logo-Zap.svg"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>ZAP | Homepage</title>
+</head>
+<style>
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      content: "";
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: initial;
+      height: initial;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+</style>
+<body class="font-spartanRegular overflow-x-hidden">
+  <main>
+    <section class="hero lg:mt-0 mt-[101px] relative">
+      <div class="container-banner swiper" id="swiperBanner">
+        <div class="hero-banner-content">
+          <div class="swiper-wrapper">
+            <img
+              src="temp-asset/homepage/Hero-Banner.png"
+              class="swiper-slide"
+              alt=""
+            />
+            <img
+              src="temp-asset/homepage/Hero-Banner.png"
+              class="swiper-slide"
+              alt=""
+            />
+            <img
+              src="temp-asset/homepage/Hero-Banner.png"
+              class="swiper-slide"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination banner-pagination"></div>
+      </div>
+      <div class="hero-text">
+        <h1>Klinik berbasis laser terbesar dengan hospitality terbaik dan medical terpercaya.</h1>
+        <h6 class="lg:w-[500px] lg:text-base  text-xs">NgeZAP sesuai kebutuhanmu mulai dari treatment wajah hingga tubuh dengan konsultasi dokter GRATIS di seluruh Indonesia.</h6>
+        <button class="w-fit capitalize text-white font-spartanMedium bg-zap-pink lg:px-6 lg:py-3 px-3 py-2 rounded-lg md:mx-0 mx-auto lg:text-base text-xs">booking sekarang</button>
+      </div>
+    </section>
+    <section class="kenapa-Memilih-Zap">
+            <div class="title">
+                <h2>kenapa memilih zap?</h2>
+                <hr>
+                <h6>Kami berkomitment untuk selalu memberikanmu <span class="md:inline block"></span> pelayanan terbaik sebaik mungkin </h6>
+            </div>
+            <!-- Why us -->
+            <div class="content grid lg:grid-cols-2 gap-6 grid-cols-1 lg:mt-14 mt-9  ">
+                <div class="img-wrapper ">
+                    <img src="temp-asset/homepage/Why-choose-us.png" class="w-full h-full" alt="">
+                </div>
+                <div class="container detail-icon-wrapper grid lg:grid-cols-1 md:grid-cols-2  lg:place-content-center lg:place-items-center md:gap-12 gap-6 md:text-base text-xs md:mt-8">
+                    <span class="flex gap-5 ">
+                        <img src="temp-asset/homepage/Icon-Experienced.png" class="lg:w-14 lg:h-14 md:w-12 md:h-12 h-9 w-9 " alt="">
+                        <div class="text flex flex-col gap-2 ">
+                            <h5 class="font-spartanSemiBold text-zap-text-superGreen">Experienced</h5>
+                            <h6>Lebih dari 13 tahun ZAP Group hadir sebagai destinasi solusi bagi treatment kecantikan dan tubuh terpercaya di Indonesia</h6>
+                        </div>
+                    </span>
+                    <span class="flex gap-5 ">
+                        <img src="temp-asset/homepage/Icon-professional-Treatment.png" class="lg:w-14 lg:h-14 md:w-12 md:h-12 h-9 w-9 " alt="">
+                        <div class="text flex flex-col gap-2">
+                            <h5 class="font-spartanSemiBold text-zap-text-superGreen">Professional Treatment</h5>
+                            <h6>Telah melakukan lebih dari 6.000.000 treatment menjadikan ZAP sebagai ahlinya dan paling dicari serta dipercaya di industri kecantikan</h6>
+                        </div>
+                    </span>
+                    <span class="flex gap-5 ">
+                        <img src="temp-asset/homepage/Icon-Adcanced-ABT.png" class="lg:w-14 lg:h-14 md:w-12 md:h-12 h-9 w-9 " alt="">
+                        <div class="text flex flex-col gap-2 ">
+                            <h5 class="font-spartanSemiBold text-zap-text-superGreen">Advanced and Best Technology</h5>
+                            <h6>Menggunakan teknologi terbaik dikelasnya dengan material dan produk yang bermutu serta didukung oleh kepraktisan sistem yang terintegrasi secara online di seluruh cabang se-Indonesia.</h6>
+                        </div>
+                    </span>
+                    <span class="flex gap-5 ">
+                        <img src="temp-asset/homepage/icon-ontime.png" class="lg:w-14 lg:h-14 md:w-12 md:h-12 h-9 w-9 " alt="">
+                        <div class="text flex flex-col gap-2 ">
+                            <h5 class="font-spartanSemiBold text-zap-text-superGreen">On Time Treatment</h5>
+                            <h6>Seluruh Brand ZAP mengutamakan ketepatan waktu treatment, karena waktu begitu berharga.</h6>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <!-- Why us End -->
+    </section>
+    <section class="treatment-pilihan ">
+            <div class=" content lg:grid lg:grid-cols-2 grid-cols-1 items-center  ">
+                <div class="container title lg:text-start  lg:px-40  gap-5 lg:w-[980px] lg:h-[590px] lg:bg-treatment-pilihan-bg lg:bg-no-repeat lg:bg-cover  justify-center">
+                    <h2>treatment-pilihan</h2>
+                    <hr class="lg:mx-0">
+                    <h6 class="lg:w-[350px] ">ZAP merupakan pioner treatment hair removal terbaik sekaligus hadir sebagai treatment berbasis laser terpercaya dengan keamanan terbaik.</h6>
+                    <button class="lg:block hidden bg-zap-SuperGreen w-fit px-9 py-3 rounded-lg font-spartanSemiBold text-white capitalize lg:mx-0 mx-auto">lihat semua</button>
+                </div>
+                <!-- Card-slider  -->
+                <div class="swiper container   lg:mt-0 mt-9  ">
+                    <div class="treatment-pilihan-content lg:max-w-screen-md    ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide relative card border-[6px] bg-zap-green border-green-600 rounded-xl w-[300px]  px-3 py-3 ">
+                                <div class="card-head h-52">
+                                    <img src="temp-asset/homepage/treatment-pilihan-1.png" class="w-full h-48" alt="">
+                                </div>
+                                <div class="card-body  h-[120px] flex flex-col gap-2 ">
+                                    <h5 class="capitalize font-spartanSemiBold">dna slamon</h5>
+                                    <h6>Treatment terbaik hasil riset revolusioner yang telah teruji hasilnya</h6>
+                                </div>
+                                <div class="card-footer my-2 flex gap-4 text-[11px]">
+                                    <div class="capsule-content bg-zap-green shadow-md w-fit px-2 py-1 capitalize text-zap-text-superGreen rounded-xl">
+                                        <p>beauty</p>
+                                    </div>
+                                    <div class="capsule-content bg-zap-green shadow-md w-fit px-2 py-1 capitalize text-zap-text-superGreen rounded-xl">
+                                        <p>dull skin</p>
+                                    </div>
+                                    <div class="capsule-content bg-zap-magenta shadow-md w-fit px-2 py-1 capitalize text-zap-text-pink rounded-xl">
+                                        <p>dermatologis</p>
+                                    </div>
+                                </div>
+                                <img src="temp-asset/homepage/treatment-favorite.png" class="absolute top-8 left-0 right-0 bottom-0" alt="">
+                            </div>
+                            <div class="swiper-slide card border-[6px] bg-zap-white border-green-600 rounded-xl w-[300px]  px-3 py-3 ">
+                                <div class="card-head h-52">
+                                    <img src="temp-asset/homepage/treatment-pilihan-2.png" class="w-full h-48" alt="">
+                                </div>
+                                <div class="card-body  h-[120px] flex flex-col gap-2 ">
+                                    <h5 class="capitalize font-spartanSemiBold">Advance Yellow Laser</h5>
+                                    <h6>Brightening Treatment offers treatments that focus on helping..</h6>
+                                </div>
+                                <div class="card-footer my-2 flex gap-4 text-[11px]">
+                                    <div class="capsule-content bg-zap-green shadow-md w-fit px-2 py-1 capitalize text-zap-text-superGreen rounded-xl">
+                                        <p>beauty</p>
+                                    </div>
+                                    <div class="capsule-content bg-zap-green shadow-md w-fit px-2 py-1 capitalize text-zap-text-superGreen rounded-xl">
+                                        <p>dull skin</p>
+                                    </div>
+                                    <div class="capsule-content bg-zap-magenta shadow-md w-fit px-2 py-1 capitalize text-zap-text-pink rounded-xl">
+                                        <p>dermatologis</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card border-[6px] bg-zap-white border-green-600 rounded-xl w-[300px]  px-3 py-3 ">
+                                <div class="card-head h-52">
+                                    <img src="temp-asset/homepage/treatment-pilihan-1.png" class="w-full h-48" alt="">
+                                </div>
+                                <div class="card-body  h-[120px] flex flex-col gap-2 ">
+                                    <h5 class="capitalize font-spartanSemiBold">dna slamon</h5>
+                                    <h6>Treatment terbaik hasil riset revolusioner yang telah teruji hasilnya</h6>
+                                </div>
+                                <div class="card-footer my-2 flex gap-4 text-[11px]">
+                                    <div class="capsule-content bg-zap-green shadow-md w-fit px-2 py-1 capitalize text-zap-text-superGreen rounded-xl">
+                                        <p>beauty</p>
+                                    </div>
+                                    <div class="capsule-content bg-zap-green shadow-md w-fit px-2 py-1 capitalize text-zap-text-superGreen rounded-xl">
+                                        <p>dull skin</p>
+                                    </div>
+                                    <div class="capsule-content bg-zap-magenta shadow-md w-fit px-2 py-1 capitalize text-zap-text-pink rounded-xl">
+                                        <p>dermatologis</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card border-[6px] bg-zap-green border-green-600 rounded-xl w-[300px]  px-3 py-3 ">
+                                <div class="card-head h-52">
+                                    <img src="temp-asset/homepage/treatment-pilihan-1.png" class="w-full h-48" alt="">
+                                </div>
+                                <div class="card-body  h-[120px] flex flex-col gap-2 ">
+                                    <h5 class="capitalize font-spartanSemiBold">dna slamon</h5>
+                                    <h6>Treatment terbaik hasil riset revolusioner yang telah teruji hasilnya</h6>
+                                </div>
+                                <div class="card-footer my-2 flex gap-4 text-[11px]">
+                                    <div class="capsule-content bg-zap-green shadow-md w-fit px-2 py-1 capitalize text-zap-text-superGreen rounded-xl">
+                                        <p>beauty</p>
+                                    </div>
+                                    <div class="capsule-content bg-zap-green shadow-md w-fit px-2 py-1 capitalize text-zap-text-superGreen rounded-xl">
+                                        <p>dull skin</p>
+                                    </div>
+                                    <div class="capsule-content bg-zap-magenta shadow-md w-fit px-2 py-1 capitalize text-zap-text-pink rounded-xl">
+                                        <p>dermatologis</p>
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>
+                      <div class="swiper-button-next treatment-button-next">
+                        <img
+                          src="temp-asset/statis-asset/Arrow_R-Treatment.png"
+                          class="treatment-pilihan-btn"
+                          alt=""
+                        />
+                      </div>
+                </div>
+                <!-- Card-slider End -->
+            </div>
+    </section>
+    <section class="promo md:pl-0 pl-4 ">
+          <div class="title">
+            <h2>Promo</h2>
+            <hr>
+            <h6>Promo menarik yang sesuai dengan kebutuhanmu bisa kamu dapatkan disini</h6>
+          </div>
+        <!-- Why us -->
+        <div class="swiper lg:mt-14 mt-9 ">
+          <div class="promo-content ">
+              <div class="swiper-wrapper ">
+                <figure class="swiper-slide">  
+                  <img src="temp-asset/homepage/Promo-1.png"  alt="">
+                </figure>
+                <figure class="swiper-slide">  
+                  <img src="temp-asset/homepage/Promo-2.png"  alt="">
+                </figure>
+                <figure class="swiper-slide">  
+                  <img src="temp-asset/homepage/Promo-3.png"  alt="">
+                </figure>
+                <figure class="swiper-slide">  
+                  <img src="temp-asset/homepage/Promo-4.png"  alt="">
+                </figure>
+              </div>
+          </div>
+          <div class="swiper-button-prev promo-button-prev">
+              <img
+                src="temp-asset/statis-asset/Arrow_R.png"
+                class="promo-btn"
+                alt=""
+              />
+            </div>
+            <div class="swiper-button-next promo-button-next">
+              <img
+                src="temp-asset/statis-asset/Arrow_L.png"
+                class="promo-btn"
+                alt=""
+              />
+            </div>
+        </div>
+        <!-- Why us End -->
+    </section>
+    <section class="Zap-Brand bg-zap-green lg:py-32 py-14">
+          <div class="title">
+            <h2>ZAP BRANDS</h2>
+            <hr>
+            <h6>
+              ZAP Brands memiliki brand dengan
+              <span class="lg:inline block"></span> spesifikasi khusus yang akan
+              membantumu
+              <span class="lg:inline md:hidden block"></span> memberikan solusi
+              sesuai kebutuhanmu
+            </h6>
+          </div>
+    
+            <div
+              class=" container grid lg:grid-cols-4 grid-cols-2 gap-6 lg:mt-14 mt-9  mx-auto"
+            >
+              <div
+                class="content-wrapper flex justify-center  group relative overflow-hidden transition-transform"
+              >
+                <div class="relative w-full">
+                  <img
+                    class="lg:w-full lg:h-full md:w-full md:h-full"
+                    src="temp-asset/homepage/Brand-Zappremiere.png"
+                    alt=""
+                  />
+                  <div
+                    class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-2xl"
+                  >
+                    <div
+                      class="overlay-content absolute inset-0 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                    >
+                      <div
+                        class="img-head bg-opacity-100 py-2 px-4"
+                        style="
+                          background-color: #c0a279;
+                          border-radius: 16px 16px 0px 0px;
+                        "
+                      >
+                        <img
+                          src="temp-asset/homepage/Brand-Zappremiere-Ttile.png"
+                          alt=""
+                          width="50%"
+                        />
+                      </div>
+                      <p
+                        class="lg:py-14 md:py-16 py-5 mx-5 text-white md:text-base text-[10px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      >
+                        ZAP Premiere menggunakan teknologi laser terbaik.
+                        Dirancang khusus untuk menjawab masalah kulit yang sulit
+                        diatasi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content-wrapper flex justify-center group relative overflow-hidden transition-transform rounded-2xl"
+              >
+                <div class="relative w-full">
+                  <img
+                    class="lg:w-full lg:h-full md:w-full md:h-full"
+                    src="temp-asset/homepage/Brand-Menlogy.png"
+                    alt=""
+                  />
+                  <div
+                    class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-2xl"
+                  >
+                    <div
+                      class="overlay-content absolute inset-0 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                    >
+                      <div
+                        class="img-head bg-opacity-100 py-4 px-4"
+                        style="
+                          background-color: #8b4328;
+                          border-radius: 16px 16px 0px 0px;
+                        "
+                      >
+                        <img
+                          src="temp-asset/homepage/Brand-Menlogy-Title.png"
+                          alt=""
+                          width="50%"
+                        />
+                      </div>
+                      <p
+                        class="lg:py-14 md:py-16 py-5 mx-5 text-white md:text-base text-[10px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      >
+                        Treatment khusus untuk pria, mulai dari masalah rambut
+                        sampai treatment untuk memulihkan stamina.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content-wrapper flex justify-center group relative overflow-hidden transition-transform rounded-2xl"
+              >
+                <div class="relative w-full">
+                  <img
+                    class="lg:w-full lg:h-full md:w-full md:h-full"
+                    src="temp-asset/homepage/Brand-Juva.png"
+                    alt=""
+                  />
+                  <div
+                    class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-2xl"
+                  >
+                    <div
+                      class="overlay-content absolute inset-0 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                    >
+                      <div
+                        class="img-head bg-opacity-100 py-4 px-4"
+                        style="
+                          background-color: #faf7f5;
+                          border-radius: 16px 16px 0px 0px;
+                        "
+                      >
+                        <img
+                          src="temp-asset/homepage/Brand-Juva-Headtitle.png"
+                          width="20%"
+                          alt=""
+                        />
+                      </div>
+                      <p
+                        class="lg:py-14 md:py-16 py-5 mx-5 text-white md:text-base text-[10px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      >
+                        Rawat kulit wajahmu dengan jenis kulit cenderung
+                        berjerawat dengan rangkaian produk Acne Series dari ZAP
+                        Beauty dan JUVA.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="content-wrapper flex justify-center group relative overflow-hidden transition-transform rounded-2xl"
+              >
+                <div class="relative w-full">
+                  <img
+                    class="lg:w-full lg:h-full md:w-full md:h-full"
+                    src="temp-asset/homepage/Brand-Zaphealth.png"
+                    alt=""
+                  />
+                  <div
+                    class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-2xl"
+                  >
+                    <div
+                      class="overlay-content absolute inset-0 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+                    >
+                      <div
+                        class="img-head bg-opacity-100 py-2 px-4"
+                        style="
+                          background-color: #50abf0;
+                          border-radius: 16px 16px 0px 0px;
+                        "
+                      >
+                        <img
+                          src="temp-asset/homepage/Brand-Zaphealth-Title.png"
+                          width="50%"
+                          alt=""
+                        />
+                      </div>
+                      <p
+                        class="lg:py-14 md:py-16 py-5 mx-5 text-white md:text-base text-[10px] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                      >
+                        BE PREPARED FOR THE NEW CONCEPT OF ZAP HEALTH
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+    </section>
+    <section class="testimonial lg:container lg:max-w-screen-xl mx-auto">
+          <div class="title">
+            <h2>KATA MEREKA TENTANG ZAP</h2>
+            <hr>
+            <h6>
+              Cerita dibalik kebahagiaan
+              <span class="lg:inline block"></span> mereka yang meningkat karena
+              ZAP
+            </h6>
+          </div>
+          <div class="swiper lg:mt-14 mt-9 ">
+            <div
+              class="container testimonial-content overflow-hidden  lg:max-w-screen-lg md:max-w-screen-md"
+            >
+              <div class="swiper-wrapper">
+                <article
+                  class="px-5 mx-auto swiper-slide bg-zap-magenta"
+                  data-swiper-autoplay="2000"
+                >
+                  <img
+                    src="temp-asset/homepage/Testimonial-1.png"
+                    class="pt-10 mx-auto"
+                    alt=""
+                  />
+                  <p class="text-center pt-4 font-light">
+                    “Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ips has been the industry's
+                    standard dummy"
+                  </p>
+                  <p class="text-center py-5 font-spartanSemiBold">
+                    Jane Cooper<span class="block font-spartanMedium text-sm"
+                      >Influencer</span
+                    >
+                  </p>
+                </article>
+                <article
+                  class="px-5 mx-auto swiper-slide bg-zap-magenta"
+                  data-swiper-autoplay="2000"
+                >
+                  <img
+                    src="temp-asset/homepage/Testimonial-2.png"
+                    class="pt-10 mx-auto"
+                    alt=""
+                  />
+                  <p class="text-center pt-4 font-light">
+                    “Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ips has been the industry's
+                    standard dummy"
+                  </p>
+                  <p class="text-center py-5 font-spartanSemiBold">
+                    Jane Cooper<span class="block font-spartanMedium text-sm"
+                      >Influencer</span
+                    >
+                  </p>
+                </article>
+                <article
+                  class="px-5 mx-auto swiper-slide bg-zap-magenta"
+                  data-swiper-autoplay="2000"
+                >
+                  <img
+                    src="temp-asset/homepage/Testimonial-3.png"
+                    class="pt-10 mx-auto"
+                    alt=""
+                  />
+                  <p class="text-center pt-4 font-light">
+                    “Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ips has been the industry's
+                    standard dummy"
+                  </p>
+                  <p class="text-center py-5 font-spartanSemiBold">
+                    Jane Cooper<span class="block font-spartanMedium text-sm"
+                      >Influencer</span
+                    >
+                  </p>
+                </article>
+                <article
+                  class="px-5 mx-auto swiper-slide bg-zap-magenta"
+                  data-swiper-autoplay="2000"
+                >
+                  <img
+                    src="temp-asset/homepage/Testimonial-3.png"
+                    class="pt-10 mx-auto"
+                    alt=""
+                  />
+                  <p class="text-center pt-4 font-light">
+                    “Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ips has been the industry's
+                    standard dummy"
+                  </p>
+                  <p class="text-center py-5 font-spartanSemiBold">
+                    Jane Cooper<span class="block font-spartanMedium text-sm"
+                      >Influencer</span
+                    >
+                  </p>
+                </article>
+              </div>
+            </div>
+            <!-- Button -->
+            <div class="swiper-button-prev testi-button-prev">
+              <img
+                src="temp-asset/statis-asset/Arrow_R.png"
+                class="testimonial-btn"
+                alt=""
+              />
+            </div>
+            <div class="swiper-button-next testi-button-next">
+              <img
+                src="temp-asset/statis-asset/Arrow_L.png"
+                class="testimonial-btn"
+                alt=""
+              />
+            </div>
+            <!-- Button End -->
+          </div>
+    </section>
+    <section class="layananHomecare container">
+      <div
+        class="max-w-screen-lg mx-auto rounded-lg lg:relative bg-zap-green lg:text-sm text-xs"
+      >
+        <div
+          class="item-container lg:text-start text-center px-5 flex items-center flex-col lg:flex-row"
+        >
+          <div class="img">
+            <img
+              class="mx-auto lg:absolute lg:bottom-0 lg:block hidden left-0 h-full"
+              src="temp-asset/homepage/Layanan homecare Rectangel.png"
+              alt=""
+            />
+            <img
+              class="mx-auto lg:mt-0 mt-4 h-52 lg:absolute lg:-bottom-14 lg:-left-20 lg:h-fit"
+              src="temp-asset/homepage/Layana-Homecare-Item.png"
+              alt=""
+            />
+          </div>
+          <div class="card-text my-10 lg:h-40 lg:ml-72 rounded-lg">
+            <h2 class="my-2 text-zap-text-superGreen">
+              LAYANAN HOMECARE ADA UNTUKMU
+            </h2>
+            <h6 class="my-4">
+              Buat kamu yang nggak punya banyak waktu, <br />
+              layanan ini bisa bantu kamu langsung bawa pulang produk
+              pilihanmu
+            </h6>
+            <button
+              class="rounded-lg font-spartanSemiBold py-3 px-6 my-2 text-zap-text-superGreen bg-zap-white"
+            >
+              Hubungi Kami
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="booking overflow-hidden">
+          <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+            <div class="card-booking-1 bg-booking1-bg bg-no-repeat bg-cover">
+              <div class="card-body py-20 px-20">
+                <div class="card-text">
+                  <h2 class="text-white mb-4 lg:text-start text-center">
+                    "ME TIME" KINI JADI LEBIH
+                    <span class="lg:block"></span> PRAKTIS
+                  </h2>
+                  <hr class="w-40 border-white mb-6 mx-0" id="hideHr1" />
+                  <h6 class="text-white leading-relaxed mb-8" id="hideText1">
+                    Pesan treatment favoritmu sekarang melalui handphone untuk
+                    <br />
+                    menghindari antrian dan pastikan kamu mendapatkan waktu yang
+                    sesuai dengan jadwalmu.
+                  </h6>
+                  <button
+                    class="rounded-lg py-3 px-6 lg:mx-0 mx-auto flex font-spartanSemiBold lg:text-base text-xs bg-zap-white text-zap-text-superGreen"
+                  >
+                    Booking Sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-booking-2 bg-booking2-bg bg-no-repeat bg-cover">
+              <div class="card-body py-20 px-20">
+                <div class="card-text">
+                  <h2 id="textToModify" class="text-white mb-4">
+                    VOUCHER TREATMENT DAN <span class="lg:block"></span> SKINCARE
+                    DIMANA SAJA
+                  </h2>
+                  <hr class="w-40 border-white mb-6 mx-0" id="hideHr2" />
+                  <h6 class="text-white leading-relaxed mb-8" id="hideText2">
+                    Kunjungi E-Store kami untuk mendapatkan voucher <br />
+                    treatment favorit atau membeli produk skincare dengan mudah,
+                    <br />
+                    kapan saja
+                  </h6>
+                  <button
+                    class="rounded-lg lg:mx-0 mx-auto flex py-3 px-6 font-spartanSemiBold lg:text-base text-xs bg-zap-white text-zap-text-pink"
+                  >
+                    Belanja di E-Store
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+  </main>
+  <footer>
+    <section class="container mb-5">
+      <div class="container-footer-head flex items-center flex-col">
+        <img
+          src="temp-asset/statis-asset/Logo-Zap.svg"
+          alt=""
+          class="md:w-36"
+        />
+        <div class="wrapper-links md:flex text-center gap-16 pt-10">
+          <p>Download Katalog</p>
+          <p class="md:my-0 my-3">Liputan</p>
+          <p>FAQ</p>
+          <p class="md:my-0 my-3">Contact Us</p>
+        </div>
+      </div>
+      <hr class="mt-5 border-2 border-gray-200 w-full" />
+      <div
+        class="container-footer-foot flex justify-between mt-8 text-slate-500"
+      >
+        <div class="sosial-media-wrapper">
+          <p class="md:text-lg">Social Media</p>
+          <span class="flex md:gap-10 gap-4 mt-3">
+            <img
+              class="md:w-8 w-7"
+              src="temp-asset/statis-asset/Icon-sosmed-fb.svg"
+              alt=""
+            />
+            <img
+              class="md:w-8 w-7"
+              src="temp-asset/statis-asset/Icon-sosmed-ig.svg"
+              alt=""
+            />
+            <img
+              class="md:w-12 w-10"
+              src="temp-asset/statis-asset/Icon-sosmed-yt.svg"
+              alt=""
+            />
+          </span>
+        </div>
+        <div class="Marketplace-Wrapper">
+          <p class="md:text-lg">Official Marketplace</p>
+          <span class="flex justify-center items-center md:gap-10 gap-4 mt-3">
+            <img
+              class="md:w-5 w-5"
+              src="temp-asset/statis-asset/Icon-marketplace-blibli.svg"
+              alt=""
+            />
+            <img
+              class="md:w-7 w-6"
+              src="temp-asset/statis-asset/Icon-marketplace-shoppe.svg"
+              alt=""
+            />
+            <img
+              class="md:w-7 w-6"
+              src="temp-asset/statis-asset/Icon-marketplace-Tokopedia.svg"
+              alt=""
+            />
+          </span>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+<script src="js/booking.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+</html>
