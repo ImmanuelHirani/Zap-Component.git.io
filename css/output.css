@@ -785,6 +785,11 @@ hr {
   margin-bottom: 0.75rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -1121,6 +1126,11 @@ hr {
   background-color: rgb(250 247 245 / var(--tw-bg-opacity));
 }
 
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -1278,10 +1288,6 @@ hr {
   font-size: 11px;
 }
 
-.text-\[8\.8px\] {
-  font-size: 8.8px;
-}
-
 .text-\[8px\] {
   font-size: 8px;
 }
@@ -1400,7 +1406,7 @@ hr {
 .testimonial-btn {
   margin-left: 1rem;
   margin-right: 1rem;
-  width: 3rem;
+  width: 2.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1734,6 +1740,11 @@ hr {
     margin-bottom: 0px;
   }
 
+  .md\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .md\:ml-64 {
     margin-left: 16rem;
   }
@@ -1814,17 +1825,9 @@ hr {
     gap: 3rem;
   }
 
-  .md\:p-0 {
-    padding: 0px;
-  }
-
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .md\:pl-0 {
-    padding-left: 0px;
   }
 
   .md\:text-\[10px\] {
