@@ -270,7 +270,7 @@
                   <li
                     class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
                   >
-                    <a href="treatment.html">All Treatment</a>
+                    <a href="all-Treatment.html">All Treatment</a>
                   </li>
                   <li
                     class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
@@ -1108,6 +1108,15 @@
     </section>
   </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var mobileMenuButton = document.getElementById("navBurger");
+    var mobileMenu = document.getElementById("mobileMenu");
+    mobileMenuButton.addEventListener("click", function () {
+      mobileMenu.classList.toggle("translate-x-0");
+    });
+  });
+</script>
 <script src="js/nav.js"></script>
 <script src="js/dropdown.js"></script>
 <script src="js/floatingbtn.js"></script>

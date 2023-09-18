@@ -84,6 +84,8 @@
   @apply rotate-180;
 }
 
+
+
 .treatmentbtndropdown-active > i {
   @apply rotate-180;
 }
