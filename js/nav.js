@@ -13,6 +13,7 @@ const navexpand = document.querySelector("#navexpand");
 navBurger.addEventListener("click", function () {
   navBurger.classList.toggle("navBurger-active");
 });
+
 navDropTreatment.addEventListener("click", function () {
   navDropTreatment.classList.toggle("navDropTreatment-active");
   navexpand.classList.toggle("navexpand-active");

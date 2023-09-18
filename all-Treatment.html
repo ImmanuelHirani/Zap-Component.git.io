@@ -343,11 +343,11 @@
             <div
               class=" lg:w-[650px] lg:mx-10 lg:text-start text-center lg:my-0 my-10 mx-auto"
             >
-              <h2 class="text-zap-text-superGreen">ALL TREATMENTS</h2>
-              <h6 class="mt-5 lg:text-base text-sm">
+              <h2 class="text-zap-text-superGreen">ALL TREATMENTS</h1>
+              <h5 class="mt-5 lg:text-base text-sm">
                 Menggabungkan berbagai teknologi modern dalam satu rangkaian
                 untuk mendapatkan semua kebaikan kulit yang kamu butuhkan
-              </h6>
+              </h5>
             </div>
           </div>
         </div>
@@ -356,10 +356,10 @@
         <div class="content-wrapper container  lg:p-4 md:p-0 ">
           <div class="treatment-head flex justify-between  lg:text-[15px] text-xs items-center">
             <span class="md:hidden block">Urutkan berdasarkan</span>
-            <h5 class="md:block hidden">Menampilkan <span class="text-black font-spartanSemiBold">10</span> dari <span>369</span> treatment untuk <span>“All Treatments”</span> </h5>
+            <h5 class="md:block hidden lg:text-base  md:text-sm">Menampilkan <span class="text-black font-spartanSemiBold">10</span> dari <span>369</span> treatment untuk <span>“All Treatments”</span> </h5>
           <div class="relative">
-            <button id="treatment-btn-dropdown" class="lg:text-[15px] md:text-sm text-[9px] flex items-center capitalize md:px-5 px-3 md:py-3 py-2 lg:w-72 md:w-[270px] w-44 justify-between  bg-zap-SuperGreen rounded-lg text-white font-spartanSemiBold">treatment - terfavorite<i class='bx bx-chevron-down md:text-3xl text-2xl transition ease-in-out duration-300'></i></button>
-            <div id="treatment-menu" class="hidden menu-wrapper cursor-pointer">
+            <button id="btn-dropdown" class="lg:text-[15px] md:text-sm text-[9px] flex items-center capitalize md:px-5 px-3 md:py-3 py-2 lg:w-72 md:w-[270px] w-44 justify-between  bg-zap-SuperGreen rounded-lg text-white font-spartanSemiBold">treatment - terfavorite<i class='bx bx-chevron-down md:text-3xl text-2xl transition ease-in-out duration-300'></i></button>
+            <div id="drop-menu" class="hidden menu-wrapper cursor-pointer">
               <ul class="absolute mt-2 z-10 left-0 right-0  flex flex-col lg:gap-5 gap-1 bg-white border-2 border-red-500 rounded-lg md:px-3 md:py-3 px-1 py-1 ">
                 <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize lg:text-base md:text-sm text-[9px]" ">treatment - terfavorite</button></li>
                 <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize lg:text-base md:text-sm text-[9px]">harga - tertingi</button></li>
@@ -465,8 +465,8 @@
               Lihat Detail
             </a>
           </div>
-        </div>
-        <div
+          </div>
+          <div
           class="card-wrapper rounded-xl border-2 border-slate-300 relative group"
         >
           <!-- Card-body -->
@@ -559,8 +559,8 @@
               Lihat Detail
             </a>
           </div>
-        </div>
-        <div
+          </div>
+          <div
           class="card-wrapper rounded-xl border-2 border-slate-300 relative group"
         >
           <!-- Card-body -->
@@ -657,8 +657,8 @@
               Lihat Detail
             </a>
           </div>
-        </div>
-        <div
+          </div>
+          <div
           class="card-wrapper rounded-xl border-2 border-slate-300 relative group"
         >
           <!-- Card-body -->
@@ -750,8 +750,8 @@
               Lihat Detail
             </a>
           </div>
-        </div>
-        <div
+          </div>
+          <div
           class="card-wrapper rounded-xl border-2 border-slate-300 relative group"
         >
           <!-- Card-body -->
@@ -850,8 +850,8 @@
               Lihat Detail
             </a>
           </div>
-        </div>
-        <div
+          </div>
+          <div
           class="card-wrapper rounded-xl border-2 border-slate-300 relative group"
         >
           <!-- Card-body -->
@@ -944,7 +944,7 @@
               Lihat Detail
             </a>
           </div>
-        </div>
+          </div>
           <!-- Treatment -1 End -->
           <!-- Treatment 2 -->
             <div
@@ -1520,17 +1520,17 @@
               </div>
             </div>
           <!-- Treatment 2 end -->
-
           </div>
           <div class="pagination w-fit ml-auto flex items-center gap-2">
-            <button id="prev-button" class="border-2 w-12 h-12 py-2 flex items-center justify-center rounded-lg shadow-lg"><i class='text-4xl bx bx-chevron-left'></i></button>
-            <span id="current-page" class="border-2 w-12 h-12 py-2 flex items-center justify-center rounded-lg text-xl font-spartanSemiBold border-green-200 shadow-lg text-zap-text-superGreen">1</span>
-            <button id="next-button" class="border-2 w-12 h-12 py-2 flex items-center justify-center rounded-lg shadow-lg"><i class='text-4xl bx bx-chevron-right'></i></button>
+            <button id="prev-button" class="border-2 md:w-12 w-10 h-9 md:h-12 py-2 flex items-center justify-center rounded-lg shadow-lg"><i class='md:text-4xl bx bx-chevron-left'></i></button>
+            <span class="current-page border-2 md:w-12 md:h-12 w-10 h-9 py-2 flex items-center justify-center rounded-lg md:text-xl font-spartanSemiBold border-green-200 shadow-lg text-zap-text-superGreen">1</span>
+            <button id="next-button" class="border-2 md:w-12 w-10 h-9 md:h-12 py-2 flex items-center justify-center rounded-lg shadow-lg"><i class='md:text-4xl bx bx-chevron-right'></i></button>
+            <span id="total-page" class="md:ml-5 ml-2">of 24</span>
           </div>
         </div>
       </section>
       <section class="promo md:pl-0 pl-4 ">
-        <div class="title text-start lg:p-4  p-0">
+        <div class="title container text-start lg:p-4  p-0">
           <h2>all treatment promo</h2>
           <hr class="mx-0" />
         </div>
@@ -1589,7 +1589,7 @@
               <h2 class="font-spartanMedium">
                 galau mau treatment apa?
               </h2>
-              <h6 >
+              <h6>
                 ZAP bisa bantu kamu untuk menemukan pilihan treatment yang tepat untuk kulitmu
               </h6>
               <button
@@ -1785,7 +1785,7 @@
     });
   </script>
   <script src="js/nav.js"></script>
-  <script src="js/treatment-paggination.js"></script>
+  <script src="js/TreatmentPaggination.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/floatingbtn.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

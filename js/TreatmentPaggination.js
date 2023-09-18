@@ -1,6 +1,6 @@
 // Get the treatment content wrapper and treatment items
 const treatmentContent = document.getElementById('treatment-content');
-const treatmentItems = treatmentContent.querySelectorAll('.card-wraper'); // Updated class name
+const treatmentItems = treatmentContent.querySelectorAll('.card-wrapper');
 
 // Get the pagination buttons and current page elements
 const prevButton = document.getElementById('prev-button');
@@ -52,3 +52,5 @@ prevButton.addEventListener('click', () => {
     updateCurrentPageElements();
   }
 });
+
+
