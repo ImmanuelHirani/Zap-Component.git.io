@@ -26,9 +26,6 @@ let TreatmentPilihanSwiper = new Swiper(".treatment-pilihan-content ", {
   slidesPerView: 1.2,
   spaceBetween:10,
   grabCursor: true,
-  
-
-  
   // If we need pagination
 
   // Navigation arrows
@@ -95,3 +92,5 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
   }
 });
 // Homepage End
+
+

@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="css/output.css">
     <link rel="website icon" type="png" href="temp-asset/statis-asset/Logo-Zap.svg"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
     <title>ZAP | Homepage</title>
 </head>
 <style>
@@ -26,6 +30,296 @@
     }
 </style>
 <body class="overflow-x-hidden">
+  <header class="font-spartanSemiBold fixed w-full lg:top-0 -top-1 z-20">
+    <nav id="navexpand" class="py-7 bg-zap-white shadow-md ">
+      <div class="container lg:text-base">
+        <!-- Desktop -->
+        <ul class="lg:flex hidden justify-between items-center">
+          <li class="flex items-center">
+            <a href="index.html"
+              ><img src="temp-asset/statis-asset/Logo-Zap.svg" class="w-28 z-10 relative" alt=""
+            /></a>
+          </li>
+          <li class="flex justify-center items-center gap-8">
+            <a
+              type="button"
+              id="navDropTreatment"
+              class="z-10 relative hover:text-green-600  cursor-pointer flex items-center"
+              >Treatment<i
+                class="bx bx-chevron-down text-3xl transition ease-in-out duration-75"
+              ></i>
+              <ul
+                id="navmenuTreatment"
+                class="hidden absolute top-0 bottom-0 left-0 right-0"
+              >
+                <li
+                  class="drop-menu  flex items-center container p-0 gap-4  font-spartanBold absolute left-0 right-0 top-0 bottom-0  mt-16 wrapper uppercase "
+                >
+                  <a
+                    href="beuaty-treatment.html"
+                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >face</a
+                  >
+                  <a
+                    href="body-treatment.html"
+                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >body</a
+                  >
+                  <a
+                    href="hair-treatment.html"
+                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >hair removal</a
+                  >
+                  <a
+                    href="Drips&health-treatment.html"
+                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >drips & health</a
+                  >
+                  <a
+                    href="all-Treatment.html"
+                    class="rounded-lg mx-2 block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >all treatment</a
+                  >
+                </li>
+              </ul>
+            </a>
+            <a href="solution.html" class="hover:text-green-600 z-10 relative"
+              >Solusi Kami
+            </a>
+            <a href="" class="hover:text-green-600">Promo</a>
+            <a href="store.html" class="hover:text-green-600 z-10 relative">E-Store</a>
+            <a href="lokasi.html" class="hover:text-green-600 z-10 relative">Lokasi</a>
+            <a href="" class="hover:text-green-600 z-10 relative">Artikel</a>
+            <a href="about.us.html" class="hover:text-green-600 z-10 relative"
+              >Tentang ZAP</a
+            >
+          </li>
+          <li class="flex items-center z-10 relative">
+            <a
+              href=""
+              class="bg-green-600 py-2 px-3 rounded-lg font-spartanSemiBold text-white"
+              >Online Booking</a
+            >
+            <!-- Language -->
+            <div
+              class="relative cursor-pointer py-2 px-3 rounded-lg font-spartanSemiBold text-black"
+              id="Language"
+            >
+              <span class="flex items-center group">
+                <img
+                  src="temp-asset/statis-asset/English-Bahasa.png"
+                  alt=""
+                />
+                <i
+                  class="transition duration-200 ease-in-out bx bx-chevron-down text-2xl"
+                ></i>
+              </span>
+              <div id="LanguageBox" class="hidden absolute right-5 top-14">
+                <div
+                  class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg px-3 w-36 rounded-lg py-2 bg-white"
+                >
+                  <button
+                    class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                    onclick="changeLanguage('ENG')"
+                  >
+                    <img
+                      src="temp-asset/statis-asset/English-Bahasa.png"
+                      alt=""
+                    />ENG
+                    <span id="checkENG"><i class="text-2xl bx"></i></span>
+                  </button>
+                  <button
+                    class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                    onclick="changeLanguage('ID')"
+                  >
+                    <img
+                      src="temp-asset/statis-asset/Indo-Bahasa.png"
+                      alt=""
+                    />ID
+                    <span id="checkID"><i class="text-2xl bx"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Language End-->
+            <a href="" class="text-zap-text-superGreen mt-2"
+              ><i class="bx bx-cart-alt text-3xl"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- Desktop End -->
+        <!-- ----------------------------------------------------- -->
+        <!-- mobile and Ipad V -->
+        <ul class="lg:hidden flex justify-between text-xs">
+          <li class="flex items-center z-20">
+            <a href="index.html"
+              ><img
+                src="temp-asset/statis-asset/Logo-Zap.svg"
+                class="w-20"
+                alt=""
+            /></a>
+          </li>
+          <li class="flex md:gap-9 gap-5 items-center z-20">
+            <div class="flex items-center gap-3">
+              <a
+                href=""
+                class="bg-green-600 py-[10px] text-xs px-4 rounded-lg font-spartanSemiBold text-white"
+                >Online Booking</a
+              >
+              <!-- Language -->
+              <div
+                class="relative md:block hidden cursor-pointer py-2 px-3 rounded-lg font-spartanSemiBold text-black"
+                id="Languagesm"
+              >
+                <span id="masterLang" class="flex items-center">
+                  <img
+                    src="temp-asset/statis-asset/English-Bahasa.png"
+                    alt=""
+                  />
+                  <i class="bx bx-chevron-down text-2xl"></i>
+                </span>
+                <div
+                  id="LanguageBoxsm"
+                  class="hidden absolute right-5 top-14"
+                >
+                  <div
+                    class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg w-36 rounded-lg py-2 bg-zap-white"
+                  >
+                    <button
+                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                      onclick="changeLanguage('ENG')"
+                    >
+                      <img
+                        src="temp-asset/statis-asset/English-Bahasa.png"
+                        alt=""
+                      />ENG
+                      <span id="checkENG"><i class="text-2xl bx"></i></span>
+                    </button>
+                    <button
+                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                      onclick="changeLanguage('ID')"
+                    >
+                      <img
+                        src="temp-asset/statis-asset/Indo-Bahasa.png"
+                        alt=""
+                      />ID
+                      <span id="checkID"><i class="text-2xl bx"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Language End -->
+              <a href="" class="text-zap-text-superGreen mt-2"
+                ><i class="bx bx-cart-alt text-3xl"></i
+              ></a>
+            </div>
+            <button
+              class="nav-sm relative"
+              id="navBurger"
+              name="mobileMenuButton"
+            >
+              <span
+                class="navBurger-line duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="navBurger-line-middle duration-300 ease-in-out"
+              ></span>
+              <span
+                class="navBurger-line duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+          </li>
+        </ul>
+        <!-- mobile and Ipad V End -->
+        <!-- Offcanvas mobile -->
+        <div
+          id="mobileMenu"
+          class="lg:hidden fixed top z-10 left-0 h-[1250px] w-full -top-2 bg-white transform -translate-x-full ease-in-out transition-transform duration-300"
+        >
+          <div class="container nav-wrapper mx-auto py-6 md:text-2xl text-sm">
+            <div
+              class="bg-nav absolute -z-10` inset-0 h-full bg-no-repeat bg-cover bg-center"
+              style="
+                background-image: url('temp-asset/homepage/Navbar.png');
+                opacity: 0.1;
+              "
+            ></div>
+            <ul
+              class="uppercase font-spartanSemiBold flex flex-col gap-y-10 mt-20 z-30"
+              style="letter-spacing: 1.4px"
+            >
+              <li id="btn-treatmentSM" class="z-30 w-fit">
+                <a
+                  class="hover:text-zap-text-superGreen cursor-pointer flex items-center "
+                  type="button"
+                  >Treatment
+                  <i
+                    id="treatbtnSM"
+                    class="transition duration-200 ease-in-out bx bx-chevron-down relative bottom-[2px] md:text-5xl text-2xl"
+                  ></i>
+                </a>
+                <ul
+                  id="treatbtnlink"
+                  class="lg:flex hidden mt-5 uppercase ml-5"
+                >
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="treatment.html">All Treatment</a>
+                  </li>
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="hair-treatment.html">Hair Removal</a>
+                  </li>
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="beuaty-treatment.html">Face</a>
+                  </li>
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="body-treatment.html">Body</a>
+                  </li>
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="Drips&health-treatment.html">DRIPS & HEALTH</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="">Promo</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="store.html">E-Store</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="lokasi.html">Lokasi</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="">Artikel</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="solution.html">Solusi kami</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="about.us.html">Tentang ZAP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Offcanvas mobile End -->
+      </div>
+    </nav>
+  </header>
   <main>
     <section class="hero lg:mt-0 mt-[101px] relative">
       <div class="container-banner swiper" id="swiperBanner">
@@ -228,7 +522,7 @@
               
             </div>
     </section>
-    <section class="promo lg:pl-0 pl-4">
+    <section class="promo md:pl-0 pl-4">
           <div class="title">
             <h2>Promo</h2>
             <hr>
@@ -283,7 +577,7 @@
             </h6>
           </div>
             <div
-              class=" container grid lg:grid-cols-4 grid-cols-2 gap-6 lg:mt-14 mt-9  mx-auto"
+              class=" container grid lg:grid-cols-4 grid-cols-2 gap-6 lg:mt-14 mt-9  "
             >
               <div
                 class="content-wrapper flex justify-center  group relative overflow-hidden transition-transform"
@@ -814,6 +1108,8 @@
     </section>
   </footer>
 </body>
+<script src="js/nav.js"></script>
+<script src="js/dropdown.js"></script>
 <script src="js/floatingbtn.js"></script>
 <script src="js/booking.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

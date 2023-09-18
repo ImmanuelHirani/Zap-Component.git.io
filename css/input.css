@@ -2,143 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Font */
 @font-face {
-    font-family: 'spartanBlack';
-    src: url('../spartan-cufonfonts/Spartan-Black.ttf') format("truetype");
-    font-weight: 800; /* This corresponds to ExtraBold font weight */
- 
+  font-family: "spartanBlack";
+  src: url("../spartan-cufonfonts/Spartan-Black.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
-    font-family: 'spartanBold';
-    src: url('../spartan-cufonfonts/Spartan-Bold.ttf') format("truetype");
-    font-weight: 800; /* This corresponds to ExtraBold font weight */
- 
+  font-family: "spartanBold";
+  src: url("../spartan-cufonfonts/Spartan-Bold.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
-    font-family: 'spartanExtraBold';
-    src: url('../spartan-cufonfonts/Spartan-ExtraBold.ttf') format("truetype");
-    font-weight: 800; /* This corresponds to ExtraBold font weight */
- 
+  font-family: "spartanExtraBold";
+  src: url("../spartan-cufonfonts/Spartan-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
-    font-family: 'spartanExtraLight';
-    src: url('../spartan-cufonfonts/Spartan-ExtraLight.ttf') format("truetype");
-    font-weight: 200; /* This corresponds to ExtraLight font weight */
- 
+  font-family: "spartanExtraLight";
+  src: url("../spartan-cufonfonts/Spartan-ExtraLight.ttf") format("truetype");
+  font-weight: 200; /* This corresponds to ExtraLight font weight */
 }
 
 @font-face {
-    font-family: 'spartanLight';
-    src: url('../spartan-cufonfonts/Spartan-Light.ttf') format("truetype");
-    font-weight: 300; /* This corresponds to Light font weight */
- 
+  font-family: "spartanLight";
+  src: url("../spartan-cufonfonts/Spartan-Light.ttf") format("truetype");
+  font-weight: 300; /* This corresponds to Light font weight */
 }
 
 @font-face {
-    font-family: 'spartanMedium';
-    src: url('../spartan-cufonfonts/Spartan-Medium.ttf') format("truetype");
-    font-weight: 500; /* This corresponds to Medium font weight */
- 
+  font-family: "spartanMedium";
+  src: url("../spartan-cufonfonts/Spartan-Medium.ttf") format("truetype");
+  font-weight: 500; /* This corresponds to Medium font weight */
 }
 
 @font-face {
-    font-family: 'spartanRegular';
-    src: url('../spartan-cufonfonts/Spartan-Regular.ttf') format("truetype");
-    font-weight: 400; /* This corresponds to Regular font weight */
- 
+  font-family: "spartanRegular";
+  src: url("../spartan-cufonfonts/Spartan-Regular.ttf") format("truetype");
+  font-weight: 400; /* This corresponds to Regular font weight */
 }
 
 @font-face {
-    font-family: 'spartanSemiBold';
-    src: url('../spartan-cufonfonts/Spartan-Semibold.ttf') format("truetype");
-    font-weight: 600; /* This corresponds to Semibold font weight */
- 
+  font-family: "spartanSemiBold";
+  src: url("../spartan-cufonfonts/Spartan-Semibold.ttf") format("truetype");
+  font-weight: 600; /* This corresponds to Semibold font weight */
 }
 
 @font-face {
-    font-family: 'spartanThin';
-    src: url('../spartan-cufonfonts/Spartan-Thin.ttf') format("truetype");
-    font-weight: 100; /* This corresponds to Thin font weight */
- 
+  font-family: "spartanThin";
+  src: url("../spartan-cufonfonts/Spartan-Thin.ttf") format("truetype");
+  font-weight: 100; /* This corresponds to Thin font weight */
 }
 
-
-.navBurger-line  {
-    @apply w-[30px] h-[2px]  block bg-black
+.navBurger-line {
+  @apply w-[30px] h-[2px]  block bg-black;
 }
 
-.navBurger-line-middle  {
-    @apply w-[20px] h-[2px] my-2 block relative left-[9px]  bg-black
+.navBurger-line-middle {
+  @apply w-[20px] h-[2px] my-2 block relative left-[9px]  bg-black;
+
+  
 }
+
+.navBurger-active > span:nth-child(2) {
+    @apply scale-0
+}
+
+.navBurger-active > span:nth-child(3) {
+    @apply -rotate-45 bg-red-400
+}
+
 
 .navBurger-active > span:nth-child(1) {
-    @apply  rotate-45  bg-red-400
+  @apply rotate-45  bg-red-400;
 }
 
-.Language-active > span >  i {
-    @apply  rotate-180  
+.Language-active > span > i {
+  @apply rotate-180;
 }
+
+.treatmentbtndropdown-active > i {
+  @apply rotate-180;
+}
+
+.navexpand-active {
+  @apply transition-all ease-in-out duration-300 pb-24;
+}
+
+.navDropTreatment-active > i {
+    @apply  rotate-180 
+}
+
+
+
+.btntreatmentSM-active > a > i {
+    @apply  rotate-180 
+}
+
+.navDropTreatment-active  {
+    @apply  text-green-600
+}
+
 
 @layer utilities {
+  .promo-btn {
+    @apply lg:mx-20 md:mx-8 mx-2 md:w-fit w-12;
+  }
 
-    .promo-btn {
-        @apply md:mx-20 mx-2 md:w-fit w-12 
-    }
+  .treatment-pilihan-btn {
+    @apply md:w-fit w-20;
+  }
 
-    .treatment-pilihan-btn {
-        @apply md:w-fit w-20 
-    }
+  .testimonial-btn {
+    @apply md:w-fit w-10 lg:mx-0 mx-4;
+  }
 
-    .testimonial-btn {
-        @apply md:w-fit w-10 lg:mx-0 mx-4
-    }
-
-    .hero-text {
-        @apply  container md:px-0 px-10 md:text-start text-center flex flex-col justify-center lg:mx-28 md:mx-20 md:my-auto mt-9 gap-4 lg:w-[500px] md:w-[290px] h-fit md:absolute top-0 bottom-0  z-10
-    }
+  .hero-text {
+    @apply container md:px-0 px-10 md:text-start text-center flex flex-col justify-center lg:mx-28 md:mx-20 md:my-auto mt-9 gap-4 lg:w-[500px] md:w-[290px] h-fit md:absolute top-0 bottom-0  z-10;
+  }
 }
 
-        #swiperBanner .swiper-pagination {
-            @apply lg:bottom-5 
-        }
+#swiperBanner .swiper-pagination {
+  @apply lg:bottom-5;
+}
 
-        #swiperBanner .swiper-pagination-bullet {
-            @apply opacity-100 bg-zap-green md:w-3 md:h-3 w-2 h-2 
-        }
+#swiperBanner .swiper-pagination-bullet {
+  @apply opacity-100 bg-zap-green md:w-3 md:h-3 w-2 h-2;
+}
 
-        #swiperBanner .swiper-pagination-bullet-active {
-            @apply bg-zap-SuperGreen
-        }
+#swiperBanner .swiper-pagination-bullet-active {
+  @apply bg-zap-SuperGreen;
+}
 
-        #swipertreatment .swiper-slide {
-            @apply bg-zap-SuperGreen lg:w-[250px]
-        }
+#swipertreatment .swiper-slide {
+  @apply bg-zap-SuperGreen lg:w-[250px];
+}
 
 @layer base {
+  section {
+    @apply md:mt-32 mt-20;
+  }
 
-    section {
-        @apply md:mt-32 mt-20
-    }
+  .title {
+    @apply text-center gap-4 md:text-sm text-xs flex flex-col container;
+  }
 
-    .title {
-       @apply text-center gap-4 md:text-sm text-xs flex flex-col container
-    }
+  h1 {
+    @apply lg:text-4xl md:text-base text-sm lg:leading-[50px] font-spartanBold;
+  }
 
-    h1 {
-        @apply lg:text-4xl md:text-base text-sm lg:leading-[50px] font-spartanBold
-    }
+  h2 {
+    @apply lg:text-2xl  md:text-base text-sm  uppercase font-spartanSemiBold tracking-[4.2px];
+  }
 
-    h2 {
-        @apply lg:text-2xl  md:text-base text-sm  uppercase font-spartanSemiBold tracking-[4.2px]
-    }
-
-    hr {
-        @apply w-28 md:border-2 border-[1px] mx-auto border-black
-    }
+  hr {
+    @apply w-28 md:border-2 border-[1px] mx-auto border-black;
+  }
 }
-

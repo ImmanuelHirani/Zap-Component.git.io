@@ -12,6 +12,9 @@ module.exports = {
         center: false,
         padding: "0px",
       },
+
+
+
       backgroundImage: {
         "treatment-pilihan-bg":
           "url('../temp-asset/homepage/treatment-pilihan-bg.png')",
