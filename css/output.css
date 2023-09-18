@@ -881,8 +881,20 @@ hr {
   margin-top: 2.25rem;
 }
 
-.mt-\[101px\] {
-  margin-top: 101px;
+.mt-\[105px\] {
+  margin-top: 105px;
+}
+
+.mt-\[110px\] {
+  margin-top: 110px;
+}
+
+.mt-\[90px\] {
+  margin-top: 90px;
+}
+
+.mt-\[95px\] {
+  margin-top: 95px;
 }
 
 .block {
@@ -1175,9 +1187,9 @@ hr {
   border-radius: 0.75rem;
 }
 
-.rounded-b-lg {
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
 }
 
 .border-2 {
