@@ -138,11 +138,11 @@
 
 @layer utilities {
 
-  .promo-button-view-all > button {
+  .button-view-all > button {
     @apply  bg-zap-SuperGreen lg:text-base md:text-sm text-xs w-fit lg:px-9 py-3 px-8 rounded-lg font-spartanSemiBold text-white capitalize
   }
 
-  .promo-button-view-all {
+  .button-view-all {
     @apply container lg:mt-10 mt-5  lg:p-4 p-0 
   }
 
