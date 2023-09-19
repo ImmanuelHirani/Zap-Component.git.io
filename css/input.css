@@ -120,10 +120,31 @@
     @apply lg:hover:text-green-500 cursor-pointer font-spartanMedium 
 }
 
+@layer components {
+
+.accordion-header {
+    @apply py-4  cursor-pointer 
+}
+
+.accordion-header.active i {
+    @apply transition ease-in-out duration-300;
+    transform:rotateX(180deg);
+}
+
+.accordion-body {
+    @apply  max-h-0 overflow-hidden transition-all duration-200 ease-in-out
+}
+}
 
 @layer utilities {
 
-  
+  .before-after-btn {
+    @apply lg:mx-20 md:mx-8 mx-2 md:w-fit w-12;
+  }
+
+  .treatment-recomendations-btn {
+    @apply lg:mx-20 md:mx-8 mx-2 md:w-fit w-12;
+  }
 
   .estore-Btn {
    @apply md:mx-0 mx-2 md:w-fit w-9

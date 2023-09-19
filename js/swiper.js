@@ -156,6 +156,91 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
     }
   });
 
+  // Full details 
+  let stepSwiper = new Swiper(".content-swiper-stepbyStep", {
+
+    slidesPerView: 1.5,
+    grabCursor: true,
+    // If we need pagination
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+    },
+    autoplay : {
+      delay : 4000,
+      disableOnInteraction: false,
+  },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.step-button-next',
+      prevEl: '.step-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView:2 ,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    }
+  });
+  
+  let BaSwiper = new Swiper(".card-content-Before-After", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    grabCursor: true,
+    // If we need pagination
+    pagination: {
+  
+      clickable: true,
+      dynamicBullets: true,
+    },
+    autoplay : {
+      delay : 4000,
+      disableOnInteraction: false,
+  },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.before-button-next',
+      prevEl: '.before-button-prev',
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+      968: {
+        slidesPerView: 3,
+      },
+    }
+  });
+
+  let RaSwiper = new Swiper(".card-content-treatment-rekomendasi", {
+    slidesPerView: 1.1,
+    spaceBetween: 5,
+    grabCursor: true,
+    // If we need pagination
+
+    autoplay : {
+      delay : 4000,
+      disableOnInteraction: false,
+  },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.rekom-button-next',
+      prevEl: '.rekom-button-prev',
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+      968: {
+        slidesPerView:'2.5',
+      },
+    }
+  });
+  // Full details end 
+
+
   let EstoresliderSwiper = new Swiper(".Estoreslider-content ", {
     slidesPerView: 2,
     
