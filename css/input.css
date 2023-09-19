@@ -6,56 +6,55 @@
 /* Font */
 @font-face {
   font-family: "spartansemibold";
-  src: url("../spartan-cufonfonts/Spartan-Black.ttf") format("truetype");
+  src: url("../spartan-cufonfonts/Spartan-Black.ttf") 
 
 }
 
 @font-face {
   font-family: "spartanBold";
-  src: url("../spartan-cufonfonts/Spartan-Bold.ttf") format("truetype");
+  src: url("../spartan-cufonfonts/Spartan-Bold.ttf") 
 
 }
 
 @font-face {
   font-family: "spartanExtraBold";
-  src: url("../spartan-cufonfonts/Spartan-ExtraBold.ttf") format("truetype");
+  src: url("../spartan-cufonfonts/Spartan-ExtraBold.ttf") 
 
 }
 
 @font-face {
   font-family: "spartanExtraLight";
-  src: url("../spartan-cufonfonts/Spartan-ExtraLight.ttf") format("truetype");
+  src: url("../spartan-cufonfonts/Spartan-ExtraLight.ttf") 
 
 }
 
 @font-face {
   font-family: "spartanLight";
-  src: url("../spartan-cufonfonts/Spartan-Light.ttf") format("truetype");
-  font-weight: 300; /* This corresponds to Light font weight */
+  src: url("../spartan-cufonfonts/Spartan-Light.ttf") 
+
 }
 
 @font-face {
   font-family: "spartanMedium";
-  src: url("../spartan-cufonfonts/Spartan-Medium.ttf") format("truetype");
+  src: url("../spartan-cufonfonts/Spartan-Medium.ttf") 
 
 }
 
 @font-face {
   font-family: "spartanRegular";
-  src: url("../spartan-cufonfonts/Spartan-Regular.ttf") format("truetype");
+  src: url("../spartan-cufonfonts/Spartan-Regular.ttf") 
  
 }
 
 @font-face {
   font-family: "spartanSemiBold";
-  src: url("../spartan-cufonfonts/Spartan-Semibold.ttf") format("truetype");
+  src: url("../spartan-cufonfonts/Spartan-Semibold.ttf") 
 
 }
 
 @font-face {
   font-family: "spartanThin";
-  src: url("../spartan-cufonfonts/Spartan-Thin.ttf") format("truetype");
-  
+  src: url("../spartan-cufonfonts/Spartan-Thin.ttf") 
 }
 
 .navBurger-line {
