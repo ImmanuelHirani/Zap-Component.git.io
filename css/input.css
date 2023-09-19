@@ -138,6 +138,19 @@
 
 @layer utilities {
 
+  .promo-button-view-all > button {
+    @apply  bg-zap-SuperGreen lg:text-base md:text-sm text-xs w-fit lg:px-9 py-3 px-8 rounded-lg font-spartanSemiBold text-white capitalize
+  }
+
+  .promo-button-view-all {
+    @apply container lg:mt-10 mt-5  lg:p-4 p-0 
+  }
+
+  .button-booking {
+    @apply rounded-lg lg:mx-0 mx-auto flex lg:px-9 py-3 px-8 font-spartanSemiBold lg:text-base md:text-sm text-xs  
+  }
+
+
   .before-after-btn {
     @apply lg:mx-20 md:mx-8 mx-2 md:w-fit w-12;
   }
@@ -202,7 +215,7 @@
   }
 
   .title {
-    @apply text-center gap-4 md:text-sm text-xs flex flex-col ;
+    @apply text-center gap-4 md:text-sm text-xs flex flex-col lg:mb-10 mb-5 ;
   }
 
   h1 {
@@ -218,7 +231,7 @@
   }
 
   h5 {
-    @apply md:text-base text-xs
+    @apply lg:text-base md:text-sm text-xs
   }
 
  

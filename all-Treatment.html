@@ -352,25 +352,25 @@
           </div>
         </div>
       </section>
-      <section class="main-content">
-        <div class="content-wrapper container  lg:p-4 md:p-0 ">
-          <div class="treatment-head flex justify-between  lg:text-[15px] text-xs items-center">
-            <span class="md:hidden block">Urutkan berdasarkan</span>
-            <h5 class="md:block hidden lg:text-base  md:text-sm">Menampilkan <span class="text-black font-spartanSemiBold">10</span> dari <span>369</span> treatment untuk <span>“All Treatments”</span> </h5>
-          <div class="relative">
-            <button id="btn-dropdown" class="lg:text-[15px] md:text-sm text-[9px] flex items-center capitalize md:px-5 px-3 md:py-3 py-2 lg:w-72 md:w-[270px] w-44 justify-between  bg-zap-SuperGreen rounded-lg text-white font-spartanSemiBold">treatment - terfavorite<i class='bx bx-chevron-down md:text-3xl text-2xl transition ease-in-out duration-300'></i></button>
+      <section class="main-content lg:mt-20 md:mt-12 mt-2 ">
+        <div class="content-wrapper container  lg:p-4 md:p-0   ">
+          <div class="treatment-head flex justify-between lg:text-base md:text-sm text-xs items-center">
+            <h5 class="md:hidden block capitalize font-spartanMedium">pilih Kategori</h5>
+            <h5 class="md:block hidden">Menampilkan <span class="text-black font-spartanSemiBold">10</span> dari <span>369</span> treatment untuk <span>“All Treatments”</span> </h5>
+          <div class="relative py-6">
+            <button id="btn-dropdown" class="flex items-center capitalize px-4  py-3 lg:w-80 md:w-72 w-56 justify-between  bg-zap-SuperGreen rounded-lg text-white font-spartanSemiBold">treatment - terfavorite<i class='bx bx-chevron-down md:text-3xl text-lg transition ease-in-out duration-300'></i></button>
             <div id="drop-menu" class="hidden menu-wrapper cursor-pointer">
-              <ul class="absolute mt-2 z-10 left-0 right-0  flex flex-col lg:gap-5 gap-1 bg-white border-2 border-red-500 rounded-lg md:px-3 md:py-3 px-1 py-1 ">
-                <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize lg:text-base md:text-sm text-[9px]" ">treatment - terfavorite</button></li>
-                <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize lg:text-base md:text-sm text-[9px]">harga - tertingi</button></li>
-                <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize lg:text-base md:text-sm text-[9px]">harga - terendah</button></li>
-                <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize lg:text-base md:text-sm text-[9px]">dermatologis - treatment</button></li>
+              <ul class="absolute mt-2 z-10 inset-x-0  flex flex-col lg:gap-5 gap-1 bg-white border-2 border-red-500 rounded-lg md:px-3 md:py-3 px-1 py-1 ">
+                <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize ">treatment - terfavorite</button></li>
+                <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize ">harga - tertingi</button></li>
+                <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize ">harga - terendah</button></li>
+                <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize ">dermatologis - treatment</button></li>
             </ul>
             </div>
           </div>
           </div>
           <div
-            id="treatment-content" class="treatment-content py-10 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 lg:mt-5"
+            id="treatment-content" class="treatment-content  grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 lg:mt-5 "
           >
           <!-- Treatment -1 -->
           <div
@@ -378,7 +378,7 @@
         >
           <!-- Card-body -->
           <div
-            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
           >
             <img
               src="temp-asset/treatment/Hair.png"
@@ -400,13 +400,13 @@
           <!-- Card-body End -->
           <!-- Card-Footer -->
           <div
-            class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+            class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
           >
             <div
-              class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+              class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
             >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Calender.svg"
@@ -414,7 +414,7 @@
                 />2 mingguan</span
               >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Time.svg"
@@ -423,11 +423,11 @@
               >
             </div>
             <div
-              class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+              class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-10px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartanMedium">
                   398<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb</span
@@ -435,7 +435,7 @@
                 </p></span
               >
               <span
-                class="lg:text-xs text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 h-11 my-auto flex flex-col justify-center"
                 style="
                   background: linear-gradient(
                     180deg,
@@ -444,7 +444,7 @@
                   );
                 "
                 >ZAP SERIES
-                <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs ">
                   299<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb'</span
@@ -471,7 +471,7 @@
         >
           <!-- Card-body -->
           <div
-            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
           >
             <img
               src="temp-asset/treatment/Hair.png"
@@ -494,13 +494,13 @@
           <!-- Card-body End -->
           <!-- Card-Footer -->
           <div
-            class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+            class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
           >
             <div
-              class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+              class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
             >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Calender.svg"
@@ -508,7 +508,7 @@
                 />2 mingguan</span
               >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Time.svg"
@@ -517,11 +517,11 @@
               >
             </div>
             <div
-              class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+              class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-10px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartanMedium">
                   398<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb</span
@@ -529,7 +529,7 @@
                 </p></span
               >
               <span
-                class="lg:text-xs text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 h-11 my-auto flex flex-col justify-center"
                 style="
                   background: linear-gradient(
                     180deg,
@@ -538,7 +538,7 @@
                   );
                 "
                 >ZAP SERIES
-                <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs ">
                   299<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb'</span
@@ -565,7 +565,7 @@
         >
           <!-- Card-body -->
           <div
-            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
           >
             <img
               src="temp-asset/treatment/DNA-Salmon-2.png"
@@ -592,13 +592,13 @@
           />
           <!-- Card-Footer -->
           <div
-            class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+            class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
           >
             <div
-              class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+              class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
             >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Calender.svg"
@@ -606,7 +606,7 @@
                 />2 mingguan</span
               >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Time.svg"
@@ -615,11 +615,11 @@
               >
             </div>
             <div
-              class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+              class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-10px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartanMedium">
                   398<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb</span
@@ -627,7 +627,7 @@
                 </p></span
               >
               <span
-                class="lg:text-xs text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 h-11 my-auto flex flex-col justify-center"
                 style="
                   background: linear-gradient(
                     180deg,
@@ -636,7 +636,7 @@
                   );
                 "
                 >ZAP SERIES
-                <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs ">
                   299<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb'</span
@@ -663,7 +663,7 @@
         >
           <!-- Card-body -->
           <div
-            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
           >
             <img
               src="temp-asset/treatment/DNA Salmon-4.png"
@@ -685,13 +685,13 @@
           <!-- Card-body End -->
           <!-- Card-Footer -->
           <div
-            class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+            class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
           >
             <div
-              class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+              class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
             >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Calender.svg"
@@ -699,7 +699,7 @@
                 />2 mingguan</span
               >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Time.svg"
@@ -708,11 +708,11 @@
               >
             </div>
             <div
-              class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+              class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-10px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartanMedium">
                   398<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb</span
@@ -729,7 +729,7 @@
                   );
                 "
                 >ZAP SERIES
-                <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs ">
                   299<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb'</span
@@ -756,7 +756,7 @@
         >
           <!-- Card-body -->
           <div
-            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
           >
             <img
               src="temp-asset/treatment/DNA-Salmon-Treatment.png"
@@ -789,9 +789,9 @@
             class="card-footer rounded-b-xl px-3 bg-zap-magenta lg:h-24 h-14 flex items-center justify-between"
           >
             <div
-              class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+              class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
             >
-              <!-- <span class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+              <!-- <span class="flex items-center gap-x-2  lg:text-base text-[10px]"
         ><img
           class="lg:w-5 md:w-4 w-3"
           src="temp-asset/treatment/Calender.svg"
@@ -799,7 +799,7 @@
         />2 mingguan</span
       > -->
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Time.svg"
@@ -808,11 +808,11 @@
               >
             </div>
             <div
-              class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+              class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-10px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartanMedium">
                   499<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb</span
@@ -829,7 +829,7 @@
                   );
                 "
                 >ZAP SERIES
-                <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs ">
                   299<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb'</span
@@ -856,7 +856,7 @@
         >
           <!-- Card-body -->
           <div
-            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+            class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
           >
             <img
               src="temp-asset/treatment/DNA Salmon-3.png"
@@ -879,13 +879,13 @@
           <!-- Card-body End -->
           <!-- Card-Footer -->
           <div
-            class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+            class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
           >
             <div
-              class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+              class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
             >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Calender.svg"
@@ -893,7 +893,7 @@
                 />800 shots</span
               >
               <span
-                class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
                 ><img
                   class="lg:w-5 md:w-4 w-3"
                   src="temp-asset/treatment/Time.svg"
@@ -902,11 +902,11 @@
               >
             </div>
             <div
-              class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+              class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-10px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartanMedium">
                   2.248<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb</span
@@ -914,7 +914,7 @@
                 </p></span
               >
               <span
-                class="lg:text-xs text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 h-11 my-auto flex flex-col justify-center"
                 style="
                   background: linear-gradient(
                     180deg,
@@ -923,7 +923,7 @@
                   );
                 "
                 >ZAP SERIES
-                <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                <p class="lg:text-2xl text-xs ">
                   1.249<span
                     class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                     >rb'</span
@@ -952,7 +952,7 @@
             >
               <!-- Card-body -->
               <div
-                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
               >
                 <img
                   src="temp-asset/treatment/DNA Salmon-3.png"
@@ -975,13 +975,13 @@
               <!-- Card-body End -->
               <!-- Card-Footer -->
               <div
-                class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
               >
                 <div
-                  class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
                 >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Calender.svg"
@@ -989,7 +989,7 @@
                     />800 shots</span
                   >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Time.svg"
@@ -998,11 +998,11 @@
                   >
                 </div>
                 <div
-                  class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-10px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
                       2.248<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb</span
@@ -1010,7 +1010,7 @@
                     </p></span
                   >
                   <span
-                    class="lg:text-xs text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 h-11 my-auto flex flex-col justify-center"
                     style="
                       background: linear-gradient(
                         180deg,
@@ -1019,7 +1019,7 @@
                       );
                     "
                     >ZAP SERIES
-                    <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs ">
                       1.249<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb'</span
@@ -1046,7 +1046,7 @@
             >
               <!-- Card-body -->
               <div
-                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
               >
                 <img
                   src="temp-asset/treatment/DNA-Salmon-Treatment.png"
@@ -1079,9 +1079,9 @@
                 class="card-footer rounded-b-xl px-3 bg-zap-magenta lg:h-24 h-14 flex items-center justify-between"
               >
                 <div
-                  class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
                 >
-                  <!-- <span class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                  <!-- <span class="flex items-center gap-x-2  lg:text-base text-[10px]"
             ><img
               class="lg:w-5 md:w-4 w-3"
               src="temp-asset/treatment/Calender.svg"
@@ -1089,7 +1089,7 @@
             />2 mingguan</span
           > -->
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Time.svg"
@@ -1098,11 +1098,11 @@
                   >
                 </div>
                 <div
-                  class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-10px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
                       499<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb</span
@@ -1119,7 +1119,7 @@
                       );
                     "
                     >ZAP SERIES
-                    <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs ">
                       299<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb'</span
@@ -1146,7 +1146,7 @@
             >
               <!-- Card-body -->
               <div
-                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
               >
                 <img
                   src="temp-asset/treatment/DNA Salmon-4.png"
@@ -1168,13 +1168,13 @@
               <!-- Card-body End -->
               <!-- Card-Footer -->
               <div
-                class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
               >
                 <div
-                  class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
                 >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Calender.svg"
@@ -1182,7 +1182,7 @@
                     />2 mingguan</span
                   >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Time.svg"
@@ -1191,11 +1191,11 @@
                   >
                 </div>
                 <div
-                  class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-10px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
                       398<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb</span
@@ -1212,7 +1212,7 @@
                       );
                     "
                     >ZAP SERIES
-                    <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs ">
                       299<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb'</span
@@ -1239,7 +1239,7 @@
             >
               <!-- Card-body -->
               <div
-                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
               >
                 <img
                   src="temp-asset/treatment/DNA-Salmon-2.png"
@@ -1266,13 +1266,13 @@
               />
               <!-- Card-Footer -->
               <div
-                class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
               >
                 <div
-                  class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
                 >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Calender.svg"
@@ -1280,7 +1280,7 @@
                     />2 mingguan</span
                   >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Time.svg"
@@ -1289,11 +1289,11 @@
                   >
                 </div>
                 <div
-                  class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-10px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
                       398<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb</span
@@ -1301,7 +1301,7 @@
                     </p></span
                   >
                   <span
-                    class="lg:text-xs text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 h-11 my-auto flex flex-col justify-center"
                     style="
                       background: linear-gradient(
                         180deg,
@@ -1310,7 +1310,7 @@
                       );
                     "
                     >ZAP SERIES
-                    <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs ">
                       299<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb'</span
@@ -1337,7 +1337,7 @@
             >
               <!-- Card-body -->
               <div
-                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
               >
                 <img
                   src="temp-asset/treatment/Hair.png"
@@ -1360,13 +1360,13 @@
               <!-- Card-body End -->
               <!-- Card-Footer -->
               <div
-                class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
               >
                 <div
-                  class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
                 >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Calender.svg"
@@ -1374,7 +1374,7 @@
                     />2 mingguan</span
                   >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Time.svg"
@@ -1383,11 +1383,11 @@
                   >
                 </div>
                 <div
-                  class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-10px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
                       398<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb</span
@@ -1395,7 +1395,7 @@
                     </p></span
                   >
                   <span
-                    class="lg:text-xs text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 h-11 my-auto flex flex-col justify-center"
                     style="
                       background: linear-gradient(
                         180deg,
@@ -1404,7 +1404,7 @@
                       );
                     "
                     >ZAP SERIES
-                    <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs ">
                       299<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb'</span
@@ -1431,7 +1431,7 @@
             >
               <!-- Card-body -->
               <div
-                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-3 mx-3"
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
               >
                 <img
                   src="temp-asset/treatment/Hair.png"
@@ -1453,13 +1453,13 @@
               <!-- Card-body End -->
               <!-- Card-Footer -->
               <div
-                class="card-footer rounded-b-xl px-3 bg-zap-green lg:h-24 h-14 flex items-center justify-between"
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
               >
                 <div
-                  class="left-content lg:w-fit w-52 flex lg:gap-x-6 gap-x-2 justify-between"
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
                 >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Calender.svg"
@@ -1467,7 +1467,7 @@
                     />2 mingguan</span
                   >
                   <span
-                    class="flex items-center gap-x-2 lg:text-base md:text-[9px] text-[9px]"
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
                     ><img
                       class="lg:w-5 md:w-4 w-3"
                       src="temp-asset/treatment/Time.svg"
@@ -1476,11 +1476,11 @@
                   >
                 </div>
                 <div
-                  class="right-content items-center gap-x-3 lg:w-fit w-52 justify-end flex"
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-10px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
                       398<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb</span
@@ -1488,7 +1488,7 @@
                     </p></span
                   >
                   <span
-                    class="lg:text-xs text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 h-11 my-auto flex flex-col justify-center"
                     style="
                       background: linear-gradient(
                         180deg,
@@ -1497,7 +1497,7 @@
                       );
                     "
                     >ZAP SERIES
-                    <p class="lg:text-2xl text-[8px] font-spartanMedium">
+                    <p class="lg:text-2xl text-xs ">
                       299<span
                         class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
                         >rb'</span
@@ -1521,7 +1521,7 @@
             </div>
           <!-- Treatment 2 end -->
           </div>
-          <div class="pagination w-fit ml-auto flex items-center gap-2">
+          <div class="pagination w-fit ml-auto flex items-center gap-2 mt-5">
             <button id="prev-button" class="border-2 md:w-12 w-10 h-9 md:h-12 py-2 flex items-center justify-center rounded-lg shadow-lg"><i class='md:text-4xl bx bx-chevron-left'></i></button>
             <span class="current-page border-2 md:w-12 md:h-12 w-10 h-9 py-2 flex items-center justify-center rounded-lg md:text-xl font-spartanSemiBold border-green-200 shadow-lg text-zap-text-superGreen">1</span>
             <button id="next-button" class="border-2 md:w-12 w-10 h-9 md:h-12 py-2 flex items-center justify-center rounded-lg shadow-lg"><i class='md:text-4xl bx bx-chevron-right'></i></button>
@@ -1534,7 +1534,7 @@
           <h2>all treatment promo</h2>
           <hr class="mx-0" />
         </div>
-        <div class="swiper lg:mt-14 mt-9">
+        <div class="swiper">
           <div class="promo-content">
             <div class="swiper-wrapper">
               <figure class="swiper-slide">
@@ -1566,8 +1566,8 @@
             />
           </div>
         </div>
-        <div class="container text-start mt-10 lg:p-4 p-0 ">
-          <button class="bg-zap-SuperGreen w-fit lg:px-9 lg:py-3 px-8 py-2 rounded-lg font-spartanSemiBold text-white capitalize">lihat semua</button>
+        <div class="promo-button-view-all">
+          <button>lihat semua</button>
         </div>
       </section>
       <section class="treatment-solutions container ">
