@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link href="https://fonts.cdnfonts.com/css/spartan?styles=80624,80626,80621,80622,80623,80625,80619,80620,80618" rel="stylesheet">
     <link
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     rel="stylesheet"
@@ -36,8 +37,8 @@
       right: 0;
     }
   </style>
-  <body class="overflow-x-hidden  font-spartanRegular">
-    <header class="font-spartanSemiBold fixed w-full lg:top-0 -top-1 z-20">
+  <body class="overflow-x-hidden  font-spartan font-normal">
+    <header class="font-spartan font-semibold fixed w-full lg:top-0 -top-1 z-20">
       <nav id="navexpand" class="py-7 bg-zap-white shadow-md ">
         <div class="container lg:text-base">
           <!-- Desktop -->
@@ -60,7 +61,7 @@
                   class="hidden absolute top-0 bottom-0 left-0 right-0"
                 >
                   <li
-                    class="drop-menu  flex items-center container p-0 gap-4  font-spartanBold absolute left-0 right-0 top-0 bottom-0  mt-16 wrapper uppercase "
+                    class="drop-menu  flex items-center container p-0 gap-4  font-spartan font-bold absolute left-0 right-0 top-0 bottom-0  mt-16 wrapper uppercase "
                   >
                     <a
                       href="beuaty-treatment.html"
@@ -109,12 +110,12 @@
             <li class="flex items-center z-10 relative">
               <a
                 href=""
-                class="bg-green-600 py-2 px-3 rounded-lg font-spartanSemiBold text-white"
+                class="bg-green-600 py-2 px-3 rounded-lg font-spartan font-semibold text-white"
                 >Online Booking</a
               >
               <!-- Language -->
               <div
-                class="relative cursor-pointer py-2 px-3 rounded-lg font-spartanSemiBold text-black"
+                class="relative cursor-pointer py-2 px-3 rounded-lg font-spartan font-semibold text-black"
                 id="Language"
               >
                 <span class="flex items-center group">
@@ -131,7 +132,7 @@
                     class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg px-3 w-36 rounded-lg py-2 bg-white"
                   >
                     <button
-                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                      class="flex cursor-pointer items-center gap-2 font-spartan font-bold"
                       onclick="changeLanguage('ENG')"
                     >
                       <img
@@ -141,7 +142,7 @@
                       <span id="checkENG"><i class="text-2xl bx"></i></span>
                     </button>
                     <button
-                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                      class="flex cursor-pointer items-center gap-2 font-spartan font-bold"
                       onclick="changeLanguage('ID')"
                     >
                       <img
@@ -175,12 +176,12 @@
               <div class="flex items-center gap-3">
                 <a
                   href=""
-                  class="bg-green-600 py-[10px] text-xs px-4 rounded-lg font-spartanSemiBold text-white"
+                  class="bg-green-600 py-[10px] text-xs px-4 rounded-lg font-spartan font-semibold text-white"
                   >Online Booking</a
                 >
                 <!-- Language -->
                 <div
-                  class="relative md:block hidden cursor-pointer py-2 px-3 rounded-lg font-spartanSemiBold text-black"
+                  class="relative md:block hidden cursor-pointer py-2 px-3 rounded-lg font-spartan font-semibold text-black"
                   id="Languagesm"
                 >
                   <span id="masterLang" class="flex items-center">
@@ -198,7 +199,7 @@
                       class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg w-36 rounded-lg py-2 bg-zap-white"
                     >
                       <button
-                        class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                        class="flex cursor-pointer items-center gap-2 font-spartan font-bold"
                         onclick="changeLanguage('ENG')"
                       >
                         <img
@@ -208,7 +209,7 @@
                         <span id="checkENG"><i class="text-2xl bx"></i></span>
                       </button>
                       <button
-                        class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                        class="flex cursor-pointer items-center gap-2 font-spartan font-bold"
                         onclick="changeLanguage('ID')"
                       >
                         <img
@@ -257,7 +258,7 @@
                 "
               ></div>
               <ul
-                class="uppercase font-spartanSemiBold flex flex-col gap-y-10 mt-20 z-30"
+                class="uppercase font-spartan font-semibold flex flex-col gap-y-10 mt-20 z-30"
                 style="letter-spacing: 1.4px"
               >
                 <li id="btn-treatmentSM" class="z-30 w-fit">
@@ -355,10 +356,10 @@
       <section class="main-content lg:mt-20 md:mt-12 mt-2 ">
         <div class="content-wrapper container  lg:p-4 md:p-0   ">
           <div class="treatment-head flex justify-between lg:text-base md:text-sm text-xs items-center">
-            <h5 class="md:hidden block capitalize font-spartanMedium">pilih Kategori</h5>
-            <h5 class="md:block hidden">Menampilkan <span class="text-black font-spartanSemiBold">10</span> dari <span>369</span> treatment untuk <span>“All Treatments”</span> </h5>
+            <h5 class="md:hidden block capitalize font-spartan font-medium">pilih Kategori</h5>
+            <h5 class="md:block hidden">Menampilkan <span class="text-black font-spartan font-semibold">10</span> dari <span>369</span> treatment untuk <span>“All Treatments”</span> </h5>
           <div class="relative py-6">
-            <button id="btn-dropdown" class="flex items-center capitalize px-4  py-3 lg:w-80 md:w-72 w-56 justify-between  bg-zap-SuperGreen rounded-lg text-white font-spartanSemiBold">treatment - terfavorite<i class='bx bx-chevron-down md:text-3xl text-lg transition ease-in-out duration-300'></i></button>
+            <button id="btn-dropdown" class="flex items-center capitalize px-4  py-3 lg:w-80 md:w-72 w-56 justify-between  bg-zap-SuperGreen rounded-lg text-white font-spartan font-semibold">treatment - terfavorite<i class='bx bx-chevron-down md:text-3xl text-lg transition ease-in-out duration-300'></i></button>
             <div id="drop-menu" class="hidden menu-wrapper cursor-pointer">
               <ul class="absolute mt-2 z-10 inset-x-0  flex flex-col lg:gap-5 gap-1 bg-white border-2 border-red-500 rounded-lg md:px-3 md:py-3 px-1 py-1 ">
                 <li class="group hover:bg-slate-300 rounded-md md:px-3 px-2 py-2" onclick="selectItem(this)"><button class="capitalize ">treatment - terfavorite</button></li>
@@ -387,7 +388,7 @@
             />
             <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
               <p
-                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
               >
                 HAIR REMOVAL
               </p>
@@ -427,15 +428,15 @@
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-xs font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartan font-medium">
                   398<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb</span
                   >
                 </p></span
               >
               <span
-                class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                class="lg:text-xs text-[9px] font-spartan font-medium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
                 style="
                   background: linear-gradient(
                     180deg,
@@ -446,7 +447,7 @@
                 >ZAP SERIES
                 <p class="lg:text-2xl text-xs ">
                   299<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb'</span
                   >
                 </p></span
@@ -480,7 +481,7 @@
             />
             <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
               <p
-                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
               >
                 UNDERARM HAIR REMOVAL + <br />
                 UNDERARM REJUVENATION
@@ -521,15 +522,15 @@
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-xs font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartan font-medium">
                   398<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb</span
                   >
                 </p></span
               >
               <span
-                class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                class="lg:text-xs text-[9px] font-spartan font-medium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
                 style="
                   background: linear-gradient(
                     180deg,
@@ -540,7 +541,7 @@
                 >ZAP SERIES
                 <p class="lg:text-2xl text-xs ">
                   299<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb'</span
                   >
                 </p></span
@@ -574,7 +575,7 @@
             />
             <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
               <p
-                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
               >
                 INFUSE SUPER GLOW PREMIUM
               </p>
@@ -619,15 +620,15 @@
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-xs font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartan font-medium">
                   398<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb</span
                   >
                 </p></span
               >
               <span
-                class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                class="lg:text-xs text-[9px] font-spartan font-medium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
                 style="
                   background: linear-gradient(
                     180deg,
@@ -638,7 +639,7 @@
                 >ZAP SERIES
                 <p class="lg:text-2xl text-xs ">
                   299<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb'</span
                   >
                 </p></span
@@ -672,7 +673,7 @@
             />
             <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
               <p
-                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
               >
                 BIKINI LINE REJUVENATION COMBO
               </p>
@@ -712,9 +713,9 @@
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-xs font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartan font-medium">
                   398<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb</span
                   >
                 </p></span
@@ -731,7 +732,7 @@
                 >ZAP SERIES
                 <p class="lg:text-2xl text-xs ">
                   299<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb'</span
                   >
                 </p></span
@@ -765,7 +766,7 @@
             />
             <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
               <p
-                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
               >
                 ADVANCE YELLOW LASER
                 <span class="text-zap-text-pink block"
@@ -812,9 +813,9 @@
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-xs font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartan font-medium">
                   499<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb</span
                   >
                 </p></span
@@ -831,7 +832,7 @@
                 >ZAP SERIES
                 <p class="lg:text-2xl text-xs ">
                   299<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb'</span
                   >
                 </p></span
@@ -865,7 +866,7 @@
             />
             <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
               <p
-                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
               >
                 FLECK BLOCKER + FACE PRP
               </p>
@@ -906,15 +907,15 @@
             >
               <span class="lg:text-xs text-[9px]"
                 >Hanya
-                <p class="lg:text-2xl text-xs font-spartanMedium">
+                <p class="lg:text-2xl text-xs font-spartan font-medium">
                   2.248<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb</span
                   >
                 </p></span
               >
               <span
-                class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                class="lg:text-xs text-[9px] font-spartan font-medium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
                 style="
                   background: linear-gradient(
                     180deg,
@@ -925,7 +926,7 @@
                 >ZAP SERIES
                 <p class="lg:text-2xl text-xs ">
                   1.249<span
-                    class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                    class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                     >rb'</span
                   >
                 </p></span
@@ -961,7 +962,7 @@
                 />
                 <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
                   <p
-                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
                   >
                     FLECK BLOCKER + FACE PRP
                   </p>
@@ -1002,15 +1003,15 @@
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartan font-medium">
                       2.248<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb</span
                       >
                     </p></span
                   >
                   <span
-                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                    class="lg:text-xs text-[9px] font-spartan font-medium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
                     style="
                       background: linear-gradient(
                         180deg,
@@ -1021,7 +1022,7 @@
                     >ZAP SERIES
                     <p class="lg:text-2xl text-xs ">
                       1.249<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb'</span
                       >
                     </p></span
@@ -1055,7 +1056,7 @@
                 />
                 <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
                   <p
-                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
                   >
                     ADVANCE YELLOW LASER
                     <span class="text-zap-text-pink block"
@@ -1102,9 +1103,9 @@
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartan font-medium">
                       499<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb</span
                       >
                     </p></span
@@ -1121,7 +1122,7 @@
                     >ZAP SERIES
                     <p class="lg:text-2xl text-xs ">
                       299<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb'</span
                       >
                     </p></span
@@ -1155,7 +1156,7 @@
                 />
                 <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
                   <p
-                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
                   >
                     BIKINI LINE REJUVENATION COMBO
                   </p>
@@ -1195,9 +1196,9 @@
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartan font-medium">
                       398<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb</span
                       >
                     </p></span
@@ -1214,7 +1215,7 @@
                     >ZAP SERIES
                     <p class="lg:text-2xl text-xs ">
                       299<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb'</span
                       >
                     </p></span
@@ -1248,7 +1249,7 @@
                 />
                 <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
                   <p
-                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
                   >
                     INFUSE SUPER GLOW PREMIUM
                   </p>
@@ -1293,15 +1294,15 @@
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartan font-medium">
                       398<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb</span
                       >
                     </p></span
                   >
                   <span
-                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                    class="lg:text-xs text-[9px] font-spartan font-medium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
                     style="
                       background: linear-gradient(
                         180deg,
@@ -1312,7 +1313,7 @@
                     >ZAP SERIES
                     <p class="lg:text-2xl text-xs ">
                       299<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb'</span
                       >
                     </p></span
@@ -1346,7 +1347,7 @@
                 />
                 <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
                   <p
-                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
                   >
                     UNDERARM HAIR REMOVAL + <br />
                     UNDERARM REJUVENATION
@@ -1387,15 +1388,15 @@
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartan font-medium">
                       398<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb</span
                       >
                     </p></span
                   >
                   <span
-                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                    class="lg:text-xs text-[9px] font-spartan font-medium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
                     style="
                       background: linear-gradient(
                         180deg,
@@ -1406,7 +1407,7 @@
                     >ZAP SERIES
                     <p class="lg:text-2xl text-xs ">
                       299<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb'</span
                       >
                     </p></span
@@ -1440,7 +1441,7 @@
                 />
                 <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
                   <p
-                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanSemiBold"
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartan font-semibold"
                   >
                     HAIR REMOVAL
                   </p>
@@ -1480,15 +1481,15 @@
                 >
                   <span class="lg:text-xs text-[9px]"
                     >Hanya
-                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                    <p class="lg:text-2xl text-xs font-spartan font-medium">
                       398<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb</span
                       >
                     </p></span
                   >
                   <span
-                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                    class="lg:text-xs text-[9px] font-spartan font-medium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
                     style="
                       background: linear-gradient(
                         180deg,
@@ -1499,7 +1500,7 @@
                     >ZAP SERIES
                     <p class="lg:text-2xl text-xs ">
                       299<span
-                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        class="lg:text-xs text-[8px] font-spartan font-normal lg:relative lg:bottom-2"
                         >rb'</span
                       >
                     </p></span
@@ -1523,15 +1524,15 @@
           </div>
           <div class="pagination w-fit ml-auto flex items-center gap-2 mt-5">
             <button id="prev-button" class="border-2 md:w-12 w-10 h-9 md:h-12 py-2 flex items-center justify-center rounded-lg shadow-lg"><i class='md:text-4xl bx bx-chevron-left'></i></button>
-            <span class="current-page border-2 md:w-12 md:h-12 w-10 h-9 py-2 flex items-center justify-center rounded-lg md:text-xl font-spartanSemiBold border-green-200 shadow-lg text-zap-text-superGreen">1</span>
+            <span class="current-page border-2 md:w-12 md:h-12 w-10 h-9 py-2 flex items-center justify-center rounded-lg md:text-xl font-spartan font-semibold border-green-200 shadow-lg text-zap-text-superGreen">1</span>
             <button id="next-button" class="border-2 md:w-12 w-10 h-9 md:h-12 py-2 flex items-center justify-center rounded-lg shadow-lg"><i class='md:text-4xl bx bx-chevron-right'></i></button>
             <span id="total-page" class="md:ml-5 ml-2">of 24</span>
           </div>
         </div>
       </section>
       <section class="promo md:pl-0 pl-4 ">
-        <div class="title container text-start lg:p-4  p-0">
-          <h2>all treatment promo</h2>
+        <div class="title container gap-4  lg:p-4  p-0">
+          <h2 class="text-start">all treatment promo</h2>
           <hr class="mx-0" />
         </div>
         <div class="swiper">
@@ -1586,14 +1587,14 @@
               />
             </div>
             <div class="card-text flex flex-col gap-5 my-10 lg:h-40 lg:ml-72 md:ml-64 rounded-lg text-center  lg:w-[600px]">
-              <h2 class="font-spartanMedium">
+              <h2 class="font-spartan font-medium">
                 galau mau treatment apa?
               </h2>
               <h6>
                 ZAP bisa bantu kamu untuk menemukan pilihan treatment yang tepat untuk kulitmu
               </h6>
               <button
-                class="rounded-lg font-spartanSemiBold py-3 px-6 w-fit  text-white mx-auto  bg-zap-SuperGreen"
+                class="rounded-lg font-spartan font-semibold py-3 px-6 w-fit  text-white mx-auto  bg-zap-SuperGreen"
               >
                 Temukan Solusinya
               </button>
@@ -1604,7 +1605,7 @@
       <section class="floating-btn">
         <div
           id="back2top"
-          class="font-spartanSemiBold text-xs cursor-pointer backtotop fixed right-6 bottom-32 border-2 border-green-600 bg-zap-green px-2 py-1 lg:z-30 z-10 rounded-md"
+          class="font-spartan font-semibold text-xs cursor-pointer backtotop fixed right-6 bottom-32 border-2 border-green-600 bg-zap-green px-2 py-1 lg:z-30 z-10 rounded-md"
         >
           <span href="#" class="text-green-600 text-center mx-auto">
             <span class="uppercase text-center"

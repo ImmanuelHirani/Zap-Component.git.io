@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/spartan?styles=80624,80626,80621,80622,80623,80625,80619,80620,80618');
  
 
 /* Font */
@@ -207,21 +209,22 @@
 }
 
 
-
+@layer utilities {
+  
   section {
     @apply md:mt-24 mt-20;
   }
 
   .title {
-    @apply text-center gap-4 md:text-sm text-xs flex flex-col lg:mb-10 mb-5 ;
+    @apply  md:text-sm text-xs flex flex-col lg:mb-10 mb-5 ;
   }
 
   h1 {
-    @apply lg:text-4xl md:text-base text-sm lg:leading-[50px] font-spartanBold;
+    @apply lg:text-4xl md:text-base text-sm lg:leading-[50px] font-spartan font-bold;
   }
 
   h2 {
-    @apply lg:text-2xl  md:text-base text-xs  uppercase  font-spartanSemiBold tracking-[4.2px];
+    @apply lg:text-2xl  md:text-base text-xs  uppercase font-spartan font-semibold  tracking-[4.2px];
   }
 
   h6 {
@@ -236,3 +239,5 @@
   hr {
     @apply lg:w-28 md:w-16 w-20 md:border-2 border-[1px] mx-auto border-slate-600;
   }
+
+}

@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
+  
   content: ["../Zap-Component-CleanCode/*.{html,js}"],
   theme: {
     container: {
@@ -30,6 +32,7 @@ module.exports = {
         spartanExtraBold: ["spartanExtraBold"],
         spartanBold: ["spartanBold"],
         spartanBlack: ["spartanBlack"],
+        spartan: ['Spartan', 'sans-serif'],
       },
       backgroundColor: {
         "zap-white": "#FAF7F5",
