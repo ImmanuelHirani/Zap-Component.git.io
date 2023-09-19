@@ -5,27 +5,27 @@
 
 /* Font */
 @font-face {
-  font-family: "spartanBlack";
+  font-family: "spartansemibold";
   src: url("../spartan-cufonfonts/Spartan-Black.ttf") format("truetype");
-  font-weight: 900; /* This corresponds to ExtraBold font weight */
+
 }
 
 @font-face {
   font-family: "spartanBold";
   src: url("../spartan-cufonfonts/Spartan-Bold.ttf") format("truetype");
-  font-weight: 800; /* This corresponds to ExtraBold font weight */
+
 }
 
 @font-face {
   font-family: "spartanExtraBold";
   src: url("../spartan-cufonfonts/Spartan-ExtraBold.ttf") format("truetype");
-  font-weight: 800; /* This corresponds to ExtraBold font weight */
+
 }
 
 @font-face {
   font-family: "spartanExtraLight";
   src: url("../spartan-cufonfonts/Spartan-ExtraLight.ttf") format("truetype");
-  font-weight: 200; /* This corresponds to ExtraLight font weight */
+
 }
 
 @font-face {
@@ -37,25 +37,25 @@
 @font-face {
   font-family: "spartanMedium";
   src: url("../spartan-cufonfonts/Spartan-Medium.ttf") format("truetype");
-  font-weight: 500; /* This corresponds to Medium font weight */
+
 }
 
 @font-face {
   font-family: "spartanRegular";
   src: url("../spartan-cufonfonts/Spartan-Regular.ttf") format("truetype");
-  font-weight: 400; /* This corresponds to Regular font weight */
+ 
 }
 
 @font-face {
   font-family: "spartanSemiBold";
   src: url("../spartan-cufonfonts/Spartan-Semibold.ttf") format("truetype");
-  font-weight: 600; /* This corresponds to Semibold font weight */
+
 }
 
 @font-face {
   font-family: "spartanThin";
   src: url("../spartan-cufonfonts/Spartan-Thin.ttf") format("truetype");
-  font-weight: 100; /* This corresponds to Thin font weight */
+  
 }
 
 .navBurger-line {
