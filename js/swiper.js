@@ -168,7 +168,7 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
     },
     autoplay : {
       delay : 4000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
   },
     // Navigation arrows
     navigation: {
