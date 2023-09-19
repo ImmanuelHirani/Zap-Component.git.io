@@ -147,7 +147,7 @@
   }
 
   .button-booking {
-    @apply rounded-lg lg:mx-0 mx-auto flex lg:px-9 py-3 px-8 font-spartanSemiBold lg:text-base md:text-sm text-xs  
+    @apply w-fit rounded-lg lg:mx-0 mx-auto flex lg:px-9 py-3 px-8 font-spartanSemiBold lg:text-base md:text-sm text-xs  
   }
 
 
