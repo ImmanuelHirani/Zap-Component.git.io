@@ -485,7 +485,6 @@ h2 {
   font-family: spartanMedium;
   font-size: 0.75rem;
   line-height: 1rem;
-  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4.2px;
 }
@@ -1640,10 +1639,6 @@ hr {
 
 .font-light {
   font-weight: 300;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .uppercase {
