@@ -210,7 +210,7 @@
   }
 
   h2 {
-    @apply lg:text-2xl  md:text-base text-xs  uppercase font-spartanSemiBold tracking-[4.2px];
+    @apply lg:text-2xl  md:text-base text-xs  uppercase font-spartanMedium font-semibold tracking-[4.2px];
   }
 
   h6 {
