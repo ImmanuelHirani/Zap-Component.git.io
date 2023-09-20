@@ -242,7 +242,7 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
 
 
   let EstoresliderSwiper = new Swiper(".Estoreslider-content ", {
-    slidesPerView: 2,
+    slidesPerView: 1.8,
     
     spaceBetween:10,
     grabCursor: true,
