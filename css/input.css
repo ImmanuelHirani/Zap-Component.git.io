@@ -2,61 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.cdnfonts.com/css/spartan?styles=80624,80626,80621,80622,80623,80625,80619,80620,80618');
- 
-
 /* Font */
 @font-face {
-  font-family: "spartansemibold";
-  src: url("../spartan-cufonfonts/Spartan-Black.ttf") 
-
+  font-family: "spartanBlack";
+  src: url("../spartan-cufonfonts/Spartan-Black.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
   font-family: "spartanBold";
-  src: url("../spartan-cufonfonts/Spartan-Bold.ttf") 
-
+  src: url("../spartan-cufonfonts/Spartan-Bold.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
   font-family: "spartanExtraBold";
-  src: url("../spartan-cufonfonts/Spartan-ExtraBold.ttf") 
-
+  src: url("../spartan-cufonfonts/Spartan-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* This corresponds to ExtraBold font weight */
 }
 
 @font-face {
   font-family: "spartanExtraLight";
-  src: url("../spartan-cufonfonts/Spartan-ExtraLight.ttf") 
-
+  src: url("../spartan-cufonfonts/Spartan-ExtraLight.ttf") format("truetype");
+  font-weight: 200; /* This corresponds to ExtraLight font weight */
 }
 
 @font-face {
   font-family: "spartanLight";
-  src: url("../spartan-cufonfonts/Spartan-Light.ttf") 
-
+  src: url("../spartan-cufonfonts/Spartan-Light.ttf") format("truetype");
+  font-weight: 300; /* This corresponds to Light font weight */
 }
 
 @font-face {
   font-family: "spartanMedium";
-  src: url("../spartan-cufonfonts/Spartan-Medium.ttf") 
-
+  src: url("../spartan-cufonfonts/Spartan-Medium.ttf") format("truetype");
+  font-weight: 500; /* This corresponds to Medium font weight */
 }
 
 @font-face {
   font-family: "spartanRegular";
-  src: url("../spartan-cufonfonts/Spartan-Regular.ttf") 
- 
+  src: url("../spartan-cufonfonts/Spartan-Regular.ttf") format("truetype");
+  font-weight: 400; /* This corresponds to Regular font weight */
 }
 
 @font-face {
   font-family: "spartanSemiBold";
-  src: url("../spartan-cufonfonts/Spartan-Semibold.ttf") 
-
+  src: url("../spartan-cufonfonts/Spartan-Semibold.ttf") format("truetype");
+  font-weight: 600; /* This corresponds to Semibold font weight */
 }
 
 @font-face {
   font-family: "spartanThin";
-  src: url("../spartan-cufonfonts/Spartan-Thin.ttf") 
+  src: url("../spartan-cufonfonts/Spartan-Thin.ttf") format("truetype");
+  font-weight: 100; /* This corresponds to Thin font weight */
 }
 
 .navBurger-line {
@@ -122,7 +120,7 @@
     @apply lg:hover:text-green-500 cursor-pointer font-spartanMedium 
 }
 
-
+@layer components {
 
 .accordion-header {
     @apply py-4  cursor-pointer 
@@ -136,20 +134,9 @@
 .accordion-body {
     @apply  max-h-0 overflow-hidden transition-all duration-200 ease-in-out
 }
+}
 
-
-  .button-view-all > button {
-    @apply  bg-zap-SuperGreen lg:text-base md:text-sm text-xs w-fit lg:px-9 py-3 px-8 rounded-lg font-spartanSemiBold text-white capitalize
-  }
-
-  .button-view-all {
-    @apply container lg:mt-10 mt-5  lg:p-4 p-0 
-  }
-
-  .button-booking {
-    @apply w-fit rounded-lg lg:mx-0 mx-auto flex lg:px-9 py-3 px-8 font-spartanSemiBold lg:text-base md:text-sm text-xs  
-  }
-
+@layer utilities {
 
   .before-after-btn {
     @apply lg:mx-20 md:mx-8 mx-2 md:w-fit w-12;
@@ -186,7 +173,7 @@
   .hero-text {
     @apply container md:px-0 px-10 md:text-start text-center flex flex-col justify-center lg:mx-28 md:mx-20 md:my-auto mt-9 gap-4 lg:w-[500px] md:w-[290px] h-fit md:absolute top-0 bottom-0  z-10;
   }
-
+}
 
 #swiperBanner .swiper-pagination {
   @apply lg:bottom-5;
@@ -209,22 +196,21 @@
 }
 
 
-@layer utilities {
-  
+@layer base {
   section {
     @apply md:mt-24 mt-20;
   }
 
   .title {
-    @apply  md:text-sm text-xs flex flex-col lg:mb-10 mb-5 ;
+    @apply text-center gap-4 md:text-sm text-xs flex flex-col ;
   }
 
   h1 {
-    @apply lg:text-4xl md:text-base text-sm lg:leading-[50px] font-spartan font-bold;
+    @apply lg:text-4xl md:text-base text-sm lg:leading-[50px] font-spartanBold;
   }
 
   h2 {
-    @apply lg:text-2xl  md:text-base text-xs  uppercase font-spartan font-semibold  tracking-[4.2px];
+    @apply lg:text-2xl  md:text-base text-xs  uppercase font-spartanSemiBold tracking-[4.2px];
   }
 
   h6 {
@@ -239,5 +225,4 @@
   hr {
     @apply lg:w-28 md:w-16 w-20 md:border-2 border-[1px] mx-auto border-slate-600;
   }
-
 }

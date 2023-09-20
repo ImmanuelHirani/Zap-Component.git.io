@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="font-spartan font-normal">
+<html lang="en" class="font-spartanRegular">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/output.css">
     <link rel="website icon" type="png" href="temp-asset/statis-asset/Logo-Zap.svg"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link href="https://fonts.cdnfonts.com/css/spartan?styles=80624,80626,80621,80622,80623,80625,80619,80620,80618" rel="stylesheet">
-                
-                
     <link
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     rel="stylesheet"
@@ -33,7 +30,7 @@
     }
 </style>
 <body class="overflow-x-hidden">
-  <header class=" font-spartan font-semibold fixed w-full lg:top-0 -top-1 z-20">
+  <header class="font-spartanSemiBold fixed w-full lg:top-0 -top-1 z-20">
     <nav id="navexpand" class="py-7 bg-zap-white shadow-md ">
       <div class="container lg:text-base">
         <!-- Desktop -->
@@ -56,7 +53,7 @@
                 class="hidden absolute top-0 bottom-0 left-0 right-0"
               >
                 <li
-                  class="drop-menu  flex items-center container p-0 gap-4  font-spartan font-semibold absolute left-0 right-0 top-0 bottom-0  mt-16 wrapper uppercase "
+                  class="drop-menu  flex items-center container p-0 gap-4  font-spartanBold absolute left-0 right-0 top-0 bottom-0  mt-16 wrapper uppercase "
                 >
                   <a
                     href="beuaty-treatment.html"
@@ -105,12 +102,12 @@
           <li class="flex items-center z-10 relative">
             <a
               href=""
-              class="bg-green-600 py-2 px-3 rounded-lg font-spartan font-semibold text-white"
+              class="bg-green-600 py-2 px-3 rounded-lg font-spartanSemiBold text-white"
               >Online Booking</a
             >
             <!-- Language -->
             <div
-              class="relative cursor-pointer py-2 px-3 rounded-lg font-spartan font-semibold text-black"
+              class="relative cursor-pointer py-2 px-3 rounded-lg font-spartanSemiBold text-black"
               id="Language"
             >
               <span class="flex items-center group">
@@ -127,7 +124,7 @@
                   class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg px-3 w-36 rounded-lg py-2 bg-white"
                 >
                   <button
-                    class="flex cursor-pointer items-center gap-2 font-spartan font-semibold"
+                    class="flex cursor-pointer items-center gap-2 font-spartanBold"
                     onclick="changeLanguage('ENG')"
                   >
                     <img
@@ -137,7 +134,7 @@
                     <span id="checkENG"><i class="text-2xl bx"></i></span>
                   </button>
                   <button
-                    class="flex cursor-pointer items-center gap-2 font-spartan font-semibold"
+                    class="flex cursor-pointer items-center gap-2 font-spartanBold"
                     onclick="changeLanguage('ID')"
                   >
                     <img
@@ -171,12 +168,12 @@
             <div class="flex items-center gap-3">
               <a
                 href=""
-                class="bg-green-600 py-[10px] text-xs px-4 rounded-lg font-spartan font-semibold text-white"
+                class="bg-green-600 py-[10px] text-xs px-4 rounded-lg font-spartanSemiBold text-white"
                 >Online Booking</a
               >
               <!-- Language -->
               <div
-                class="relative md:block hidden cursor-pointer py-2 px-3 rounded-lg font-spartan font-semibold text-black"
+                class="relative md:block hidden cursor-pointer py-2 px-3 rounded-lg font-spartanSemiBold text-black"
                 id="Languagesm"
               >
                 <span id="masterLang" class="flex items-center">
@@ -194,7 +191,7 @@
                     class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg w-36 rounded-lg py-2 bg-zap-white"
                   >
                     <button
-                      class="flex cursor-pointer items-center gap-2 font-spartan font-semibold"
+                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
                       onclick="changeLanguage('ENG')"
                     >
                       <img
@@ -204,7 +201,7 @@
                       <span id="checkENG"><i class="text-2xl bx"></i></span>
                     </button>
                     <button
-                      class="flex cursor-pointer items-center gap-2 font-spartan font-semibold"
+                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
                       onclick="changeLanguage('ID')"
                     >
                       <img
@@ -253,7 +250,7 @@
               "
             ></div>
             <ul
-              class="uppercase font-spartan font-semibold flex flex-col gap-y-10 mt-20 z-30"
+              class="uppercase font-spartanSemiBold flex flex-col gap-y-10 mt-20 z-30"
               style="letter-spacing: 1.4px"
             >
               <li id="btn-treatmentSM" class="z-30 w-fit">
@@ -325,7 +322,7 @@
   </header>
   <main>
     <section class="hero lg:mt-0 mt-[90px] relative">
-       <div class="container-banner swiper" id="swiperBanner">
+      <div class="container-banner swiper" id="swiperBanner">
         <div class="hero-banner-content">
           <div class="swiper-wrapper">
             <img
@@ -346,66 +343,64 @@
           </div>
         </div>
         <div class="swiper-pagination banner-pagination"></div>
-       </div>
-       <div class="hero-text">
+      </div>
+      <div class="hero-text">
         <h1>Klinik berbasis laser terbesar dengan hospitality terbaik dan medical terpercaya.</h1>
         <h6 class="lg:w-[500px] lg:text-base  text-xs">NgeZAP sesuai kebutuhanmu mulai dari treatment wajah hingga tubuh dengan konsultasi dokter GRATIS di seluruh Indonesia.</h6>
-        <button class="button-booking text-white  bg-zap-pink  ">booking sekarang</button>
-       </div>
+        <button class="w-fit capitalize text-white font-spartanMedium bg-zap-pink lg:px-6 lg:py-3 px-3 py-2 rounded-lg md:mx-0 mx-auto lg:text-base text-xs">booking sekarang</button>
+      </div>
     </section>
     <section class="kenapa-Memilih-Zap">
-       <div class="title gap-4 text-center">
-            <h2>kenapa memilih zap?</h2>
-            <hr>
-            <h6>Kami berkomitment untuk selalu memberikanmu <span class="md:inline block"></span> pelayanan terbaik sebaik mungkin </h6>
-       </div>
-       <!-- Why us -->
-       <div class="content grid lg:grid-cols-2 gap-6 grid-cols-1 lg:mt-14 mt-9  ">
+            <div class="title">
+                <h2>kenapa memilih zap?</h2>
+                <hr>
+                <h6>Kami berkomitment untuk selalu memberikanmu <span class="md:inline block"></span> pelayanan terbaik sebaik mungkin </h6>
+            </div>
+            <!-- Why us -->
+            <div class="content grid lg:grid-cols-2 gap-6 grid-cols-1 mt-10  ">
                 <div class="img-wrapper ">
                     <img src="temp-asset/homepage/Why-choose-us.png" class="w-full h-full" alt="">
                 </div>
-                <div class="container detail-icon-wrapper grid lg:grid-cols-1 md:grid-cols-2  lg:place-content-center lg:place-items-center md:gap-12 gap-6 md:text-base text-xs md:mt-8">
+                <div class="container  detail-icon-wrapper grid lg:grid-cols-1 md:grid-cols-2   lg:items-center lg:place-content-center md:gap-14 gap-7  md:text-base text-xs md:mt-8">
                     <span class="flex gap-5 ">
                         <img src="temp-asset/homepage/Icon-Experienced.png" class="lg:w-14 lg:h-14 md:w-12 md:h-12 h-9 w-9 " alt="">
                         <div class="text flex flex-col gap-2 ">
-                            <h5 class="font-spartan font-semibold text-zap-text-superGreen">Experienced</h5>
-                            <h6>Lebih dari 13 tahun ZAP Group hadir sebagai destinasi solusi bagi treatment kecantikan dan tubuh terpercaya di Indonesia</h6>
+                            <h5 class="font-spartanSemiBold text-zap-text-superGreen">Experienced</h5>
+                            <h6>Lebih dari 13 tahun ZAP Group hadir sebagai destinasi solusi <span class="lg:block"></span> bagi treatment kecantikan dan tubuh terpercaya di Indonesia</h6>
                         </div>
                     </span>
                     <span class="flex gap-5 ">
                         <img src="temp-asset/homepage/Icon-professional-Treatment.png" class="lg:w-14 lg:h-14 md:w-12 md:h-12 h-9 w-9 " alt="">
                         <div class="text flex flex-col gap-2">
-                            <h5 class="font-spartan font-semibold text-zap-text-superGreen">Professional Treatment</h5>
-                            <h6>Telah melakukan lebih dari 6.000.000 treatment menjadikan ZAP sebagai ahlinya dan paling dicari serta dipercaya di industri kecantikan</h6>
+                            <h5 class="font-spartanSemiBold text-zap-text-superGreen">Professional Treatment</h5>
+                            <h6>Telah melakukan lebih dari 6.000.000 treatment <span class="lg:block"></span> menjadikan ZAP sebagai ahlinya dan paling dicari serta <span class="lg:block"></span> dipercaya di industri kecantikan</h6>
                         </div>
                     </span>
                     <span class="flex gap-5 ">
                         <img src="temp-asset/homepage/Icon-Adcanced-ABT.png" class="lg:w-14 lg:h-14 md:w-12 md:h-12 h-9 w-9 " alt="">
                         <div class="text flex flex-col gap-2 ">
-                            <h5 class="font-spartan font-semibold text-zap-text-superGreen">Advanced and Best Technology</h5>
-                            <h6>Menggunakan teknologi terbaik dikelasnya dengan material dan produk yang bermutu serta didukung oleh kepraktisan sistem yang terintegrasi secara online di seluruh cabang se-Indonesia.</h6>
+                            <h5 class="font-spartanSemiBold text-zap-text-superGreen">Advanced and Best Technology</h5>
+                            <h6>Menggunakan teknologi terbaik dikelasnya dengan material <span class="lg:block"></span> dan produk yang bermutu serta didukung oleh kepraktisan <span class="lg:block"></span> sistem yang terintegrasi secara online di seluruh cabang se-<span class="lg:block"></span>Indonesia.</h6>
                         </div>
                     </span>
                     <span class="flex gap-5 ">
                         <img src="temp-asset/homepage/icon-ontime.png" class="lg:w-14 lg:h-14 md:w-12 md:h-12 h-9 w-9 " alt="">
                         <div class="text flex flex-col gap-2 ">
-                            <h5 class="font-spartan font-semibold text-zap-text-superGreen">On Time Treatment</h5>
-                            <h6>Seluruh Brand ZAP mengutamakan ketepatan waktu treatment, karena waktu begitu berharga.</h6>
+                            <h5 class="font-spartanSemiBold text-zap-text-superGreen">On Time Treatment</h5>
+                            <h6>Seluruh Brand ZAP mengutamakan ketepatan waktu <span class="lg:block"></span> treatment, karena waktu begitu berharga.</h6>
                         </div>
                     </span>
                 </div>
-       </div>
-       <!-- Why us End -->
+            </div>
+            <!-- Why us End -->
     </section>
     <section class="treatment-pilihan lg:p-0 pl-4 ">
-       <div class="content lg:grid lg:grid-cols-2 grid-cols-1 items-center  ">
-                <div class="title text-start  lg:px-40  gap-4 lg:w-[980px] lg:h-[590px] lg:bg-treatment-pilihan-bg lg:bg-no-repeat lg:bg-cover  justify-center">
+            <div class="content lg:grid lg:grid-cols-2 grid-cols-1 items-center  ">
+                <div class="title lg:text-start  lg:px-40  gap-5 2xl:w-[1200px] lg:w-[980px] lg:h-[590px] lg:bg-treatment-pilihan-bg lg:bg-no-repeat lg:bg-cover  justify-center">
                     <h2>treatment-pilihan</h2>
                     <hr class="lg:mx-0">
                     <h5 class="lg:w-[350px] ">ZAP merupakan pioner treatment hair removal terbaik sekaligus hadir sebagai treatment berbasis laser terpercaya dengan keamanan terbaik.</h5>
-                    <div class="button-view-all  lg:mt-0 lg:p-0 lg:block hidden">
-                      <button>lihat semua</button>
-                    </div>
+                    <button class="lg:block hidden bg-zap-SuperGreen w-fit px-9 py-3 rounded-lg font-spartanSemiBold text-white capitalize lg:mx-0 mx-auto lg:text-base md:text-sm text-xs">lihat semua</button>
                 </div>
                 <!-- Card-slider  -->
                 <div class="swiper container  lg:mt-0 mt-9  ">
@@ -416,7 +411,7 @@
                                     <img src="temp-asset/homepage/treatment-pilihan-1.png" class="w-full h-48" alt="">
                                 </div>
                                 <div class="card-body  h-[120px] flex flex-col gap-2 ">
-                                    <h5 class="capitalize font-spartan font-semibold">dna slamon</h5>
+                                    <h5 class="capitalize font-spartanSemiBold">dna slamon</h5>
                                     <h6>Treatment terbaik hasil riset revolusioner yang telah teruji hasilnya</h6>
                                 </div>
                                 <div class="card-footer my-2 flex gap-4 text-[11px]">
@@ -437,7 +432,7 @@
                                     <img src="temp-asset/homepage/treatment-pilihan-2.png" class="w-full h-48" alt="">
                                 </div>
                                 <div class="card-body  h-[120px] flex flex-col gap-2 ">
-                                    <h5 class="capitalize font-spartan font-semibold">Advance Yellow Laser</h5>
+                                    <h5 class="capitalize font-spartanSemiBold">Advance Yellow Laser</h5>
                                     <h6>Brightening Treatment offers treatments that focus on helping..</h6>
                                 </div>
                                 <div class="card-footer my-2 flex gap-4 text-[11px]">
@@ -457,7 +452,7 @@
                                     <img src="temp-asset/homepage/treatment-pilihan-3.png" class="w-full h-48" alt="">
                                 </div>
                                 <div class="card-body  h-[120px] flex flex-col gap-2 ">
-                                    <h5 class="capitalize font-spartan font-semibold">dna slamon</h5>
+                                    <h5 class="capitalize font-spartanSemiBold">dna slamon</h5>
                                     <h6>Treatment terbaik hasil riset revolusioner yang telah teruji hasilnya</h6>
                                 </div>
                                 <div class="card-footer my-2 flex gap-4 text-[11px]">
@@ -477,7 +472,7 @@
                                     <img src="temp-asset/homepage/treatment-pilihan-1.png" class="w-full h-48" alt="">
                                 </div>
                                 <div class="card-body  h-[120px] flex flex-col gap-2 ">
-                                    <h5 class="capitalize font-spartan font-semibold">dna slamon</h5>
+                                    <h5 class="capitalize font-spartanSemiBold">dna slamon</h5>
                                     <h6>Treatment terbaik hasil riset revolusioner yang telah teruji hasilnya</h6>
                                 </div>
                                 <div class="card-footer my-2 flex gap-4 text-[11px]">
@@ -497,7 +492,7 @@
                                   <img src="temp-asset/homepage/treatment-pilihan-3.png" class="w-full h-48" alt="">
                               </div>
                               <div class="card-body  h-[120px] flex flex-col gap-2 ">
-                                  <h5 class="capitalize font-spartan font-semibold">dna slamon</h5>
+                                  <h5 class="capitalize font-spartanSemiBold">dna slamon</h5>
                                   <h6>Treatment terbaik hasil riset revolusioner yang telah teruji hasilnya</h6>
                               </div>
                               <div class="card-footer my-2 flex gap-4 text-[11px]">
@@ -521,20 +516,19 @@
                           alt=""
                         />
                       </div>
-                      <div class="promo-button-view-all lg:hidden">
-                        <button>lihat semua</button>
-                      </div>
+                      <button class="lg:hidden block bg-zap-SuperGreen w-fit mt-5 px-8 py-2 rounded-lg font-spartanSemiBold text-white capitalize lg:text-base md:text-sm text-xs">lihat semua</button>
                 </div>
                 <!-- Card-slider End -->
-       </div>
+              
+            </div>
     </section>
     <section class="promo md:pl-0 pl-4">
-       <div class="title gap-4 text-center">
+          <div class="title">
             <h2>Promo</h2>
             <hr>
             <h5>Promo menarik yang sesuai dengan kebutuhanmu bisa kamu dapatkan disini</h5>
-       </div>
-       <div class="swiper lg:mt-14 mt-9 ">
+          </div>
+        <div class="swiper mt-10">
           <div class="promo-content ">
               <div class="swiper-wrapper ">
                 <figure class="swiper-slide">  
@@ -565,13 +559,13 @@
                 alt=""
               />
             </div>
-       </div>
-       <div class="button-view-all text-center">
-          <button>lihat semua</button>
-       </div>
+        </div>
+        <div class="mt-5 text-center">
+          <button class="bg-zap-SuperGreen  lg:px-9 lg:py-3 px-8 py-2 rounded-lg font-spartanSemiBold text-white capitalize lg:text-base md:text-sm text-xs">lihat semua</button>
+        </div>
     </section>
     <section class="Zap-Brand bg-zap-green lg:py-32 py-14">
-       <div class="title gap-4 text-center">
+          <div class="title">
             <h2>ZAP BRANDS</h2>
             <hr>
             <h5>
@@ -581,9 +575,9 @@
               <span class="lg:inline md:hidden block"></span> memberikan solusi
               sesuai kebutuhanmu
             </h5>
-       </div>
-       <div
-              class=" container grid lg:grid-cols-4 grid-cols-2 gap-4 lg:mt-14 mt-9  "
+          </div>
+            <div
+              class=" container grid lg:grid-cols-4 grid-cols-2 gap-6 lg:mt-14 mt-9  "
             >
               <div
                 class="content-wrapper flex justify-center  group relative overflow-hidden transition-transform"
@@ -738,10 +732,10 @@
                   </div>
                 </div>
               </div>
-       </div>
+            </div>
     </section>
     <section class="testimonial lg:container lg:max-w-screen-xl mx-auto">
-       <div class="title gap-4 text-center">
+          <div class="title">
             <h2>KATA MEREKA TENTANG ZAP</h2>
             <hr>
             <h5>
@@ -749,8 +743,8 @@
               <span class="lg:inline block"></span> mereka yang meningkat karena
               ZAP
             </h5>
-       </div>
-       <div class="swiper lg:mt-14 mt-9 ">
+          </div>
+          <div class="swiper mt-10">
             <div
               class="container testimonial-content overflow-hidden  lg:max-w-screen-lg md:max-w-screen-md"
             >
@@ -769,8 +763,8 @@
                     typesetting industry. Lorem Ips has been the industry's
                     standard dummy"
                   </p>
-                  <p class="text-center py-5 font-spartan font-semibold">
-                    Jane Cooper<span class="block font-spartan font-medium text-sm"
+                  <p class="text-center py-5 font-spartanSemiBold">
+                    Jane Cooper<span class="block font-spartanMedium text-sm"
                       >Influencer</span
                     >
                   </p>
@@ -789,8 +783,8 @@
                     typesetting industry. Lorem Ips has been the industry's
                     standard dummy"
                   </p>
-                  <p class="text-center py-5 font-spartan font-semibold">
-                    Jane Cooper<span class="block font-spartan font-medium text-sm"
+                  <p class="text-center py-5 font-spartanSemiBold">
+                    Jane Cooper<span class="block font-spartanMedium text-sm"
                       >Influencer</span
                     >
                   </p>
@@ -809,8 +803,8 @@
                     typesetting industry. Lorem Ips has been the industry's
                     standard dummy"
                   </p>
-                  <p class="text-center py-5 font-spartan font-semibold">
-                    Jane Cooper<span class="block font-spartan font-medium text-sm"
+                  <p class="text-center py-5 font-spartanSemiBold">
+                    Jane Cooper<span class="block font-spartanMedium text-sm"
                       >Influencer</span
                     >
                   </p>
@@ -829,8 +823,8 @@
                     typesetting industry. Lorem Ips has been the industry's
                     standard dummy"
                   </p>
-                  <p class="text-center py-5 font-spartan font-semibold">
-                    Jane Cooper<span class="block font-spartan font-medium text-sm"
+                  <p class="text-center py-5 font-spartanSemiBold">
+                    Jane Cooper<span class="block font-spartanMedium text-sm"
                       >Influencer</span
                     >
                   </p>
@@ -853,7 +847,7 @@
               />
             </div>
             <!-- Button End -->
-       </div>
+          </div>
     </section>
     <section class="layananHomecare container">
       <div
@@ -875,7 +869,7 @@
             />
           </div>
           <div class="card-text my-10 lg:h-40 lg:ml-72 rounded-lg flex flex-col gap-5">
-            <h2 class=" text-zap-text-superGreen">
+            <h2 class=" text-zap-text-superGreen ">
               LAYANAN HOMECARE ADA UNTUKMU
             </h2>
             <h6 class="">
@@ -884,7 +878,7 @@
               pilihanmu
             </h6>
             <button
-              class="rounded-lg font-spartan font-semibold w-fit py-3 px-6 lg:mx-0 mx-auto  text-zap-text-superGreen bg-zap-white"
+              class="rounded-lg font-spartanSemiBold w-fit py-3 px-6 lg:mx-0 mx-auto  text-zap-text-superGreen bg-zap-white lg:text-base md:text-sm text-xs"
             >
               Hubungi Kami
             </button>
@@ -893,7 +887,7 @@
       </div>
     </section>
     <section class="booking overflow-hidden">
-      <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+          <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
             <div class="card-booking-1 bg-booking1-bg bg-no-repeat bg-cover">
               <div class="card-body py-20 px-20">
                 <div class="card-text">
@@ -909,7 +903,7 @@
                     sesuai dengan jadwalmu.
                   </h6>
                   <button
-                    class="button-booking text-zap-text-superGreen bg-zap-white"
+                    class="rounded-lg py-3 px-6 lg:mx-0 mx-auto flex font-spartanSemiBold lg:text-base md:text-sm text-xs bg-zap-white text-zap-text-superGreen"
                   >
                     Booking Sekarang
                   </button>
@@ -931,19 +925,19 @@
                     kapan saja
                   </h6>
                   <button
-                    class="button-booking text-zap-text-pink bg-zap-white"
+                    class="rounded-lg lg:mx-0 mx-auto flex py-3 px-6 font-spartanSemiBold lg:text-base text-xs bg-zap-white text-zap-text-pink"
                   >
                     Belanja di E-Store
                   </button>
                 </div>
               </div>
             </div>
-      </div>
+          </div>
     </section>
     <section class="floating-btn">
       <div
         id="back2top"
-        class="font-spartan font-semibold text-xs cursor-pointer backtotop fixed right-6 bottom-32 border-2 border-green-600 bg-zap-green px-2 py-1 lg:z-30 z-10 rounded-md"
+        class="font-spartanSemiBold text-xs cursor-pointer backtotop fixed right-6 bottom-32 border-2 border-green-600 bg-zap-green px-2 py-1 lg:z-30 z-10 rounded-md"
       >
         <span href="#" class="text-green-600 text-center mx-auto">
           <span class="uppercase text-center"
