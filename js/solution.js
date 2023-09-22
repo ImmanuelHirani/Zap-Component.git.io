@@ -1,47 +1,81 @@
-const beautybtn = document.querySelector('#beautyBtn');
-const bodyBtn = document.querySelector('#bodyBtn');
-const hairBtn = document.querySelector('#hairBtn');
-const dripshealtBtn = document.querySelector('#dripsHealtBtn');
-const optionBeauty = document.querySelector('#beautyChoose');
-const optionBody = document.querySelector('#optionChooseBody');
-const btnActive = document.querySelector('#btnSolutionfit');
-const SolutionFit = document.querySelector('#SolutionFit');
+const treatmentChoose = document.querySelectorAll(".treatment-choose");
+const box = document.querySelectorAll(".box-choise-wrapper");
+const myButtons = document.querySelectorAll('.myButton');
+const findFitTreatmentButtons = document.querySelectorAll('.find-fit-treatment');
+const treatmentFit = document.querySelectorAll('.treatment-fit');
 
-let activeCategory = null; // Menyimpan kategori aktif saat ini
+treatmentChoose.forEach((treatmentChooseBTN) => {
+  treatmentChooseBTN.addEventListener("click", () => {
+    // Menghapus kelas aktif dari semua elemen treatmentChoose
+    treatmentChoose.forEach((trBtn) => {
+      if (trBtn !== treatmentChooseBTN) {
+        trBtn.classList.remove("treatment-active");
+      }
+    });
 
-beautybtn.addEventListener('click', function() {
-    if (activeCategory === 'beauty') {
-        optionBeauty.classList.toggle('hidden');
-    } else {
-        optionBeauty.classList.remove('hidden');
-        optionBody.classList.add('hidden');
-        activeCategory = 'beauty';
+    // Menghapus kelas hidden dan menambahkan kelas box-Active pada semua box
+    box.forEach((boxItem) => {
+      boxItem.classList.remove("hidden");
+      boxItem.classList.add("box-Active");
+
+      // Secara eksplisit mengatur max-height saat menghapus kelas hidden
+      boxItem.style.maxHeight = boxItem.scrollHeight + "px";
+    });
+
+    // Toggle class pada elemen yang diklik
+    treatmentChooseBTN.classList.toggle("treatment-active");
+
+    // Cek apakah ada elemen treatment-choose yang aktif
+    const isActive = Array.from(treatmentChoose).some((trBtn) =>
+      trBtn.classList.contains("treatment-active")
+    );
+
+    // Jika tidak ada elemen yang aktif, tambahkan kembali kelas hidden pada semua box
+    if (!isActive) {
+      box.forEach((boxItem) => {
+        boxItem.classList.add("hidden");
+        boxItem.style.maxHeight = "0";
+      });
     }
+  });
 });
 
-bodyBtn.addEventListener('click', function() {
-    if (activeCategory === 'body') {
-        optionBody.classList.toggle('hidden');
-    } else {
-        optionBody.classList.remove('hidden');
-        optionBeauty.classList.add('hidden');
-        activeCategory = 'body';
-    }
+
+myButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    // Toggle class on the clicked button
+    button.classList.toggle('button-choose-active');
+    
+    // Check if any of the myButton elements have the 'button-choose-active' class
+    const isActive = Array.from(myButtons).some((btn) => btn.classList.contains('button-choose-active'));
+
+    // Enable or disable all find-fit-treatment buttons based on the isActive variable
+    findFitTreatmentButtons.forEach((findFitTreatmentButton) => {
+      if (isActive) {
+        findFitTreatmentButton.removeAttribute('disabled');
+        findFitTreatmentButton.classList.add('button-fit-treatment-active'); // Use 'classList.add' to add a class
+      } else {
+        findFitTreatmentButton.setAttribute('disabled', 'disabled');
+        findFitTreatmentButton.classList.remove('button-fit-treatment-active'); // Use 'classList.remove' to remove a class
+      }
+    });
+  });
 });
 
-hairBtn.addEventListener('click', function() {
-    optionBeauty.classList.remove('hidden');
-    optionBody.classList.add('hidden');
-    activeCategory = 'beauty';
-});
+findFitTreatmentButtons.forEach((button) => {
+    button.addEventListener('click',() => {
+        button.classList.toggle('fit-treatment-active')
 
-dripshealtBtn.addEventListener('click', function() {
-    optionBeauty.classList.remove('hidden');
-    optionBody.classList.add('hidden');
-    activeCategory = 'beauty';
-});
+        const isActive = Array.from(findFitTreatmentButtons).some((btn) => btn.classList.contains('fit-treatment-active'));
 
-btnActive.addEventListener('click', function() {
-    btnActive.classList.toggle('BtnFit-active');
-    SolutionFit.classList.toggle('hidden');
-});
+        treatmentFit.forEach((button)=> {
+            if(isActive) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden')
+            }
+        })
+
+
+    })
+})

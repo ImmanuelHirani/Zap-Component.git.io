@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en" class="font-spartanRegular">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="website icon" type="png" href="temp-asset/statis-asset/Logo-Zap.svg"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+    <title>ZAP | Homepage</title>
+</head>
+<style>
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      content: "";
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: initial;
+      height: initial;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+</style>
+<body class="overflow-x-hidden">
+  <header class="font-spartanMedium  fixed w-full lg:top-0 -top-1 z-20">
+    <nav id="navexpand" class="py-7 bg-zap-white shadow-md ">
+      <div class="container lg:text-base">
+        <!-- Desktop -->
+        <ul class="lg:flex hidden justify-between items-center">
+          <li class="flex items-center">
+            <a href="index.html"
+              ><img src="temp-asset/statis-asset/Logo-Zap.svg" class="w-28 z-10 relative" alt=""
+            /></a>
+          </li>
+          <li class="flex justify-center items-center gap-8">
+            <a
+              type="button"
+              id="navDropTreatment"
+              class="z-10 relative hover:text-green-600  cursor-pointer flex items-center"
+              >Treatment<i
+                class="bx bx-chevron-down text-3xl transition ease-in-out duration-75"
+              ></i>
+              <ul
+                id="navmenuTreatment"
+                class="hidden absolute top-0 bottom-0 left-0 right-0"
+              >
+                <li
+                  class="drop-menu  flex items-center container p-0 gap-4  font-spartanBold absolute left-0 right-0 top-0 bottom-0  mt-16 wrapper uppercase "
+                >
+                  <a
+                    href="beuaty-treatment.html"
+                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >face</a
+                  >
+                  <a
+                    href="body-treatment.html"
+                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >body</a
+                  >
+                  <a
+                    href="hair-treatment.html"
+                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >hair removal</a
+                  >
+                  <a
+                    href="Drips&health-treatment.html"
+                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >drips & health</a
+                  >
+                  <a
+                    href="all-Treatment.html"
+                    class="rounded-lg mx-2 block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
+                    style="width: 245px"
+                    >all treatment</a
+                  >
+                </li>
+              </ul>
+            </a>
+            <a href="solution.html" class="hover:text-green-600 z-10 relative"
+              >Solusi Kami
+            </a>
+            <a href="" class="hover:text-green-600">Promo</a>
+            <a href="store.html" class="hover:text-green-600 z-10 relative">E-Store</a>
+            <a href="lokasi.html" class="hover:text-green-600 z-10 relative">Lokasi</a>
+            <a href="" class="hover:text-green-600 z-10 relative">Artikel</a>
+            <a href="about.us.html" class="hover:text-green-600 z-10 relative"
+              >Tentang ZAP</a
+            >
+          </li>
+          <li class="flex items-center z-10 relative">
+            <a
+              href=""
+              class="bg-green-600 py-2 px-3 rounded-lg font-spartanMedium  text-white"
+              >Online Booking</a
+            >
+            <!-- Language -->
+            <div
+              class="relative cursor-pointer py-2 px-3 rounded-lg font-spartanMedium  text-black"
+              id="Language"
+            >
+              <span class="flex items-center group">
+                <img
+                  src="temp-asset/statis-asset/English-Bahasa.png"
+                  alt=""
+                />
+                <i
+                  class="transition duration-200 ease-in-out bx bx-chevron-down text-2xl"
+                ></i>
+              </span>
+              <div id="LanguageBox" class="hidden absolute right-5 top-14">
+                <div
+                  class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg px-3 w-36 rounded-lg py-2 bg-white"
+                >
+                  <button
+                    class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                    onclick="changeLanguage('ENG')"
+                  >
+                    <img
+                      src="temp-asset/statis-asset/English-Bahasa.png"
+                      alt=""
+                    />ENG
+                    <span id="checkENG"><i class="text-2xl bx"></i></span>
+                  </button>
+                  <button
+                    class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                    onclick="changeLanguage('ID')"
+                  >
+                    <img
+                      src="temp-asset/statis-asset/Indo-Bahasa.png"
+                      alt=""
+                    />ID
+                    <span id="checkID"><i class="text-2xl bx"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Language End-->
+            <a href="" class="text-zap-text-superGreen mt-2"
+              ><i class="bx bx-cart-alt text-3xl"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- Desktop End -->
+        <!-- ----------------------------------------------------- -->
+        <!-- mobile and Ipad V -->
+        <ul class="lg:hidden flex justify-between text-xs">
+          <li class="flex items-center z-20">
+            <a href="index.html"
+              ><img
+                src="temp-asset/statis-asset/Logo-Zap.svg"
+                class="w-20"
+                alt=""
+            /></a>
+          </li>
+          <li class="flex md:gap-9 gap-5 items-center z-20">
+            <div class="flex items-center gap-3">
+              <a
+                href=""
+                class="bg-green-600 py-[10px] text-xs px-4 rounded-lg font-spartanMedium  text-white"
+                >Online Booking</a
+              >
+              <!-- Language -->
+              <div
+                class="relative md:block hidden cursor-pointer py-2 px-3 rounded-lg font-spartanMedium  text-black"
+                id="Languagesm"
+              >
+                <span id="masterLang" class="flex items-center">
+                  <img
+                    src="temp-asset/statis-asset/English-Bahasa.png"
+                    alt=""
+                  />
+                  <i class="bx bx-chevron-down text-2xl"></i>
+                </span>
+                <div
+                  id="LanguageBoxsm"
+                  class="hidden absolute right-5 top-14"
+                >
+                  <div
+                    class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg w-36 rounded-lg py-2 bg-zap-white"
+                  >
+                    <button
+                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                      onclick="changeLanguage('ENG')"
+                    >
+                      <img
+                        src="temp-asset/statis-asset/English-Bahasa.png"
+                        alt=""
+                      />ENG
+                      <span id="checkENG"><i class="text-2xl bx"></i></span>
+                    </button>
+                    <button
+                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
+                      onclick="changeLanguage('ID')"
+                    >
+                      <img
+                        src="temp-asset/statis-asset/Indo-Bahasa.png"
+                        alt=""
+                      />ID
+                      <span id="checkID"><i class="text-2xl bx"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Language End -->
+              <a href="" class="text-zap-text-superGreen mt-2"
+                ><i class="bx bx-cart-alt text-3xl"></i
+              ></a>
+            </div>
+            <button
+              class="nav-sm relative"
+              id="navBurger"
+              name="mobileMenuButton"
+            >
+              <span
+                class="navBurger-line duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="navBurger-line-middle duration-300 ease-in-out"
+              ></span>
+              <span
+                class="navBurger-line duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+          </li>
+        </ul>
+        <!-- mobile and Ipad V End -->
+        <!-- Offcanvas mobile -->
+        <div
+          id="mobileMenu"
+          class="lg:hidden fixed top z-10 left-0 h-[1250px] w-full -top-2 bg-white transform -translate-x-full ease-in-out transition-transform duration-300"
+        >
+          <div class="container nav-wrapper mx-auto py-6 md:text-2xl text-sm">
+            <div
+              class="bg-nav absolute -z-10` inset-0 h-full bg-no-repeat bg-cover bg-center"
+              style="
+                background-image: url('temp-asset/homepage/Navbar.png');
+                opacity: 0.1;
+              "
+            ></div>
+            <ul
+              class="uppercase font-spartanMedium  flex flex-col gap-y-10 mt-20 z-30"
+              style="letter-spacing: 1.4px"
+            >
+              <li id="btn-treatmentSM" class="z-30 w-fit">
+                <a
+                  class="hover:text-zap-text-superGreen cursor-pointer flex items-center "
+                  type="button"
+                  >Treatment
+                  <i
+                    id="treatbtnSM"
+                    class="transition duration-200 ease-in-out bx bx-chevron-down relative bottom-[2px] md:text-5xl text-2xl"
+                  ></i>
+                </a>
+                <ul
+                  id="treatbtnlink"
+                  class="lg:flex hidden mt-5 uppercase ml-5"
+                >
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="all-Treatment.html">All Treatment</a>
+                  </li>
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="hair-treatment.html">Hair Removal</a>
+                  </li>
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="beuaty-treatment.html">Face</a>
+                  </li>
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="body-treatment.html">Body</a>
+                  </li>
+                  <li
+                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
+                  >
+                    <a href="Drips&health-treatment.html">DRIPS & HEALTH</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="">Promo</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="store.html">E-Store</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="lokasi.html">Lokasi</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="">Artikel</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="solution.html">Solusi kami</a>
+              </li>
+              <li class="z-30 w-fit hover:text-zap-text-superGreen">
+                <a href="about.us.html">Tentang ZAP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Offcanvas mobile End -->
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero relative mt-40">
+      <div class="container p-0 g-red-600 ">
+        <div class="px-4 breedcrumb flex items-center  lg:text-base md:text-sm text-[10px]">
+          <a href="#" class="flex items-center  gap-x-3 text-zap-text-superGreen ">Treatment 
+            <svg xmlns="http://www.w3.org/2000/svg" class="rounded-lg lg:w-5 w-4 text-zap-text-superGreen icon icon-tabler icon-tabler-player-track-next-filled" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M2 5v14c0 .86 1.012 1.318 1.659 .753l8 -7a1 1 0 0 0 0 -1.506l-8 -7c-.647 -.565 -1.659 -.106 -1.659 .753z" stroke-width="0" fill="currentColor"></path>
+           </svg>
+          </a>
+          <a href="#" class="flex gap-x-3 items-center text-zap-text-superGreen ">Treatment Details 
+            <svg xmlns="http://www.w3.org/2000/svg" class="rounded-lg w-4 text-zap-text-superGreen icon icon-tabler icon-tabler-player-track-next-filled" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M2 5v14c0 .86 1.012 1.318 1.659 .753l8 -7a1 1 0 0 0 0 -1.506l-8 -7c-.647 -.565 -1.659 -.106 -1.659 .753z" stroke-width="0" fill="currentColor"></path>
+           </svg>
+          </a>
+          <a href="#" class="flex items-center gap-x-3">Hair Removal</a>
+        </div>
+        <div class="grid md:grid-cols-2 grid-cols-1  lg:mt-10">
+          <div
+            class="title text-start px-4 left-content-wrapper flex flex-col  lg:w-[800px] w-fit "
+          >
+            <span class="flex items-center gap-x-10 lg:justify-start justify-between ">
+              <h1 class="uppercase text-zap-text-superGreen">hair removal</h1>
+              <img src="temp-asset/full-details/Pore-hero-hair.svg" class="md:w-fit w-14" alt="">
+            </span>
+            <div class="badge=wrapper flex gap-3  ">
+              <span class="py-2 px-4 rounded-full bg-zap-green text-zap-text-superGreen capitalize">hair removal</span>
+              <span class="py-2 px-4 rounded-full bg-zap-green text-zap-text-superGreen capitalize">dull skin</span>
+            </div>
+            <h5 class="text-justify  ">
+              Hair Removal Treatment menggunakan teknologi penyinaran untuk memperlambat pertumbuhan bulu di area tubuh. Proses ini  tidak memberikan hasil instant. Perubahan akan terlihat dalam 2 sampai 3 minggu setelah treatment. Maka tumbuhnya rambut segera (satu hari) setelah treatment adalah wajar.<span
+                class="lg:block"
+              ></span>
+              Hasil treatment pada setiap individu akan bervariasi karena dipengaruhi oleh fase pertumbuhan rambut dan area tubuh.
+            </h5>
+            <div class="footer w-fit  flex lg:flex-row flex-col gap-x-16 gap-y-4 justify-between lg:mt-6">
+              <div class="flex md:gap-x-16 gap-x-8">
+                <span
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                ><img
+                  class="lg:w-5 md:w-4 w-3"
+                  src="temp-asset/treatment/Calender.svg"
+                  alt=""
+                />Mingguan</span
+              >
+              <span
+                class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                ><img
+                  class="lg:w-5 md:w-4 w-3"
+                  src="temp-asset/treatment/Time.svg"
+                  alt=""
+                />35 Menit</span
+              >  
+              </div>
+            
+              <button class=" lg:text-base md:text-sm text-xs capitalize border-[1px] rounded-lg px-3 py-3 border-zap-text-superGreen flex gap-4 text-zap-text-superGreen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.3423 11.5263C6.13024 11.4337 5.93757 11.2979 5.77532 11.1267L3.90515 9.15766C3.79586 9.04253 3.73443 8.88634 3.73438 8.72351C3.73432 8.56061 3.79565 8.40435 3.90486 8.28917C4.01406 8.17399 4.16221 8.10921 4.31672 8.10915C4.47122 8.10909 4.61941 8.17374 4.7287 8.28886L6.42355 10.0743L6.42879 0.61399C6.42879 0.45115 6.49018 0.294979 6.59938 0.179833C6.70865 0.0646881 6.85676 0 7.01122 0C7.16568 0 7.31385 0.0646881 7.42305 0.179833C7.53232 0.294979 7.59365 0.45115 7.59365 0.61399L7.58957 10.086L9.29375 8.28886C9.40447 8.18289 9.54956 8.12591 9.69901 8.12959C9.84846 8.13334 9.99086 8.1975 10.0967 8.30882C10.2025 8.42013 10.2637 8.57007 10.2675 8.72768C10.2714 8.88523 10.2176 9.0383 10.1173 9.1552L8.24713 11.1267C8.08487 11.2979 7.8922 11.4337 7.68014 11.5263C7.46808 11.619 7.24081 11.6667 7.01122 11.6667C6.78168 11.6667 6.55436 11.619 6.3423 11.5263ZM13.0042 9.50387C13.1136 9.39449 13.262 9.33301 13.4167 9.33301C13.5714 9.33301 13.7198 9.39449 13.8291 9.50387C13.9385 9.61324 14 9.76164 14 9.91634V12.2497C14 12.7138 13.8156 13.1589 13.4874 13.4871C13.1592 13.8153 12.7141 13.9997 12.25 13.9997H1.75C1.28587 13.9997 0.840752 13.8153 0.512563 13.4871C0.184374 13.1589 0 12.7138 0 12.2497V9.91634C0 9.76164 0.0614582 9.61324 0.170854 9.50387C0.280251 9.39449 0.428624 9.33301 0.583333 9.33301C0.738045 9.33301 0.886416 9.39449 0.995814 9.50387C1.10521 9.61324 1.16667 9.76164 1.16667 9.91634V12.2497C1.16667 12.4044 1.22813 12.5528 1.33752 12.6621C1.44692 12.7715 1.59529 12.833 1.75 12.833H12.25C12.4047 12.833 12.5531 12.7715 12.6625 12.6621C12.7718 12.5528 12.8333 12.4044 12.8333 12.2497V9.91634C12.8333 9.76164 12.8948 9.61324 13.0042 9.50387Z" fill="#31AB5C"/>
+                  </svg>
+                  download pricelist hair removal
+              </button>
+            </div>
+          </div>
+          <div
+            class="right-content-wrapper flex justify-end lg:mt-0 mt-12 mx-0 md:absolute md:top-0 bottom-0 h-full md:right-0"
+          > 
+            <img
+              class="lg:w-[420px] w-fit h-fit p-0 m-0"
+              src="temp-asset/full-details/Hero-img-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="proses-treatment">
+        <div class="container grid md:grid-cols-2 grid-cols-1 items-center md:gap-12 gap-6 ">
+            <div class="title text-start gap-6 lg:w-[450px] ">
+                <h2>Proses Treatment</h2>
+                <hr class="mx-0">
+                <h6 class="text-justify">Jumlah perawatan yang dibutuhkan untuk mendapatkan hasil terbaik adalah hingga 12x treatment, kecuali area wajah, ketiak dan area kewanitaan membutuhkan lebih dari 12x treatment.</h6>
+            </div>
+            <div class="vidio">
+              <video src="/temp-asset/full-details/y2mate.com - MANFAAT LUAR BIASA DNA SALMON UNTUK KULIT WAJAHMU_1080p.mp4" class="w-full h-full" controls></video>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial lg:container lg:max-w-screen-xl mx-auto">
+      <div class="swiper mt-10 ">
+        <div
+          class="container Step-content overflow-hidden lg:max-w-screen-lg md:max-w-screen-md"
+        >
+          <div class="swiper-wrapper text-center  ">
+            <figure class="swiper-slide py-10  relative   ">
+                <figcaption class=" absolute rounded-lg inset-x-0 top-4 md:px-10 px-4 py-3 bg-zap-SuperGreen w-fit mx-auto text-white lg:text-base md:text-sm text-xs">Step-1</figcaption>
+                <img src="temp-asset/full-details/Step-1.png" class="md:w-64 w-36 mx-auto" alt="">
+                <p class="mt-6 md:text-sm text-xs md:w-52 mx-auto">
+                  Berkonsultasi dengan dokter untuk pertama kali treatment 
+                </p>
+            </figure>
+            <figure class="swiper-slide py-10  relative   ">
+                <figcaption class=" absolute rounded-lg inset-x-0 top-4 md:px-10 px-4 py-3 bg-zap-SuperGreen w-fit mx-auto text-white lg:text-base md:text-sm text-xs">Step-2</figcaption>
+                <img src="temp-asset/full-details/Step-1.png" class="md:w-64 w-36 mx-auto" alt="">
+                <p class="mt-6 md:text-sm text-xs md:w-52 mx-auto">
+                  Pembersihan area yang akan dilakukan treatment 
+                </p>
+            </figure>
+            <figure class="swiper-slide py-10  relative   ">
+              <img src="temp-asset/full-details/STEP-3.png" class="md:w-64 w-36 mx-auto" alt="">
+              <p class="mt-6 md:text-sm text-xs md:w-52 mx-auto">
+                Pemberian Formulated Gel untuk melindungi kulit dari energi panas penyinaran
+              </p>
+            </figure>
+            <figure class="swiper-slide py-10  relative   ">
+              <figcaption class=" absolute rounded-lg inset-x-0 top-4 md:px-10 px-4 py-3 bg-zap-SuperGreen w-fit mx-auto text-white lg:text-base md:text-sm text-xs">Step-3</figcaption>
+              <img src="temp-asset/full-details/Step-1.png" class="md:w-64 w-36 mx-auto" alt="">
+              <p class="mt-6 md:text-sm text-xs md:w-52 mx-auto">
+                Pembersihan area yang akan dilakukan treatment 
+              </p>
+          </figure>
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="swiper-button-prev step-button-prev">
+          <img
+            src="temp-asset/statis-asset/Arrow_R.png"
+            class="step-btn"
+            alt=""
+          />
+        </div>
+        <div class="swiper-button-next step-button-next">
+          <img
+            src="temp-asset/statis-asset/Arrow_L.png"
+            class="step-btn"
+            alt=""
+          />
+        </div>
+        <!-- Button End -->
+      </div>
+    </section>
+    <section class="Cara-kerja-treatment bg-zap-green lg:py-32 py-14">
+      <div class="title">
+        <h2>cara kerja treatment</h2>
+        <hr>
+      </div>
+        <div
+          class=" container lg:mt-14 mt-9  "
+        >
+          <div class="swiper  ">
+            <div class="cara-kerjaTreatment-content">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide py-20">
+                  <figure class="flex flex-col gap-10 relative">
+                    <figcaption class="text-white absolute inset-x-0 bg-zap-SuperGreen md:px-6 md:py-4 px-4 py-2 md:-top-8 -top-4 mx-auto w-fit lg:text-base md:text-sm text-xs">#1</figcaption>
+                    <img src="temp-asset/full-details/hr-works-1.png" class="md:w-52 w-28 mx-auto rounded-full border-4 border-zap-text-superGreen" alt="">
+                    <p class="text-center md:w-[270px] lg:text-base md:text-sm text-[10px] mx-auto">Rambut pada fase anagen ini didorong keluar oleh otot-otot di bawah kulit sehingga akan rontok dengan sendirinya dalam waktu 2-3 minggu.</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide py-20">
+                  <figure class="flex flex-col gap-10 relative">
+                    <figcaption class="text-white absolute inset-x-0 bg-zap-pink md:px-6 md:py-4 px-4 py-2 md:-top-8 -top-4 mx-auto w-fit lg:text-base md:text-sm text-xs">#2</figcaption>
+                    <img src="temp-asset/full-details/hr-works-1.png" class="md:w-52 w-28  mx-auto rounded-full border-4 border-zap-text-superGreen" alt="">
+                    <p class="text-center md:w-[270px] lg:text-base md:text-sm text-[10px] mx-auto">Sebelum proses penyinaran dilakukan, rambut akan dicukur terlebih dahulu dan disisakan sedikit rambut agar penyerapan cahaya dapat berlangsung dengan sempurna.</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide py-20">
+                  <figure class="flex flex-col gap-10 relative">
+                    <figcaption class="text-white absolute inset-x-0 bg-zap-SuperGreen md:px-6 md:py-4 px-4 py-2 md:-top-8 -top-4 mx-auto w-fit lg:text-base md:text-sm text-xs">#3</figcaption>
+                    <img src="temp-asset/full-details/hr-works-1.png" class="md:w-52 w-28  mx-auto rounded-full border-4 border-zap-text-superGreen" alt="">
+                    <p class="text-center md:w-[270px] lg:text-base md:text-sm text-[10px] mx-auto">Energi cahaya yang dipancarkan akan diserap oleh rambut kemudian berubah menjadi energi panas yang akan diteruskan ke akar rambut hingga membuat akar rambut berhenti tumbuh.</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide py-20">
+                  <figure class="flex flex-col gap-10 relative">
+                    <figcaption class="text-white absolute inset-x-0 bg-zap-pink md:px-6 md:py-4 px-4 py-2 md:-top-8 -top-4 mx-auto w-fit lg:text-base md:text-sm text-xs">#4</figcaption>
+                    <img src="temp-asset/full-details/hr-works-1.png" class="md:w-52 w-28  mx-auto rounded-full border-4 border-zap-text-superGreen" alt="">
+                    <p class="text-center md:w-[270px] lg:text-base md:text-sm text-[10px] mx-auto">Setelah itu, pemberian formulated gel yang memberikan efek dingin, diaplikasikan ke kulit untuk memberikan rasa nyaman selama proses penyinaran berlangsung.</p>
+                  </figure>
+                </div>
+                
+            </div>
+            <div class="swiper-button-prev caraKerja-button-prev">
+              <img
+                src="temp-asset/statis-asset/Arrow_R.png"
+                class="caraKerja-btn"
+                alt=""
+              />
+            </div>
+            <div class="swiper-button-next caraKerja-button-next">
+              <img
+                src="temp-asset/statis-asset/Arrow_L.png"
+                class="caraKerja-btn"
+                alt=""
+              />
+            </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+    <section class="before-after-treatment ">
+          <div class="title">
+            <h2>before & after treatment</h2>
+            <hr>
+          </div>
+        <div class="swiper mt-10">
+          <div class="card-content-Before-After">
+              <div class="swiper-wrapper ">
+                <figure class="swiper-slide">  
+                  <img src="temp-asset/full-details/Before&After-1.png" class="w-full"  alt="">
+                </figure>
+                <figure class="swiper-slide">  
+                  <img src="temp-asset/full-details/Before&After-2.png" class="w-full" alt="">
+                </figure>
+                <figure class="swiper-slide">  
+                  <img src="temp-asset/full-details/Before&After-3.png" class="w-full" alt="">
+                </figure>
+                <figure class="swiper-slide">  
+                  <img src="temp-asset/full-details/Before&After-4.png" class="w-full" alt="">
+                </figure>
+              </div>
+          </div>
+          <div class="swiper-button-prev before-after-prev">
+              <img
+                src="temp-asset/statis-asset/Arrow_R.png"
+                class="promo-btn"
+                alt=""
+              />
+            </div>
+            <div class="swiper-button-next before-after-next">
+              <img
+                src="temp-asset/statis-asset/Arrow_L.png"
+                class="promo-btn"
+                alt=""
+              />
+            </div>
+        </div>
+    </section>
+    <section class="treatment-recomendations md:pl-0 pl-4">
+        <div class="title">
+          <h2>Rekomendasi Treatment Bersamaan</h2>
+          <hr>
+        </div>
+      <div class="swiper mt-10">
+        <div class="card-content-treatment">
+            <div class="swiper-wrapper ">
+              <div
+              class="card-wrapper swiper-slide rounded-xl border-2 border-slate-300 relative group"
+            >
+              <!-- Card-body -->
+              <div
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
+              >
+                <img
+                  src="temp-asset/treatment/Hair.png"
+                  class="lg:w-40 lg:h-40 w-24 h-24"
+                  alt=""
+                />
+                <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
+                  <p
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanMedium "
+                  >
+                    HAIR REMOVAL
+                  </p>
+                  <p class="lg:text-base md:text-[10px] text-[9px]">
+                    Treatment yang dilakukan rutin secara bertahap akan
+                    memperlambat pertumbuhan rambut pada tubuh.
+                  </p>
+                </div>
+              </div>
+              <!-- Card-body End -->
+              <!-- Card-Footer -->
+              <div
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
+              >
+                <div
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
+                >
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Calender.svg"
+                      alt=""
+                    />2 mingguan</span
+                  >
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Time.svg"
+                      alt=""
+                    />40 Menit</span
+                  >
+                </div>
+                <div
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
+                >
+                  <span class="lg:text-xs text-[9px]"
+                    >Hanya
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                      398<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb</span
+                      >
+                    </p></span
+                  >
+                  <span
+                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                    style="
+                      background: linear-gradient(
+                        180deg,
+                        #127836 0%,
+                        #67c390 100%
+                      );
+                    "
+                    >ZAP SERIES
+                    <p class="lg:text-2xl text-xs ">
+                      299<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb'</span
+                      >
+                    </p></span
+                  >
+                </div>
+              </div>
+              <!-- Card-Footer End -->
+              <div
+                class="hover-overlay absolute inset-0 flex items-center justify-center rounded-lg bg-zap-green bg-opacity-75 opacity-0 group-hover:opacity-100"
+              >
+                <a
+                  href="fulldetails.html"
+                  target="_blank"
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer lg:text-base text-[9px]"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+              </div>
+              <div
+              class="card-wrapper swiper-slide rounded-xl border-2 border-slate-300 relative group"
+            >
+              <!-- Card-body -->
+              <div
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
+              >
+                <img
+                  src="temp-asset/treatment/Hair.png"
+                  class="lg:w-40 lg:h-40 w-24 h-24"
+                  alt=""
+                />
+                <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
+                  <p
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanMedium "
+                  >
+                    UNDERARM HAIR REMOVAL + <br />
+                    UNDERARM REJUVENATION
+                  </p>
+                  <p class="lg:text-base md:text-[10px] text-[9px]">
+                    Treatment yang dilakukan rutin secara bertahap akan
+                    memperlambat pertumbuhan rambut pada tubuh.
+                  </p>
+                </div>
+              </div>
+              <!-- Card-body End -->
+              <!-- Card-Footer -->
+              <div
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
+              >
+                <div
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
+                >
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Calender.svg"
+                      alt=""
+                    />2 mingguan</span
+                  >
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Time.svg"
+                      alt=""
+                    />40 Menit</span
+                  >
+                </div>
+                <div
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
+                >
+                  <span class="lg:text-xs text-[9px]"
+                    >Hanya
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                      398<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb</span
+                      >
+                    </p></span
+                  >
+                  <span
+                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                    style="
+                      background: linear-gradient(
+                        180deg,
+                        #127836 0%,
+                        #67c390 100%
+                      );
+                    "
+                    >ZAP SERIES
+                    <p class="lg:text-2xl text-xs ">
+                      299<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb'</span
+                      >
+                    </p></span
+                  >
+                </div>
+              </div>
+              <!-- Card-Footer End -->
+              <div
+                class="hover-overlay absolute inset-0 flex items-center justify-center rounded-lg bg-zap-green bg-opacity-75 opacity-0 group-hover:opacity-100"
+              >
+                <a
+                  href="fulldetails.html"
+                  target="_blank"
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer lg:text-base text-[9px]"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+              </div>
+              <div
+              class="card-wrapper swiper-slide rounded-xl border-2 border-slate-300 relative group"
+            >
+              <!-- Card-body -->
+              <div
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
+              >
+                <img
+                  src="temp-asset/treatment/DNA-Salmon-2.png"
+                  class="lg:w-40 lg:h-40 w-24 h-24"
+                  alt=""
+                />
+                <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
+                  <p
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanMedium "
+                  >
+                    INFUSE SUPER GLOW PREMIUM
+                  </p>
+                  <p class="lg:text-base md:text-[10px] text-[9px]">
+                    Menggabungkan 2 treatment berbasis cahaya dan laser, ampuh
+                    dan aman. Terbukti lebih baik dari single teknologi.
+                  </p>
+                </div>
+              </div>
+              <!-- Card-body End -->
+              <img
+                class="absolute top-0 right-0 lg:w-14 w-7"
+                src="temp-asset/treatment/Icon-body.png"
+                alt=""
+              />
+              <!-- Card-Footer -->
+              <div
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
+              >
+                <div
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
+                >
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Calender.svg"
+                      alt=""
+                    />2 mingguan</span
+                  >
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Time.svg"
+                      alt=""
+                    />40 Menit</span
+                  >
+                </div>
+                <div
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
+                >
+                  <span class="lg:text-xs text-[9px]"
+                    >Hanya
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                      398<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb</span
+                      >
+                    </p></span
+                  >
+                  <span
+                    class="lg:text-xs text-[9px] font-spartanMedium text-white rounded-lg lg:py-2 lg:px-3 px-2 lg:h-fit h-11 my-auto flex flex-col justify-center"
+                    style="
+                      background: linear-gradient(
+                        180deg,
+                        #127836 0%,
+                        #67c390 100%
+                      );
+                    "
+                    >ZAP SERIES
+                    <p class="lg:text-2xl text-xs ">
+                      299<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb'</span
+                      >
+                    </p></span
+                  >
+                </div>
+              </div>
+              <!-- Card-Footer End -->
+              <div
+                class="hover-overlay absolute inset-0 flex items-center justify-center rounded-lg bg-zap-green bg-opacity-75 opacity-0 group-hover:opacity-100"
+              >
+                <a
+                  href="fulldetails.html"
+                  target="_blank"
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer lg:text-base text-[9px]"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+              </div>
+              <div
+              class="card-wrapper swiper-slide rounded-xl border-2 border-slate-300 relative group"
+            >
+              <!-- Card-body -->
+              <div
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
+              >
+                <img
+                  src="temp-asset/treatment/DNA Salmon-4.png"
+                  class="lg:w-40 lg:h-40 w-24 h-24"
+                  alt=""
+                />
+                <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
+                  <p
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanMedium "
+                  >
+                    BIKINI LINE REJUVENATION COMBO
+                  </p>
+                  <p class="lg:text-base md:text-[10px] text-[9px]">
+                    Menggabungkan 2 treatment berbasis cahaya dan laser, ampuh
+                    dan aman. Terbukti lebih baik dari single teknologi.
+                  </p>
+                </div>
+              </div>
+              <!-- Card-body End -->
+              <!-- Card-Footer -->
+              <div
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-green lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
+              >
+                <div
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
+                >
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Calender.svg"
+                      alt=""
+                    />2 mingguan</span
+                  >
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Time.svg"
+                      alt=""
+                    />40 Menit</span
+                  >
+                </div>
+                <div
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
+                >
+                  <span class="lg:text-xs text-[9px]"
+                    >Hanya
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                      398<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb</span
+                      >
+                    </p></span
+                  >
+                  <span
+                    class="lg:text-xs hidden text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                    style="
+                      background: linear-gradient(
+                        180deg,
+                        #127836 0%,
+                        #67c390 100%
+                      );
+                    "
+                    >ZAP SERIES
+                    <p class="lg:text-2xl text-xs ">
+                      299<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb'</span
+                      >
+                    </p></span
+                  >
+                </div>
+              </div>
+              <!-- Card-Footer End -->
+              <div
+                class="hover-overlay absolute inset-0 flex items-center justify-center rounded-lg bg-zap-green bg-opacity-75 opacity-0 group-hover:opacity-100"
+              >
+                <a
+                  href="fulldetails.html"
+                  target="_blank"
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer lg:text-base text-[9px]"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+              </div>
+              <div
+              class="card-wrapper swiper-slide rounded-xl border-2 border-slate-300 relative group"
+            >
+              <!-- Card-body -->
+              <div
+                class="body-wrapper lg:h-fit h-[100px] flex lg:gap-x-10 gap-x-3 lg:my-6 lg:mx-6 my-2 mx-2"
+              >
+                <img
+                  src="temp-asset/treatment/DNA-Salmon-Treatment.png"
+                  class="lg:w-40 lg:h-40 w-24 h-24"
+                  alt=""
+                />
+                <div class="text-wrapper w-96 flex flex-col lg:gap-y-3 gap-y-2">
+                  <p
+                    class="lg:text-base text-[10px] leading-4  text-zap-text-superGreen font-spartanMedium "
+                  >
+                    ADVANCE YELLOW LASER
+                    <span class="text-zap-text-pink block"
+                      >BY DERMATOLOGIST</span
+                    >
+                  </p>
+                  <p class="lg:text-base md:text-[10px] text-[9px]">
+                    Treatment yang dilakukan rutin secara bertahap akan
+                    memperlambat pertumbuhan rambut pada tubuh.
+                  </p>
+                </div>
+              </div>
+              <!-- Card-body End -->
+              <img
+                class="absolute top-0 right-0 px-3 py-2 lg:w-20 w-14"
+                src="temp-asset/treatment/Icon-Yellow-laser.png"
+                alt=""
+              />
+              <!-- Card-Footer -->
+              <div
+                class="card-footer rounded-b-xl lg:px-6 px-2 bg-zap-magenta lg:h-24 h-14 flex items-center justify-between lg:gap-0 gap-3"
+              >
+                <div
+                  class="left-content lg:w-fit w-52  flex lg:gap-x-6 gap-x-1 justify-between"
+                >
+                  <!-- <span class="flex items-center gap-x-2  lg:text-base text-[10px]"
+            ><img
+              class="lg:w-5 md:w-4 w-3"
+              src="temp-asset/treatment/Calender.svg"
+              alt=""
+            />2 mingguan</span
+          > -->
+                  <span
+                    class="flex items-center gap-x-2  lg:text-base text-[10px]"
+                    ><img
+                      class="lg:w-5 md:w-4 w-3"
+                      src="temp-asset/treatment/Time.svg"
+                      alt=""
+                    />35 Menit</span
+                  >
+                </div>
+                <div
+                  class="right-content items-center  gap-x-3 lg:w-fit w-44 justify-end flex"
+                >
+                  <span class="lg:text-xs text-[9px]"
+                    >Hanya
+                    <p class="lg:text-2xl text-xs font-spartanMedium">
+                      499<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb</span
+                      >
+                    </p></span
+                  >
+                  <span
+                    class="lg:text-xs hidden text-[8px] text-white rounded-lg lg:py-2 lg:px-3 px-2 py-2"
+                    style="
+                      background: linear-gradient(
+                        180deg,
+                        #127836 0%,
+                        #67c390 100%
+                      );
+                    "
+                    >ZAP SERIES
+                    <p class="lg:text-2xl text-xs ">
+                      299<span
+                        class="lg:text-xs text-[8px] font-spartanRegular lg:relative lg:bottom-2"
+                        >rb'</span
+                      >
+                    </p></span
+                  >
+                </div>
+              </div>
+              <!-- Card-Footer End -->
+              <div
+                class="hover-overlay absolute inset-0 flex items-center justify-center rounded-lg bg-zap-green bg-opacity-75 opacity-0 group-hover:opacity-100"
+              >
+                <a
+                  href="fulldetails.html"
+                  target="_blank"
+                  class="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer lg:text-base text-[9px]"
+                >
+                  Lihat Detail
+                </a>
+              </div>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev treatmentRecomend-button-prev">
+            <img
+              src="temp-asset/statis-asset/Arrow_R.png"
+              class="promo-btn"
+              alt=""
+            />
+          </div>
+          <div class="swiper-button-next treatmentRecomend-button-next">
+            <img
+              src="temp-asset/statis-asset/Arrow_L.png"
+              class="promo-btn"
+              alt=""
+            />
+          </div>
+      </div>
+      <div class="mt-5 text-center">
+        <button class="bg-zap-SuperGreen  lg:px-9 lg:py-3 px-8 py-2 rounded-lg font-spartanMedium  text-white capitalize lg:text-base md:text-sm text-xs">lihat semua</button>
+      </div>
+    </section>
+    <section class="booking overflow-hidden">
+          <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+            <div class="card-booking-1 bg-booking1-bg bg-no-repeat bg-cover">
+              <div class="card-body py-20 px-20">
+                <div class="card-text">
+                  <h2 class="text-white mb-4 lg:text-start text-center">
+                    "ME TIME" KINI JADI LEBIH
+                    <span class="lg:block"></span> PRAKTIS
+                  </h2>
+                  <hr class="w-40 border-white mb-6 mx-0" id="hideHr1" />
+                  <h6 class="text-white leading-relaxed mb-8" id="hideText1">
+                    Pesan treatment favoritmu sekarang melalui handphone untuk
+                    <br />
+                    menghindari antrian dan pastikan kamu mendapatkan waktu yang
+                    sesuai dengan jadwalmu.
+                  </h6>
+                  <button
+                    class="rounded-lg py-3 px-6 lg:mx-0 mx-auto flex font-spartanMedium  lg:text-base md:text-sm text-xs bg-zap-white text-zap-text-superGreen"
+                  >
+                    Booking Sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-booking-2 bg-booking2-bg bg-no-repeat bg-cover">
+              <div class="card-body py-20 px-20">
+                <div class="card-text">
+                  <h2 id="textToModify" class="text-white mb-4">
+                    VOUCHER TREATMENT DAN <span class="lg:block"></span> SKINCARE
+                    DIMANA SAJA
+                  </h2>
+                  <hr class="w-40 border-white mb-6 mx-0" id="hideHr2" />
+                  <h6 class="text-white leading-relaxed mb-8" id="hideText2">
+                    Kunjungi E-Store kami untuk mendapatkan voucher <br />
+                    treatment favorit atau membeli produk skincare dengan mudah,
+                    <br />
+                    kapan saja
+                  </h6>
+                  <button
+                    class="rounded-lg lg:mx-0 mx-auto flex py-3 px-6 font-spartanMedium  lg:text-base text-xs bg-zap-white text-zap-text-pink"
+                  >
+                    Belanja di E-Store
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="floating-btn">
+      <div
+        id="back2top"
+        class="font-spartanMedium  text-xs cursor-pointer backtotop fixed right-6 bottom-32 border-2 border-green-600 bg-zap-green px-2 py-1 lg:z-30 z-10 rounded-md"
+      >
+        <span href="#" class="text-green-600 text-center mx-auto">
+          <span class="uppercase text-center"
+            >Back <span class="block"> to Top</span>
+          </span>
+        </span>
+      </div>
+      <div
+        id="chat"
+        class="fixed right-6 bottom-12 bg-green-600 px-4 py-4 lg:z-30 z-10 rounded-full"
+      >
+        <span class="text-white text-center mx-auto">
+          <span class="mx-auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+      <div
+        id="close"
+        class="hidden fixed right-6 bottom-12 bg-green-600 px-4 py-4 lg:z-30 z-10 rounded-full"
+      >
+        <span class="text-white text-center mx-auto">
+          <span class="mx-auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+      <div
+        id="chat-active1"
+        class="fixed right-6 bottom-52 bg-green-600 px-4 py-4 lg:z-30 z-10 rounded-full hidden"
+      >
+        <a href="#" class="text-white text-center mx-auto">
+          <span class="mx-auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-8"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <path
+                d="M26.25 12.5631V12.5C26.25 6.29688 21.2031 1.25 15 1.25C8.79688 1.25 3.75 6.29688 3.75 12.5V12.5631C2.32563 12.8538 1.25 14.1156 1.25 15.625V18.125C1.25 19.8481 2.65188 21.25 4.375 21.25H5.625C6.31438 21.25 6.875 20.6894 6.875 20V13.75C6.875 13.0606 6.31438 12.5 5.625 12.5H5C5 6.98625 9.48625 2.5 15 2.5C20.5138 2.5 25 6.98625 25 12.5H24.375C23.6856 12.5 23.125 13.0606 23.125 13.75V20C23.125 20.6894 23.6856 21.25 24.375 21.25H25C25 23.6619 23.0375 25.625 20.625 25.625H19.2863C19.0069 24.5494 18.0363 23.75 16.875 23.75H15C13.6213 23.75 12.5 24.8713 12.5 26.25C12.5 27.6288 13.6213 28.75 15 28.75H16.875C18.0363 28.75 19.0069 27.9506 19.2863 26.875H20.625C23.7263 26.875 26.25 24.3519 26.25 21.25V21.1869C27.6744 20.8963 28.75 19.6344 28.75 18.125V15.625C28.75 14.1163 27.6744 12.8538 26.25 12.5631ZM5.625 13.75V20H4.375C3.34125 20 2.5 19.1588 2.5 18.125V15.625C2.5 14.5913 3.34125 13.75 4.375 13.75H5.625ZM16.875 27.5H15C14.3106 27.5 13.75 26.9394 13.75 26.25C13.75 25.5606 14.3106 25 15 25H16.875C17.5644 25 18.125 25.5606 18.125 26.25C18.125 26.9394 17.5644 27.5 16.875 27.5ZM27.5 18.125C27.5 19.1588 26.6588 20 25.625 20H24.375V13.75H25.625C26.6588 13.75 27.5 14.5913 27.5 15.625V18.125Z"
+                fill="#FAF7F5"
+              />
+              <path
+                d="M13.475 22.4088L15.2588 20.625H18.125C19.8481 20.625 21.25 19.2231 21.25 17.5V13.75C21.25 12.0269 19.8481 10.625 18.125 10.625H11.875C10.1519 10.625 8.75 12.0269 8.75 13.75V17.5C8.75 19.2231 10.1519 20.625 11.875 20.625V21.7456C11.875 22.1263 12.1025 22.4663 12.4544 22.6119C12.5712 22.6606 12.6931 22.6838 12.8138 22.6838C13.0575 22.6838 13.2956 22.5888 13.475 22.4088ZM11.8744 19.375C10.8406 19.375 9.99937 18.5338 9.99937 17.5V13.75C9.99937 12.7163 10.8406 11.875 11.8744 11.875H18.1244C19.1581 11.875 19.9994 12.7163 19.9994 13.75V17.5C19.9994 18.5338 19.1581 19.375 18.1244 19.375H14.9994C14.8338 19.375 14.6744 19.4406 14.5575 19.5581L13.1244 20.9913V20C13.1244 19.6544 12.8444 19.375 12.4994 19.375H11.8744Z"
+                fill="#FAF7F5"
+              />
+              <path
+                d="M12.5 15H17.5C17.845 15 18.125 14.72 18.125 14.375C18.125 14.03 17.845 13.75 17.5 13.75H12.5C12.155 13.75 11.875 14.03 11.875 14.375C11.875 14.72 12.155 15 12.5 15Z"
+                fill="#FAF7F5"
+              />
+              <path
+                d="M16.875 16.875C16.875 16.5294 16.595 16.25 16.25 16.25H12.5C12.155 16.25 11.875 16.5294 11.875 16.875C11.875 17.2206 12.155 17.5 12.5 17.5H16.25C16.595 17.5 16.875 17.2206 16.875 16.875Z"
+                fill="#FAF7F5"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        id="chat-active2"
+        class="fixed right-6 bottom-32 bg-green-600 px-4 py-4 lg:z-30 z-10 rounded-full hidden"
+      >
+        <a href="#" class="text-white text-center mx-auto">
+          <span class="mx-auto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M24 11.6909C24 18.1477 18.7256 23.3819 12.2181 23.3819C10.1523 23.3819 8.21147 22.8539 6.52293 21.9272L0 24L2.12667 17.7275C1.05387 15.9659 0.436 13.8997 0.436 11.6909C0.436 5.23413 5.71093 0 12.2181 0C18.7261 0 24 5.23413 24 11.6909ZM12.2181 1.86187C6.75573 1.86187 2.31253 6.2712 2.31253 11.6909C2.31253 13.8416 3.0136 15.8333 4.19947 17.4536L2.96187 21.104L6.76853 19.8941C8.33253 20.9211 10.2061 21.52 12.2184 21.52C17.68 21.52 22.124 17.1112 22.124 11.6915C22.124 6.27173 17.6803 1.86187 12.2181 1.86187ZM18.1677 14.3835C18.0949 14.2643 17.9027 14.1923 17.6141 14.0491C17.3251 13.9059 15.9048 13.2123 15.6408 13.1171C15.376 13.0216 15.1829 12.9736 14.9907 13.2603C14.7984 13.5472 14.2448 14.1923 14.076 14.3835C13.9075 14.5752 13.7392 14.5992 13.4501 14.4557C13.1616 14.3125 12.2312 14.0096 11.128 13.0336C10.2696 12.2741 9.68987 11.3365 9.52133 11.0493C9.35307 10.7627 9.50373 10.6077 9.648 10.4651C9.77813 10.3365 9.93707 10.1304 10.0813 9.9632C10.2261 9.79573 10.2741 9.67653 10.3699 9.48507C10.4667 9.29387 10.4184 9.12667 10.3459 8.98293C10.2739 8.83973 9.69573 7.4296 9.4552 6.85573C9.21467 6.2824 8.9744 6.37787 8.8056 6.37787C8.63733 6.37787 8.44453 6.35387 8.252 6.35387C8.05947 6.35387 7.7464 6.4256 7.4816 6.71227C7.21707 6.9992 6.4712 7.69253 6.4712 9.1024C6.4712 10.5125 7.5056 11.8749 7.6504 12.0659C7.79467 12.2568 9.64773 15.2445 12.5837 16.392C15.52 17.5389 15.52 17.1563 16.0496 17.1083C16.5787 17.0605 17.7579 16.4152 17.9995 15.7464C18.2395 15.0765 18.2395 14.5029 18.1677 14.3835Z"
+                fill="#FAF7F5"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="container mb-5">
+      <div class="container-footer-head flex items-center flex-col">
+        <img
+          src="temp-asset/statis-asset/Logo-Zap.svg"
+          alt=""
+          class="md:w-36"
+        />
+        <div class="wrapper-links md:flex text-center gap-16 pt-10">
+          <p>Download Katalog</p>
+          <p class="md:my-0 my-3">Liputan</p>
+          <p>FAQ</p>
+          <p class="md:my-0 my-3">Contact Us</p>
+        </div>
+      </div>
+      <hr class="mt-5 border-2 border-gray-200 w-full" />
+      <div
+        class="container-footer-foot flex justify-between mt-8 text-slate-500"
+      >
+        <div class="sosial-media-wrapper">
+          <p class="md:text-lg">Social Media</p>
+          <span class="flex md:gap-10 gap-4 mt-3">
+            <img
+              class="md:w-8 w-7"
+              src="temp-asset/statis-asset/Icon-sosmed-fb.svg"
+              alt=""
+            />
+            <img
+              class="md:w-8 w-7"
+              src="temp-asset/statis-asset/Icon-sosmed-ig.svg"
+              alt=""
+            />
+            <img
+              class="md:w-12 w-10"
+              src="temp-asset/statis-asset/Icon-sosmed-yt.svg"
+              alt=""
+            />
+          </span>
+        </div>
+        <div class="Marketplace-Wrapper">
+          <p class="md:text-lg">Official Marketplace</p>
+          <span class="flex justify-center items-center md:gap-10 gap-4 mt-3">
+            <img
+              class="md:w-5 w-5"
+              src="temp-asset/statis-asset/Icon-marketplace-blibli.svg"
+              alt=""
+            />
+            <img
+              class="md:w-7 w-6"
+              src="temp-asset/statis-asset/Icon-marketplace-shoppe.svg"
+              alt=""
+            />
+            <img
+              class="md:w-7 w-6"
+              src="temp-asset/statis-asset/Icon-marketplace-Tokopedia.svg"
+              alt=""
+            />
+          </span>
+        </div>
+      </div>
+    </section>
+  </footer> 
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var mobileMenuButton = document.getElementById("navBurger");
+    var mobileMenu = document.getElementById("mobileMenu");
+    mobileMenuButton.addEventListener("click", function () {
+      mobileMenu.classList.toggle("translate-x-0");
+    });
+  });
+</script>
+<script src="js/nav.js"></script>
+<script src="js/floatingbtn.js"></script>
+<script src="js/booking.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+</html>

@@ -156,34 +156,7 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
     }
   });
 
-  // Full details 
-  let stepSwiper = new Swiper(".content-swiper-stepbyStep", {
 
-    slidesPerView: 1.5,
-    grabCursor: true,
-    // If we need pagination
-    pagination: {
-      clickable: true,
-      dynamicBullets: true,
-    },
-    autoplay : {
-      delay : 4000,
-      disableOnInteraction: true,
-  },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.step-button-next',
-      prevEl: '.step-button-prev',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView:2 ,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    }
-  });
   
   let BaSwiper = new Swiper(".card-content-Before-After", {
     slidesPerView: 1,
@@ -201,8 +174,8 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
   },
     // Navigation arrows
     navigation: {
-      nextEl: '.before-button-next',
-      prevEl: '.before-button-prev',
+      nextEl: '.before-after-next',
+      prevEl: '.before-after-prev',
     },
     breakpoints: {
       600: {
@@ -214,7 +187,7 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
     }
   });
 
-  let RaSwiper = new Swiper(".card-content-treatment-rekomendasi", {
+  let RaSwiper = new Swiper(".card-content-treatment", {
     slidesPerView: 1.1,
     spaceBetween: 5,
     grabCursor: true,
@@ -226,8 +199,8 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
   },
     // Navigation arrows
     navigation: {
-      nextEl: '.rekom-button-next',
-      prevEl: '.rekom-button-prev',
+      nextEl: '.treatmentRecomend-button-next',
+      prevEl: '.treatmentRecomend-button-prev',
     },
     breakpoints: {
       600: {
@@ -242,8 +215,7 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
 
 
   let EstoresliderSwiper = new Swiper(".Estoreslider-content ", {
-    slidesPerView: 1.8,
-    
+    slidesPerView: 2,
     spaceBetween:10,
     grabCursor: true,
     // If we need pagination
@@ -267,3 +239,52 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
   });
   
   // Estore end
+
+
+  let stepSwiper = new Swiper(".Step-content ", {
+    slidesPerView: 2,
+    spaceBetween:20,
+    grabCursor: true,
+    // If we need pagination
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.step-button-next',
+      prevEl: '.step-button-prev',
+    },
+  
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+   
+      },
+      968: {
+        slidesPerView: 3,
+
+      },
+    }
+  });
+
+  let carakerjaSwiper = new Swiper(".cara-kerjaTreatment-content", {
+    slidesPerView: 2,
+    spaceBetween:20,
+    grabCursor: true,
+    // If we need pagination
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.caraKerja-button-next',
+      prevEl: '.caraKerja-button-prev',
+    },
+  
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+   
+      },
+      968: {
+        slidesPerView: 4,
+
+      },
+    }
+  });

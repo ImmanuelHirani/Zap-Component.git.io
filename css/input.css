@@ -134,6 +134,11 @@
 .accordion-body {
     @apply  max-h-0 overflow-hidden transition-all duration-200 ease-in-out
 }
+
+.box-choise-wrapper {
+  @apply  max-h-0 overflow-hidden transition-all duration-300 ease-in-out
+}
+
 }
 
 @layer utilities {
@@ -161,6 +166,20 @@
   .testimonial-btn {
     @apply md:w-fit w-10 lg:mx-0 mx-4;
   }
+
+  .step-btn {
+    @apply md:w-fit w-10 lg:mx-0 mx-4 
+  }
+
+  .caraKerja-btn {
+    @apply md:w-fit w-8 lg:mx-0 mx-4 
+  }
+
+  .caraKerja-button-prev
+  .caraKerja-button-next {
+    @apply -bottom-[900px]
+  }
+
 
   .estore-btn {
     @apply md:w-fit w-10 lg:mx-0 mx-4;
@@ -195,6 +214,14 @@
   @apply transition-all ease-in-out duration-300
 }
 
+.button-choose-active {
+  @apply bg-zap-SuperGreen text-white transition-all ease-in-out duration-75
+}
+
+.button-fit-treatment-active {
+  @apply bg-zap-SuperGreen text-white transition-all ease-in-out duration-200
+}
+
 
 @layer base {
   section {
@@ -206,7 +233,7 @@
   }
 
   h1 {
-    @apply lg:text-4xl md:text-base text-sm lg:leading-[50px] font-spartanBold;
+    @apply lg:text-4xl md:text-base text-sm lg:leading-[50px] font-spartanBold  capitalize;
   }
 
   h2 {
