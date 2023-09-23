@@ -440,7 +440,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    margin-top: 6rem;
+    margin-top: 9rem;
   }
 }
 
@@ -1092,6 +1092,10 @@ hr {
   height: 1250px;
 }
 
+.h-\[185px\] {
+  height: 185px;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -1229,6 +1233,11 @@ hr {
 
 .translate-x-0 {
   --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-0 {
+  --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1502,6 +1511,22 @@ hr {
   border-color: rgb(49 171 92 / var(--tw-border-opacity));
 }
 
+.border-x-zap-text-superGreen {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(49 171 92 / var(--tw-border-opacity));
+  border-right-color: rgb(49 171 92 / var(--tw-border-opacity));
+}
+
+.border-b-zap-text-superGreen {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(49 171 92 / var(--tw-border-opacity));
+}
+
+.border-t-zap-text-superGreen {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(49 171 92 / var(--tw-border-opacity));
+}
+
 .bg-\[\#f2ffec\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 255 236 / var(--tw-bg-opacity));
@@ -1697,6 +1722,16 @@ hr {
 .py-\[2px\] {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
 }
 
 .pl-4 {
@@ -2617,6 +2652,10 @@ hr {
     height: 2rem;
   }
 
+  .md\:h-\[190px\] {
+    height: 190px;
+  }
+
   .md\:h-full {
     height: 100%;
   }
@@ -2742,6 +2781,11 @@ hr {
 
   .md\:gap-y-20 {
     row-gap: 5rem;
+  }
+
+  .md\:bg-zap-green {
+    --tw-bg-opacity: 1;
+    background-color: rgb(224 242 214 / var(--tw-bg-opacity));
   }
 
   .md\:p-0 {
@@ -3028,6 +3072,10 @@ hr {
 
   .lg\:h-80 {
     height: 20rem;
+  }
+
+  .lg\:h-\[235px\] {
+    height: 235px;
   }
 
   .lg\:h-\[350px\] {

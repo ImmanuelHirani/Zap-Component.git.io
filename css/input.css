@@ -184,9 +184,6 @@
     @apply -bottom-[900px]
   }
 
- 
-
-
   .estore-btn {
     @apply md:w-fit w-10 lg:mx-0 mx-4;
   }
@@ -231,8 +228,10 @@
 
 @layer base {
   section {
-    @apply md:mt-24 mt-20;
+    @apply md:mt-36 mt-20;
   }
+
+ 
 
   .title {
     @apply text-center gap-4 md:text-sm text-xs flex flex-col ;

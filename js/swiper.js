@@ -164,13 +164,12 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
     grabCursor: true,
     // If we need pagination
     pagination: {
-  
       clickable: true,
       dynamicBullets: true,
     },
     autoplay : {
       delay : 4000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
   },
     // Navigation arrows
     navigation: {
