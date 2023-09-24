@@ -231,8 +231,6 @@
     @apply md:mt-36 mt-20;
   }
 
- 
-
   .title {
     @apply text-center gap-4 md:text-sm text-xs flex flex-col ;
   }
