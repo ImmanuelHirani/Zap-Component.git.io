@@ -966,6 +966,15 @@
     </section>
   </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var mobileMenuButton = document.getElementById("navBurger");
+    var mobileMenu = document.getElementById("mobileMenu");
+    mobileMenuButton.addEventListener("click", function () {
+      mobileMenu.classList.toggle("translate-x-0");
+    });
+  });
+</script>
 <script src="js/solution.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/floatingbtn.js"></script>
