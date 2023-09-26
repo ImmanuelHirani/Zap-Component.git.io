@@ -573,460 +573,28 @@
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
                   <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
                   <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                  <!-- Modal detail karir -->
-                  <div class="myModal hidden">
-                    <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                          <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                            <div class="modal-header flex justify-end">
-                              <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                  <path d="M18 6l-12 12"></path>
-                                  <path d="M6 6l12 12"></path>
-                               </svg>
-                              </button>
-                            </div>
-                            <div class="modal-body py-2 flex gap-12 ">
-                              <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                                <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                                <span>
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                  <ul class="list-disc ml-4  flex flex-col mt-3">
-                                    <li>Wanita, Maksimum 28 Tahun</li>
-                                    <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                    <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                    <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                    <li>Diperbolehkan menggunakan Hijab</li>
-                                    <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                    <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                  </ul>
-                                </span>
-                                <span">
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                  <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                    <li>Suasana kerja yang menyenangkan</li>
-                                    <li>Gaji pokok</li>
-                                    <li>Service Charge</li>
-                                    <li>Komisi dan insentif</li>
-                                    <li>Asuransi kesehatan dan jiwa</li>
-                                    <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                    <li>Voucher Treatment</li>
-                                    <li>Disediakan pelatihan dan pengembangan</li>
-                                    <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                  </ul>
-                                </span>
-                              </div>
-                              <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                  <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                    <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                      <label  for="nama">Nama</label>
-                                      <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">Email</label>
-                                      <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">No handphone</label>
-                                      <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                      <label  for="nama">Akun sosial media</label>
-                                      <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                      <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                          <path d="M7 9l5 -5l5 5"></path>
-                                          <path d="M12 4l0 12"></path>
-                                        </svg>
-                                        Pilih file
-                                        <input type="file" class="hidden">
-                                      </label>                            
-                                      <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                    </form>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
                </div>
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
                 <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
                 <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                <!-- Modal detail karir -->
-                <div class="myModal hidden">
-                  <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                        <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                          <div class="modal-header flex justify-end">
-                            <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M18 6l-12 12"></path>
-                                <path d="M6 6l12 12"></path>
-                             </svg>
-                            </button>
-                          </div>
-                          <div class="modal-body py-2 flex gap-12 ">
-                            <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                              <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                              <span>
-                                <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                <ul class="list-disc ml-4  flex flex-col mt-3">
-                                  <li>Wanita, Maksimum 28 Tahun</li>
-                                  <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                  <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                  <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                  <li>Diperbolehkan menggunakan Hijab</li>
-                                  <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                  <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                </ul>
-                              </span>
-                              <span">
-                                <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                  <li>Suasana kerja yang menyenangkan</li>
-                                  <li>Gaji pokok</li>
-                                  <li>Service Charge</li>
-                                  <li>Komisi dan insentif</li>
-                                  <li>Asuransi kesehatan dan jiwa</li>
-                                  <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                  <li>Voucher Treatment</li>
-                                  <li>Disediakan pelatihan dan pengembangan</li>
-                                  <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                </ul>
-                              </span>
-                            </div>
-                            <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                  <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                    <label  for="nama">Nama</label>
-                                    <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="nama">Email</label>
-                                    <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="nama">No handphone</label>
-                                    <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                    <label  for="nama">Akun sosial media</label>
-                                    <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                    <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                      <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                        <path d="M7 9l5 -5l5 5"></path>
-                                        <path d="M12 4l0 12"></path>
-                                      </svg>
-                                      Pilih file
-                                      <input type="file" class="hidden">
-                                    </label>                            
-                                    <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                  </form>
-                            </div>
-                          </div>
-                        </div>
-                  </div>
-                </div>
-               </div>
-               <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
-                  <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
-                  <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                  <!-- Modal detail karir -->
-                  <div class="myModal hidden">
-                    <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                          <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                            <div class="modal-header flex justify-end">
-                              <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                  <path d="M18 6l-12 12"></path>
-                                  <path d="M6 6l12 12"></path>
-                               </svg>
-                              </button>
-                            </div>
-                            <div class="modal-body py-2 flex gap-12 ">
-                              <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                                <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                                <span>
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                  <ul class="list-disc ml-4  flex flex-col mt-3">
-                                    <li>Wanita, Maksimum 28 Tahun</li>
-                                    <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                    <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                    <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                    <li>Diperbolehkan menggunakan Hijab</li>
-                                    <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                    <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                  </ul>
-                                </span>
-                                <span">
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                  <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                    <li>Suasana kerja yang menyenangkan</li>
-                                    <li>Gaji pokok</li>
-                                    <li>Service Charge</li>
-                                    <li>Komisi dan insentif</li>
-                                    <li>Asuransi kesehatan dan jiwa</li>
-                                    <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                    <li>Voucher Treatment</li>
-                                    <li>Disediakan pelatihan dan pengembangan</li>
-                                    <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                  </ul>
-                                </span>
-                              </div>
-                              <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                  <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                    <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                      <label  for="nama">Nama</label>
-                                      <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">Email</label>
-                                      <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">No handphone</label>
-                                      <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                      <label  for="nama">Akun sosial media</label>
-                                      <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                      <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                          <path d="M7 9l5 -5l5 5"></path>
-                                          <path d="M12 4l0 12"></path>
-                                        </svg>
-                                        Pilih file
-                                        <input type="file" class="hidden">
-                                      </label>                            
-                                      <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                    </form>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
                </div>
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
                 <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
                 <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                <!-- Modal detail karir -->
-                <div class="myModal hidden">
-                  <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                        <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                          <div class="modal-header flex justify-end">
-                            <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M18 6l-12 12"></path>
-                                <path d="M6 6l12 12"></path>
-                             </svg>
-                            </button>
-                          </div>
-                          <div class="modal-body py-2 flex gap-12 ">
-                            <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                              <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                              <span>
-                                <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                <ul class="list-disc ml-4  flex flex-col mt-3">
-                                  <li>Wanita, Maksimum 28 Tahun</li>
-                                  <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                  <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                  <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                  <li>Diperbolehkan menggunakan Hijab</li>
-                                  <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                  <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                </ul>
-                              </span>
-                              <span">
-                                <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                  <li>Suasana kerja yang menyenangkan</li>
-                                  <li>Gaji pokok</li>
-                                  <li>Service Charge</li>
-                                  <li>Komisi dan insentif</li>
-                                  <li>Asuransi kesehatan dan jiwa</li>
-                                  <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                  <li>Voucher Treatment</li>
-                                  <li>Disediakan pelatihan dan pengembangan</li>
-                                  <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                </ul>
-                              </span>
-                            </div>
-                            <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                  <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                    <label  for="nama">Nama</label>
-                                    <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="nama">Email</label>
-                                    <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="nama">No handphone</label>
-                                    <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                    <label  for="nama">Akun sosial media</label>
-                                    <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                    <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                      <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                        <path d="M7 9l5 -5l5 5"></path>
-                                        <path d="M12 4l0 12"></path>
-                                      </svg>
-                                      Pilih file
-                                      <input type="file" class="hidden">
-                                    </label>                            
-                                    <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                  </form>
-                            </div>
-                          </div>
-                        </div>
-                  </div>
-                </div>
                </div>
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
                   <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
                   <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                  <!-- Modal detail karir -->
-                  <div class="myModal hidden">
-                    <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                          <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                            <div class="modal-header flex justify-end">
-                              <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                  <path d="M18 6l-12 12"></path>
-                                  <path d="M6 6l12 12"></path>
-                               </svg>
-                              </button>
-                            </div>
-                            <div class="modal-body py-2 flex gap-12 ">
-                              <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                                <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                                <span>
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                  <ul class="list-disc ml-4  flex flex-col mt-3">
-                                    <li>Wanita, Maksimum 28 Tahun</li>
-                                    <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                    <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                    <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                    <li>Diperbolehkan menggunakan Hijab</li>
-                                    <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                    <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                  </ul>
-                                </span>
-                                <span">
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                  <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                    <li>Suasana kerja yang menyenangkan</li>
-                                    <li>Gaji pokok</li>
-                                    <li>Service Charge</li>
-                                    <li>Komisi dan insentif</li>
-                                    <li>Asuransi kesehatan dan jiwa</li>
-                                    <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                    <li>Voucher Treatment</li>
-                                    <li>Disediakan pelatihan dan pengembangan</li>
-                                    <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                  </ul>
-                                </span>
-                              </div>
-                              <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                  <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                    <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                      <label  for="nama">Nama</label>
-                                      <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">Email</label>
-                                      <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">No handphone</label>
-                                      <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                      <label  for="nama">Akun sosial media</label>
-                                      <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                      <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                          <path d="M7 9l5 -5l5 5"></path>
-                                          <path d="M12 4l0 12"></path>
-                                        </svg>
-                                        Pilih file
-                                        <input type="file" class="hidden">
-                                      </label>                            
-                                      <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                    </form>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
                </div>
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
-                  <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
-                  <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                  <!-- Modal detail karir -->
-                  <div class="myModal hidden">
-                    <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                          <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                            <div class="modal-header flex justify-end">
-                              <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                  <path d="M18 6l-12 12"></path>
-                                  <path d="M6 6l12 12"></path>
-                               </svg>
-                              </button>
-                            </div>
-                            <div class="modal-body py-2 flex gap-12 ">
-                              <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                                <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                                <span>
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                  <ul class="list-disc ml-4  flex flex-col mt-3">
-                                    <li>Wanita, Maksimum 28 Tahun</li>
-                                    <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                    <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                    <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                    <li>Diperbolehkan menggunakan Hijab</li>
-                                    <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                    <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                  </ul>
-                                </span>
-                                <span">
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                  <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                    <li>Suasana kerja yang menyenangkan</li>
-                                    <li>Gaji pokok</li>
-                                    <li>Service Charge</li>
-                                    <li>Komisi dan insentif</li>
-                                    <li>Asuransi kesehatan dan jiwa</li>
-                                    <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                    <li>Voucher Treatment</li>
-                                    <li>Disediakan pelatihan dan pengembangan</li>
-                                    <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                  </ul>
-                                </span>
-                              </div>
-                              <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                  <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                    <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                      <label  for="nama">Nama</label>
-                                      <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">Email</label>
-                                      <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">No handphone</label>
-                                      <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                      <label  for="nama">Akun sosial media</label>
-                                      <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                      <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                          <path d="M7 9l5 -5l5 5"></path>
-                                          <path d="M12 4l0 12"></path>
-                                        </svg>
-                                        Pilih file
-                                        <input type="file" class="hidden">
-                                      </label>                            
-                                      <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                    </form>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
+                <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
+                <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
                </div>
-             </div>
+               <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
+              <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
+              <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
+               </div>
+             </div> 
             </div>
           </div>
           <div class="accordion-wrapper">
@@ -1046,462 +614,115 @@
                 <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
                   <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
                   <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                  <!-- Modal detail karir -->
-                  <div class="myModal hidden">
-                    <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                          <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                            <div class="modal-header flex justify-end">
-                              <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                  <path d="M18 6l-12 12"></path>
-                                  <path d="M6 6l12 12"></path>
-                               </svg>
-                              </button>
-                            </div>
-                            <div class="modal-body py-2 flex gap-12 ">
-                              <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                                <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                                <span>
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                  <ul class="list-disc ml-4  flex flex-col mt-3">
-                                    <li>Wanita, Maksimum 28 Tahun</li>
-                                    <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                    <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                    <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                    <li>Diperbolehkan menggunakan Hijab</li>
-                                    <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                    <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                  </ul>
-                                </span>
-                                <span">
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                  <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                    <li>Suasana kerja yang menyenangkan</li>
-                                    <li>Gaji pokok</li>
-                                    <li>Service Charge</li>
-                                    <li>Komisi dan insentif</li>
-                                    <li>Asuransi kesehatan dan jiwa</li>
-                                    <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                    <li>Voucher Treatment</li>
-                                    <li>Disediakan pelatihan dan pengembangan</li>
-                                    <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                  </ul>
-                                </span>
-                              </div>
-                              <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                  <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                    <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                      <label  for="nama">Nama</label>
-                                      <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">Email</label>
-                                      <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">No handphone</label>
-                                      <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                      <label  for="nama">Akun sosial media</label>
-                                      <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                      <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                          <path d="M7 9l5 -5l5 5"></path>
-                                          <path d="M12 4l0 12"></path>
-                                        </svg>
-                                        Pilih file
-                                        <input type="file" class="hidden">
-                                      </label>                            
-                                      <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                    </form>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
                </div>
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
                 <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
                 <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                <!-- Modal detail karir -->
-                <div class="myModal hidden">
-                  <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                        <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                          <div class="modal-header flex justify-end">
-                            <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M18 6l-12 12"></path>
-                                <path d="M6 6l12 12"></path>
-                             </svg>
-                            </button>
-                          </div>
-                          <div class="modal-body py-2 flex gap-12 ">
-                            <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                              <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                              <span>
-                                <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                <ul class="list-disc ml-4  flex flex-col mt-3">
-                                  <li>Wanita, Maksimum 28 Tahun</li>
-                                  <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                  <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                  <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                  <li>Diperbolehkan menggunakan Hijab</li>
-                                  <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                  <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                </ul>
-                              </span>
-                              <span">
-                                <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                  <li>Suasana kerja yang menyenangkan</li>
-                                  <li>Gaji pokok</li>
-                                  <li>Service Charge</li>
-                                  <li>Komisi dan insentif</li>
-                                  <li>Asuransi kesehatan dan jiwa</li>
-                                  <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                  <li>Voucher Treatment</li>
-                                  <li>Disediakan pelatihan dan pengembangan</li>
-                                  <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                </ul>
-                              </span>
-                            </div>
-                            <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                  <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                    <label  for="nama">Nama</label>
-                                    <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="nama">Email</label>
-                                    <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="nama">No handphone</label>
-                                    <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                    <label  for="nama">Akun sosial media</label>
-                                    <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                    <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                      <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                        <path d="M7 9l5 -5l5 5"></path>
-                                        <path d="M12 4l0 12"></path>
-                                      </svg>
-                                      Pilih file
-                                      <input type="file" class="hidden">
-                                    </label>                            
-                                    <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                  </form>
-                            </div>
-                          </div>
-                        </div>
-                  </div>
-                </div>
-               </div>
-               <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
-                  <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
-                  <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                  <!-- Modal detail karir -->
-                  <div class="myModal hidden">
-                    <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                          <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                            <div class="modal-header flex justify-end">
-                              <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                  <path d="M18 6l-12 12"></path>
-                                  <path d="M6 6l12 12"></path>
-                               </svg>
-                              </button>
-                            </div>
-                            <div class="modal-body py-2 flex gap-12 ">
-                              <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                                <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                                <span>
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                  <ul class="list-disc ml-4  flex flex-col mt-3">
-                                    <li>Wanita, Maksimum 28 Tahun</li>
-                                    <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                    <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                    <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                    <li>Diperbolehkan menggunakan Hijab</li>
-                                    <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                    <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                  </ul>
-                                </span>
-                                <span">
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                  <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                    <li>Suasana kerja yang menyenangkan</li>
-                                    <li>Gaji pokok</li>
-                                    <li>Service Charge</li>
-                                    <li>Komisi dan insentif</li>
-                                    <li>Asuransi kesehatan dan jiwa</li>
-                                    <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                    <li>Voucher Treatment</li>
-                                    <li>Disediakan pelatihan dan pengembangan</li>
-                                    <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                  </ul>
-                                </span>
-                              </div>
-                              <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                  <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                    <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                      <label  for="nama">Nama</label>
-                                      <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">Email</label>
-                                      <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">No handphone</label>
-                                      <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                      <label  for="nama">Akun sosial media</label>
-                                      <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                      <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                          <path d="M7 9l5 -5l5 5"></path>
-                                          <path d="M12 4l0 12"></path>
-                                        </svg>
-                                        Pilih file
-                                        <input type="file" class="hidden">
-                                      </label>                            
-                                      <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                    </form>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
                </div>
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
                 <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
                 <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                <!-- Modal detail karir -->
-                <div class="myModal hidden">
-                  <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                        <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                          <div class="modal-header flex justify-end">
-                            <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M18 6l-12 12"></path>
-                                <path d="M6 6l12 12"></path>
-                             </svg>
-                            </button>
-                          </div>
-                          <div class="modal-body py-2 flex gap-12 ">
-                            <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                              <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                              <span>
-                                <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                <ul class="list-disc ml-4  flex flex-col mt-3">
-                                  <li>Wanita, Maksimum 28 Tahun</li>
-                                  <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                  <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                  <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                  <li>Diperbolehkan menggunakan Hijab</li>
-                                  <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                  <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                </ul>
-                              </span>
-                              <span">
-                                <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                  <li>Suasana kerja yang menyenangkan</li>
-                                  <li>Gaji pokok</li>
-                                  <li>Service Charge</li>
-                                  <li>Komisi dan insentif</li>
-                                  <li>Asuransi kesehatan dan jiwa</li>
-                                  <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                  <li>Voucher Treatment</li>
-                                  <li>Disediakan pelatihan dan pengembangan</li>
-                                  <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                </ul>
-                              </span>
-                            </div>
-                            <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                  <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                    <label  for="nama">Nama</label>
-                                    <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="nama">Email</label>
-                                    <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="nama">No handphone</label>
-                                    <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                    <label  for="nama">Akun sosial media</label>
-                                    <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                    <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                    <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                      <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                        <path d="M7 9l5 -5l5 5"></path>
-                                        <path d="M12 4l0 12"></path>
-                                      </svg>
-                                      Pilih file
-                                      <input type="file" class="hidden">
-                                    </label>                            
-                                    <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                  </form>
-                            </div>
-                          </div>
-                        </div>
-                  </div>
-                </div>
                </div>
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
                   <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
                   <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                  <!-- Modal detail karir -->
-                  <div class="myModal hidden">
-                    <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                          <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                            <div class="modal-header flex justify-end">
-                              <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                  <path d="M18 6l-12 12"></path>
-                                  <path d="M6 6l12 12"></path>
-                               </svg>
-                              </button>
-                            </div>
-                            <div class="modal-body py-2 flex gap-12 ">
-                              <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                                <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                                <span>
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                  <ul class="list-disc ml-4  flex flex-col mt-3">
-                                    <li>Wanita, Maksimum 28 Tahun</li>
-                                    <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                    <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                    <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                    <li>Diperbolehkan menggunakan Hijab</li>
-                                    <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                    <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                  </ul>
-                                </span>
-                                <span">
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                  <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                    <li>Suasana kerja yang menyenangkan</li>
-                                    <li>Gaji pokok</li>
-                                    <li>Service Charge</li>
-                                    <li>Komisi dan insentif</li>
-                                    <li>Asuransi kesehatan dan jiwa</li>
-                                    <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                    <li>Voucher Treatment</li>
-                                    <li>Disediakan pelatihan dan pengembangan</li>
-                                    <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                  </ul>
-                                </span>
-                              </div>
-                              <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                  <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                    <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                      <label  for="nama">Nama</label>
-                                      <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">Email</label>
-                                      <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">No handphone</label>
-                                      <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                      <label  for="nama">Akun sosial media</label>
-                                      <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                      <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                          <path d="M7 9l5 -5l5 5"></path>
-                                          <path d="M12 4l0 12"></path>
-                                        </svg>
-                                        Pilih file
-                                        <input type="file" class="hidden">
-                                      </label>                            
-                                      <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                    </form>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
                </div>
                <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
-                  <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
-                  <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
-                  <!-- Modal detail karir -->
-                  <div class="myModal hidden">
-                    <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
-                          <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md lg:w-[1300px] md:w-[750px] h-[650px]  relative">
-                            <div class="modal-header flex justify-end">
-                              <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                  <path d="M18 6l-12 12"></path>
-                                  <path d="M6 6l12 12"></path>
-                               </svg>
-                              </button>
-                            </div>
-                            <div class="modal-body py-2 flex gap-12 ">
-                              <div class="left-content lg:text-base md:text-[13px] text-[10px]  w-[900px] flex flex-col gap-4 ">
-                                <h2 class="text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
-                                <span>
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
-                                  <ul class="list-disc ml-4  flex flex-col mt-3">
-                                    <li>Wanita, Maksimum 28 Tahun</li>
-                                    <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
-                                    <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
-                                    <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
-                                    <li>Diperbolehkan menggunakan Hijab</li>
-                                    <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
-                                    <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
-                                  </ul>
-                                </span>
-                                <span">
-                                  <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
-                                  <ul class="list-disc ml-4  flex flex-col  mt-3 ">
-                                    <li>Suasana kerja yang menyenangkan</li>
-                                    <li>Gaji pokok</li>
-                                    <li>Service Charge</li>
-                                    <li>Komisi dan insentif</li>
-                                    <li>Asuransi kesehatan dan jiwa</li>
-                                    <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
-                                    <li>Voucher Treatment</li>
-                                    <li>Disediakan pelatihan dan pengembangan</li>
-                                    <li>Penghargaan bagi karyawan dan outlet terbaik</li>
-                                  </ul>
-                                </span>
-                              </div>
-                              <div class="right-content  lg:w-[500px] w-[800px] h-[600px] ">
-                                  <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="">
-                                    <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
-                                      <label  for="nama">Nama</label>
-                                      <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">Email</label>
-                                      <input type="text" name="nama" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="nama">No handphone</label>
-                                      <input type="text" name="nama" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
-                                      <label  for="nama">Akun sosial media</label>
-                                      <input type="text" name="nama" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
-                                      <label  for="">Upload CV (pdf / docx, max 1MB) </label>
-                                      <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 md:w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-                                          <path d="M7 9l5 -5l5 5"></path>
-                                          <path d="M12 4l0 12"></path>
-                                        </svg>
-                                        Pilih file
-                                        <input type="file" class="hidden">
-                                      </label>                            
-                                      <button class="font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>        
-                                    </form>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
+                <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
+                <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
+               </div>
+               <div class="card rounded-md bg-white border-2 border-slate-300 px-8 py-4 lg:h-28 h-24 flex-col">
+              <h5 class="font-spartanMedium lg:mb-7 mb-5">GUEST RELATION OFFICER</h5>
+              <button class="text-green-600 font-spartanMedium showModal">Lihat Detail</button>
                </div>
               </div>
             </div>
           </div>
+          <!-- Modal -->
+          <div class="myModal hidden">
+            <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
+                  <div class="modal-content  bg-white py-4 md:px-8 px-4 rounded-md shadow-md lg:w-[1300px] md:w-[750px] w-[350px] h-[650px]  relative">
+                    <div class="modal-header flex justify-end">
+                      <button class="absolute bg-zap-SuperGreen flex items-center justify-center -top-3 -right-3 rounded-full closeModal  text-white w-10 h-10 text-4xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M18 6l-12 12"></path>
+                          <path d="M6 6l12 12"></path>
+                       </svg>
+                      </button>
+                    </div>
+                    <div class="modal-body py-2 flex md:flex-row flex-col md:gap-12 ">
+                      <div class="left-content  lg:text-base md:text-[13px] text-xs  md:w-[900px] flex flex-col md:gap-4 gap-6">
+                        <h2 class=" text-zap-text-superGreen lg:text-2xl text-sm">GUEST RELATION OFFICER</h2>
+                        <span>
+                          <h5 class="text-zap-text-superGreen font-spartanMedium">Kualifikasi</h5>
+                          <ul class="list-disc ml-4  flex flex-col mt-3">
+                            <li>Wanita, Maksimum 28 Tahun</li>
+                            <li>Minimum pendidikan terakhir Diploma III atau S1. Jurusan Perhotelan atau Pariwisata menjadi nilai plus</li>
+                            <li>Memiliki latar pengalaman yang kuat di bidang hospitality di hotel bintang 5</li>
+                            <li>Memiliki pengalaman sebagai Front Desk Agent atau setara minimal 1 Tahun</li>
+                            <li>Diperbolehkan menggunakan Hijab</li>
+                            <li>Bersedia menjalani pelatihan minimal 1 bulan di Jakarta</li>
+                            <li>Penempatan outlent : Jakarta, Tangerang, Bali, Balikpapan, Cirebon, Lampung, Padang, Pontianak, Semarang, Tasikmalaya & Yogyakarta</li>
+                          </ul>
+                        </span>
+                        <span>
+                          <h5 class="text-zap-text-superGreen font-spartanMedium">Fasilitas</h5>
+                          <ul class="list-disc ml-4  flex flex-col  mt-3 ">
+                            <li>Suasana kerja yang menyenangkan</li>
+                            <li>Gaji pokok</li>
+                            <li>Service Charge</li>
+                            <li>Komisi dan insentif</li>
+                            <li>Asuransi kesehatan dan jiwa</li>
+                            <li>BPJS Ketenagakerjaan dan BPJS Kesehatan</li>
+                            <li>Voucher Treatment</li>
+                            <li>Disediakan pelatihan dan pengembangan</li>
+                            <li>Penghargaan bagi karyawan dan outlet terbaik</li>
+                          </ul>
+                        </span>
+                          <button class="apply-btn bg-zap-SuperGreen capitalize text-white font-spartanMedium px-12 py-3 rounded-lg w-fit mx-auto mt-4 md:hidden block ">apply</button>
+                      </div>
+                      <div class="right-content md:block hidden  lg:w-[500px] md:w-[800px] w-[320px] h-[600px] ">
+                          <form class="bg-zap-green rounded-lg lg:text-sm text-xs flex flex-col gap-3 lg:px-12 px-6 py-6 h-full w-full capitalize" action="#" >
+                            <h5 class="text-center text-zap-text-superGreen font-spartanMedium uppercase"> Form pendaftaran</h5>
+                              <label  for="nama">Nama</label>
+                              <input type="text" name="nama" placeholder="Tulis nama lengkap mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
+                              <label  for="nama">Email</label>
+                              <input type="email" name="email" placeholder="alamat email yang di gunakan" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
+                              <label  for="nama">No handphone</label>
+                              <input type="tel" name="telp" placeholder="no hp yang bisa di hubungi" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none">
+                              <label  for="nama">Akun sosial media</label>
+                              <input type="text" name="sosialmedia" placeholder="masukan link salah satu sosial media mu" class="lg:text-xs text-[10px] border-gray-300 border-2 px-4 w-full h-14  rounded-lg focus:outline-none" >
+                              <label  for="">Upload CV (pdf / docx, max 1MB) </label>
+                              <label class="lg:text-xs text-[10px] bg-zap-SuperGreen w-28 flex justify-between font-spartanMedium items-center lg:px-3 px-5 py-2 rounded-lg text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-5 w-4" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                                  <path d="M7 9l5 -5l5 5"></path>
+                                  <path d="M12 4l0 12"></path>
+                                </svg>
+                                Pilih file
+                                <input type="file" class="hidden">
+                              </label>                            
+                              <button type="submit" class="kirim-button font-spartanMedium mt-4 bg-zap-SuperGreen lg:w-32 w-24 mx-auto px-2 lg:text-base text-sm text-white rounded-lg py-2">kirim</button>
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="modal-success hidden">
+            <div class=" bg-black bg-opacity-50  fixed inset-0 flex items-center justify-center z-50 ">
+              <div class="modal-content  bg-white py-4 px-8 rounded-md shadow-md md:w-[400px] w-[300px]  relative">
+                <div class="modal-body py-2 text-center flex flex-col gap-4  ">
+                    <h5 class="capitalize text-zap-text-superGreen font-spartanMedium ">dokument telah terkirim</h5>
+                    <h6>SIlahkan menunggu follow up dari team HR ZAP Clinic ya</h6>
+                    <button class="ok-button bg-zap-SuperGreen uppercase md:px-16 px-8 md:py-1 py-2 w-fit mx-auto rounded-lg text-white font-spartanMedium md:text-base text-xs">ok</button>
+                </div>
+              </div>
+        </div>
+          </div>
+          <!-- Modal End -->
         </div>
       </section>
       <section class="achivement">
@@ -1716,26 +937,6 @@
   </footer>
 </body>
 <script>
-  // Ambil elemen-elemen yang diperlukan
-  var showModalButtons = document.querySelectorAll(".showModal");
-  var closeModalButtons = document.querySelectorAll(".closeModal");
-  var modal = document.querySelector(".myModal");
-
-  // Tampilkan modal ketika tombol "Lihat Detail" di-klik
-  showModalButtons.forEach(function(button) {
-    button.addEventListener("click", function() {
-      modal.classList.remove("hidden");
-    });
-  });
-
-  // Sembunyikan modal ketika tombol close di-klik
-  closeModalButtons.forEach(function(button) {
-    button.addEventListener("click", function() {
-      modal.classList.add("hidden");
-    });
-  });
-</script>
-<script>
   document.addEventListener("DOMContentLoaded", function () {
     var mobileMenuButton = document.getElementById("navBurger");
     var mobileMenu = document.getElementById("mobileMenu");
@@ -1749,4 +950,5 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/accordian.js"></script>
+<script src="js/modal.js"></script>
 </html>
