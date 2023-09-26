@@ -188,9 +188,14 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
 
   let RaSwiper = new Swiper(".card-content-treatment", {
     slidesPerView: 1.1,
-    spaceBetween: 5,
+    spaceBetween: 10,
     grabCursor: true,
+  
     // If we need pagination
+
+    // Center
+   
+   
 
     autoplay : {
       delay : 4000,
