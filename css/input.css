@@ -225,6 +225,14 @@
   @apply bg-zap-SuperGreen text-white transition-all ease-in-out duration-200
 }
 
+/* Menyembunyikan panah atas dan bawah pada input tipe "number" */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 
 @layer base {
   section {

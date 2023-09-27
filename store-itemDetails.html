@@ -772,6 +772,37 @@
        
 
     </section>
+    <section class="floating-cart">
+      <div class="container grid lg:grid-cols-2 grid-cols-1 bg-zap-white font-spartanMedium capitalize  shadow-md py-6 md:px-9 px-4 rounded-lg ">
+          <div class="left-content md:block hidden">
+            <div class="flex flex-col gap-2">
+              <h6>buy 1 get 1 yellow laser</h6>
+              <h2 class="font-spartanMedium font-medium text-zap-text-superGreen">Rp 2.250.000</h2>
+            </div>
+          </div>
+          <div class="right-content flex items-center gap-2 ">
+            <div class="quantity gap-3 md:block hidden">
+              <div class=" flex items-center gap-3">
+                <button class="bg-gray-300 text-white rounded-md px-4 h-9 hover:bg-red-300 transition duration-300 ease-in-out text-2xl" onclick="decrementQuantity()">-</button>
+                <input type="number" id="quantity-input" class="border-2 border-zap-text-superGreen  h-9 w-12 rounded-md text-center" value="1" min="1" onchange="updateQuantity()">
+                <button class="bg-zap-SuperGreen text-white rounded-md px-4 h-9 text-2xl" onclick="incrementQuantity()">+</button>
+              </div>
+
+            </div>
+            <button class="bg-zap-SuperGreen flex items-center gap-4 px-3 py-2 rounded-lg text-white capitalize md:text-base text-[8.5px] md:w-fit w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="md:w-5 w-3" viewBox="0 0 24 24" fill="none">
+                <path d="M24 3H4.242L4.2 2.649C4.11405 1.91942 3.76338 1.24673 3.21449 0.758478C2.6656 0.270223 1.95663 0.000341793 1.222 0L0 0V2H1.222C1.46693 2.00003 1.70334 2.08996 1.88637 2.25272C2.06941 2.41547 2.18634 2.63975 2.215 2.883L3.8 16.351C3.88595 17.0806 4.23662 17.7533 4.78551 18.2415C5.3344 18.7298 6.04337 18.9997 6.778 19H20V17H6.778C6.53291 16.9999 6.29638 16.9099 6.11333 16.7469C5.93027 16.5839 5.81343 16.3594 5.785 16.116L5.654 15H21.836L24 3ZM20.164 13H5.419L4.478 5H21.607L20.164 13Z" fill="#FAF7F5"/>
+                <path d="M7 24.0006C8.10456 24.0006 8.99999 23.1052 8.99999 22.0006C8.99999 20.8961 8.10456 20.0006 7 20.0006C5.89543 20.0006 5 20.8961 5 22.0006C5 23.1052 5.89543 24.0006 7 24.0006Z" fill="#FAF7F5"/>
+                <path d="M17 24.0006C18.1046 24.0006 19 23.1052 19 22.0006C19 20.8961 18.1046 20.0006 17 20.0006C15.8954 20.0006 15 20.8961 15 22.0006C15 23.1052 15.8954 24.0006 17 24.0006Z" fill="#FAF7F5"/>
+                </svg>
+                tambahkan keranjang
+            </button>
+            <button class="bg-zap-magenta text-zap-text-superGreen flex  justify-center px-3 md:w-fit w-full py-2 rounded-lg  md:text-base  text-[8.5px]  capitalize">
+                beli sekarang
+            </button>
+          </div>
+      </div>
+    </section>
     <section class="floating-btn">
       <div
         id="back2top"

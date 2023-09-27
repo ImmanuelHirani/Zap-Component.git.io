@@ -18,11 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   closeModalButton.addEventListener("click", () => {
     modal.classList.add("hidden");
+    rightContent.classList.add('hidden')
+    leftContent.classList.remove('hidden')
   });
 
   kirimButton.addEventListener("click", () => {
     modal.classList.add("hidden");
     modalSuccess.classList.remove("hidden");
+
   });
 
   okButton.addEventListener("click", () => {
