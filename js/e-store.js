@@ -7,6 +7,8 @@ const prevButton = document.getElementById('prev-button');
 const nextButton = document.getElementById('next-button');
 const currentPageElements = document.querySelectorAll('.current-page');
 
+
+
 // Define the current page and items per page
 let currentPage = 1;
 const itemsPerPage = 6; // Adjust this number as needed

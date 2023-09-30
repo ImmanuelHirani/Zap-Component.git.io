@@ -1,31 +1,35 @@
-const floatingbtn = document.querySelector('#back2top');
-const chatbtn = document.querySelector('#chat');
-const closebtn = document.querySelector('#close');
-const chatabtnactive1 = document.querySelector('#chat-active1');
-const chatabtnactive2 = document.querySelector('#chat-active2');
+const backToTop = document.getElementById('backToTop');
+const liveChat = document.getElementById('liveChat');
+const whatsApp = document.getElementById('Whatsapp');
+const closeBtn = document.getElementById('CloseBtn');
+const openBtn = document.getElementById('chatBtnOpen');
 
-chatbtn.addEventListener('click', function() {
-    chatbtn.classList.toggle('hidden');
-    closebtn.classList.toggle('hidden');
-    floatingbtn.classList.toggle('hidden');
-    chatabtnactive1.classList.remove('hidden');
-    chatabtnactive1.classList.add('chatbtn-active');
-    chatabtnactive2.classList.remove('hidden');
-    chatabtnactive2.classList.add('chatbtn-active');
+openBtn.addEventListener('click', () => {
+    openBtn.classList.add('hidden')
+    closeBtn.classList.remove('hidden')
+    backToTop.classList.add('hidden')
+    whatsApp.classList.remove('hidden')
+    liveChat.classList.remove('hidden')
+    // if (!openBtn.classList.contains('hidden')) {
+    //     openBtn.classList.add('hidden');
+    //     closeBtn.classList.remove('hidden');
+    // } else {
+    //     openBtn.classList.remove('hidden');
+    //     closeBtn.classList.add('hidden');
+    // }
 });
 
-closebtn.addEventListener('click', function() {
-    chatbtn.classList.toggle('hidden');
-    closebtn.classList.toggle('hidden');
-    floatingbtn.classList.toggle('hidden');
-    chatabtnactive1.classList.add('hidden');
-    chatabtnactive1.classList.remove('chatbtn-active');
-    chatabtnactive2.classList.add('hidden');
-    chatabtnactive2.classList.remove('chatbtn-active');
-});
+closeBtn.addEventListener('click' , ()=> {
+    openBtn.classList.remove('hidden')
+    closeBtn.classList.add('hidden')
+    backToTop.classList.remove('hidden')
+    whatsApp.classList.add('hidden')
+    liveChat.classList.add('hidden')
+})
 
 
-floatingbtn.addEventListener('click', (e) => {
+
+backToTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   

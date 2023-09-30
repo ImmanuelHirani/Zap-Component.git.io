@@ -57,15 +57,19 @@
   font-weight: 100; /* This corresponds to Thin font weight */
 }
 
+body {
+  @apply  scroll-smooth
+}
+
 .navBurger-line {
   @apply w-[30px] h-[2px]  block bg-black;
 }
 
 .navBurger-line-middle {
   @apply w-[20px] h-[2px] my-2 block relative left-[9px]  bg-black;
-
-  
 }
+
+
 
 .navBurger-active > span:nth-child(2) {
     @apply scale-0
@@ -232,6 +236,7 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
+
 
 
 @layer base {

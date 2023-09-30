@@ -787,6 +787,14 @@ hr {
   bottom: 3rem;
 }
 
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.bottom-24 {
+  bottom: 6rem;
+}
+
 .bottom-32 {
   bottom: 8rem;
 }
@@ -805,6 +813,14 @@ hr {
 
 .right-0 {
   right: 0px;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.right-3\.5 {
+  right: 0.875rem;
 }
 
 .right-5 {
@@ -849,6 +865,10 @@ hr {
 
 .z-30 {
   z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .z-50 {
@@ -932,10 +952,6 @@ hr {
   margin-bottom: 2rem;
 }
 
-.ml-0 {
-  margin-left: 0px;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -950,6 +966,10 @@ hr {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-10 {
@@ -1050,6 +1070,10 @@ hr {
 
 .h-11 {
   height: 2.75rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-14 {
@@ -1318,6 +1342,10 @@ hr {
   flex-direction: column-reverse;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1464,6 +1492,11 @@ hr {
   border-radius: 0.75rem;
 }
 
+.rounded-b-none {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .rounded-b-xl {
   border-bottom-right-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
@@ -1580,11 +1613,6 @@ hr {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
@@ -1598,11 +1626,6 @@ hr {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .bg-zap-SuperGreen {
@@ -1630,18 +1653,12 @@ hr {
   background-color: rgb(250 247 245 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
+}
+
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
 }
 
 .bg-opacity-50 {
@@ -1795,11 +1812,6 @@ hr {
   padding-bottom: 2px;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1896,24 +1908,12 @@ hr {
   line-height: 1rem;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
-.text-\[8\.5px\] {
-  font-size: 8.5px;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
 .font-light {
   font-weight: 300;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .uppercase {
@@ -1995,6 +1995,14 @@ hr {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-zap-text-superGreen {
+  outline-color: #31AB5C;
 }
 
 .transition {
@@ -2349,6 +2357,10 @@ hr {
   /* This corresponds to Thin font weight */
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .navBurger-line {
   display: block;
   height: 2px;
@@ -2589,11 +2601,6 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-red-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-slate-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -2629,10 +2636,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-full {
-    width: 100%;
-  }
-
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -2657,6 +2660,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .md\:bottom-20 {
     bottom: 5rem;
+  }
+
+  .md\:bottom-40 {
+    bottom: 10rem;
   }
 
   .md\:left-0 {
@@ -2710,6 +2717,10 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: 3.5rem;
   }
 
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .md\:mt-3 {
     margin-top: 0.75rem;
   }
@@ -2750,12 +2761,20 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 3rem;
   }
 
+  .md\:h-5 {
+    height: 1.25rem;
+  }
+
   .md\:h-72 {
     height: 18rem;
   }
 
   .md\:h-8 {
     height: 2rem;
+  }
+
+  .md\:h-\[32px\] {
+    height: 32px;
   }
 
   .md\:h-full {
@@ -2808,6 +2827,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .md\:w-\[320px\] {
     width: 320px;
+  }
+
+  .md\:w-\[34px\] {
+    width: 34px;
   }
 
   .md\:w-\[350px\] {
@@ -2863,6 +2886,10 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-direction: row;
   }
 
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:gap-10 {
     gap: 2.5rem;
   }
@@ -2875,12 +2902,12 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 3.5rem;
   }
 
-  .md\:gap-3 {
-    gap: 0.75rem;
-  }
-
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:gap-9 {
@@ -2978,11 +3005,6 @@ input[type="number"]::-webkit-outer-spin-button {
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .md\:px-9 {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
   }
 
   .md\:pl-0 {
@@ -3089,6 +3111,14 @@ input[type="number"]::-webkit-outer-spin-button {
     bottom: 0.5rem;
   }
 
+  .lg\:bottom-5 {
+    bottom: 1.25rem;
+  }
+
+  .lg\:bottom-8 {
+    bottom: 2rem;
+  }
+
   .lg\:top-0 {
     top: 0px;
   }
@@ -3128,10 +3158,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .lg\:mb-7 {
     margin-bottom: 1.75rem;
-  }
-
-  .lg\:ml-20 {
-    margin-left: 5rem;
   }
 
   .lg\:ml-4 {
@@ -3404,6 +3430,10 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 2.75rem;
   }
 
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .lg\:gap-20 {
     gap: 5rem;
   }
@@ -3432,6 +3462,11 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .lg\:rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .lg\:rounded-b-lg {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
   }
 
   .lg\:bg-treatment-pilihan-bg {
@@ -3482,11 +3517,6 @@ input[type="number"]::-webkit-outer-spin-button {
   .lg\:px-9 {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
-  }
-
-  .lg\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .lg\:py-14 {
