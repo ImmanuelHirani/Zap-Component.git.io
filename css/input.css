@@ -105,11 +105,11 @@ body {
 }
 
 .w-active {
-  @apply transform scale-100 -translate-y-20
+  @apply transform scale-100 md:-translate-y-20 -translate-y-16
 }
 
 .l-active {
-  @apply transform scale-100 -translate-y-40 
+  @apply transform scale-100 md:-translate-y-40 -translate-y-32 
 }
 
 
@@ -119,12 +119,12 @@ body {
 }
 
 .language-box-active {
-  @apply transform scale-100 transition-all ease-in-out duration-100
+  @apply transform scale-100 
 }
 
 
 .navexpand-active {
-  @apply transition-all ease-in-out duration-300 pb-24;
+  @apply  pb-24;
 }
 
 .navDropTreatment-active > i {
