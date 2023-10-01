@@ -29,7 +29,7 @@ btntreatmentSM.addEventListener("click", function () {
 
 Language.addEventListener("click", function () {
   Language.classList.toggle("Language-active");
-  LanguageBox.classList.toggle("hidden");
+  LanguageBox.classList.toggle("language-box-active");
 });
 
 Languagesm.addEventListener("click", function () {

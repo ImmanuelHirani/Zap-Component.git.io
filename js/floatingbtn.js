@@ -6,39 +6,41 @@ const closeBtn = document.getElementById('CloseBtn');
 const closeBtnLiveChat = document.getElementById('CloseBtnlivechat'); // Perbaikan di sini
 const openBtn = document.getElementById('chatBtnOpen');
 
-openBtn.addEventListener('click', () => {
-    openBtn.classList.add('hidden');
-    closeBtn.classList.remove('hidden');
-    backToTop.classList.add('hidden');
-    whatsApp.classList.remove('hidden');
-    liveChat.classList.remove('hidden');
-});
+openBtn.addEventListener('click' ,() => {
+    backToTop.classList.add('b-active')
+    openBtn.classList.add('o-active')
+    closeBtn.classList.add('C-active')
+    whatsApp.classList.add('w-active')
+    liveChat.classList.add('l-active')
+})
 
-closeBtn.addEventListener('click', () => {
-    openBtn.classList.remove('hidden');
-    closeBtn.classList.add('hidden');
-    backToTop.classList.remove('hidden');
-    whatsApp.classList.add('hidden');
-    liveChat.classList.add('hidden');
-});
+liveChat.addEventListener('click' , () => {
+    liveChatBox.classList.add('livechat-active')
+    backToTop.classList.add('b-active')
+    openBtn.classList.add('o-active')
+    closeBtn.classList.remove('C-active')
+    whatsApp.classList.remove('w-active')
+    liveChat.classList.remove('l-active')
+})
+
+closeBtnLiveChat.addEventListener('click' , () => {
+    liveChatBox.classList.remove('livechat-active')
+    closeBtn.classList.add('C-active')
+    whatsApp.classList.add('w-active')
+    liveChat.classList.add('l-active')
+})
+
+
+closeBtn.addEventListener('click' ,() => {
+    backToTop.classList.remove('b-active')
+    openBtn.classList.remove('o-active')
+    closeBtn.classList.remove('C-active')
+    whatsApp.classList.remove('w-active')
+    liveChat.classList.remove('l-active')
+})
 
 backToTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 });
 
-liveChat.addEventListener('click', () => {
-    liveChatBox.classList.remove('hidden');
-    openBtn.classList.add('hidden');
-    closeBtn.classList.add('hidden');
-    backToTop.classList.add('hidden');
-    whatsApp.classList.add('hidden');
-    liveChat.classList.add('hidden');
-});
-
-closeBtnLiveChat.addEventListener('click', () => {
-    liveChatBox.classList.add('hidden');
-    closeBtn.classList.remove('hidden');
-    whatsApp.classList.remove('hidden');
-    liveChat.classList.remove('hidden');
-});
