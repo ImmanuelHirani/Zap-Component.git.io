@@ -61,32 +61,24 @@ body {
   @apply  scroll-smooth
 }
 
-.navBurger-line {
-  @apply w-[30px] h-[2px]  block bg-black;
+/* Nav */
+.navDrop-Active {
+  @apply text-zap-text-superGreen
 }
 
-.navBurger-line-middle {
-  @apply w-[20px] h-[2px] my-2 block relative left-[9px]  bg-black;
+.dropMenu-Active {
+  @apply mt-6 z-10 
 }
 
-
-
-.navBurger-active > span:nth-child(2) {
-    @apply scale-0
+.navExpands-Active {
+  @apply pb-16  
 }
 
-.navBurger-active > span:nth-child(3) {
-    @apply -rotate-45 bg-red-400
+.navDrop-Active > span > svg {
+  @apply rotate-180
 }
+/* Nav End */
 
-
-.navBurger-active > span:nth-child(1) {
-  @apply rotate-45  bg-red-400;
-}
-
-.Language-active > span > i {
-  @apply rotate-180;
-}
 
 .livechat-active {
   @apply scale-100 
@@ -113,7 +105,6 @@ body {
 }
 
 
-
 .btndropdown-active > i {
   @apply rotate-180;
 }
@@ -122,7 +113,6 @@ body {
   @apply transform scale-100 
 }
 
-
 .navexpand-active {
   @apply  pb-24;
 }
@@ -130,8 +120,6 @@ body {
 .navDropTreatment-active > i {
     @apply  rotate-180 
 }
-
-
 
 .btntreatmentSM-active > a > i {
     @apply  rotate-180 
@@ -153,6 +141,22 @@ body {
     @apply lg:hover:text-green-500 cursor-pointer font-spartanMedium 
 }
 
+.treatment-active {
+  @apply border-zap-text-superGreen border-4
+}
+
+.box-active {
+  @apply md:pb-80 pb-96 
+}
+
+.box-active > .treatment-choise-box {
+  @apply scale-100 
+}
+
+.tc-active {
+  @apply border-4 border-zap-text-superGreen
+}
+
 @layer components {
 
 .accordion-header {
@@ -168,9 +172,6 @@ body {
     @apply  max-h-0 overflow-hidden transition-all duration-200 ease-in-out
 }
 
-.box-choise-wrapper {
-  @apply  max-h-0 overflow-hidden transition-all duration-300 ease-in-out
-}
 
 }
 
