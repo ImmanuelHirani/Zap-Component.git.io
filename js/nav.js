@@ -14,7 +14,7 @@ const languageSelector = document.querySelector(".language img"); // Menggunakan
 const defaultLanguageButton = document.querySelector(".languageBox button[data-lang='ID']"); // Menemukan tombol bahasa default (ID)
 
 // Mengatur bahasa default (ID) tercentang
-defaultLanguageButton.querySelector("svg").classList.add('opacity-100');
+defaultLanguageButton.querySelector("svg").classList.toggle('opacity-100');
 
 languages.forEach((language, index) => {
   language.addEventListener('click', () => {
@@ -40,10 +40,7 @@ languageBoxes.forEach(languageBox => {
   buttons.forEach(button => {
     button.addEventListener('click', () => {
 
-      setTimeout(() => {
-        button.querySelector("svg").classList.add('opacity-100');
-      }, 10);
-      
+
       // Mengambil teks tombol yang dipilih dari atribut data-lang
       const selectedText = button.getAttribute('data-lang');
       
@@ -63,11 +60,13 @@ languageBoxes.forEach(languageBox => {
   });
 });
 
+// Language End
 
 
 const dropdownNavs = document.querySelectorAll('.dropdownNav');
 const navContainerSm = document.querySelectorAll('.navSm');
 const navContainer = document.querySelector('.navContainer');
+const navExpandsbg = document.getElementById('navExpand');
 
 let activeDropdownNav = null; // Variable to track the currently active element
 
@@ -77,23 +76,43 @@ function closeActiveDropdown() {
     activeDropdownNav.classList.remove('navDrop-Active');
     const activeDropMenuId = activeDropdownNav.getAttribute('data-drop-menu');
     const activeDropMenu = document.getElementById(activeDropMenuId);
-    activeDropMenu.classList.remove('dropMenu-Active');
-    activeDropMenu.classList.add('opacity-0');
+    activeDropMenu.classList.remove('dropMenu-Active', 'opacity-0');
     navContainer.classList.remove('navExpands-Active');
-    
+    navExpandsbg.classList.remove("nav-Active")
+    navExpandsbg.classList.add('nav-bg-Gradient');
+
     // Loop through navContainerSm elements and remove the class
     navContainerSm.forEach(element => {
       element.classList.remove('navsmExpands-Active');
     });
-    
+
     activeDropdownNav = null;
   }
+}
+
+function activateDropdown(dropdownNav) {
+  dropdownNav.classList.add('navDrop-Active');
+  const dropMenuId = dropdownNav.getAttribute('data-drop-menu');
+  const dropMenu = document.getElementById(dropMenuId);
+  dropMenu.classList.add('dropMenu-Active');
+  dropMenu.classList.remove('opacity-0');
+  navContainer.classList.add('navExpands-Active');
+  navExpandsbg.classList.add("nav-Active")
+  navExpandsbg.classList.remove('nav-bg-Gradient');
+
+  // Find the parent navSm and add the class
+  const navSm = dropdownNav.closest('.navSm');
+  if (navSm) {
+    navSm.classList.add('navsmExpands-Active');
+  }
+
+  activeDropdownNav = dropdownNav;
 }
 
 dropdownNavs.forEach((dropdownNav) => {
   dropdownNav.addEventListener('click', (e) => {
     e.stopPropagation(); // Prevent the click event from reaching the document click event handler
-    
+
     if (activeDropdownNav === dropdownNav) {
       // Clicked on the currently active element, close the dropdown
       closeActiveDropdown();
@@ -102,20 +121,7 @@ dropdownNavs.forEach((dropdownNav) => {
       closeActiveDropdown();
 
       // Activate the new dropdown
-      dropdownNav.classList.add('navDrop-Active');
-      const dropMenuId = dropdownNav.getAttribute('data-drop-menu');
-      const dropMenu = document.getElementById(dropMenuId);
-      dropMenu.classList.add('dropMenu-Active');
-      dropMenu.classList.remove('opacity-0');
-      navContainer.classList.add('navExpands-Active');
-      
-      // Find the parent navSm and add the class
-      const navSm = dropdownNav.closest('.navSm');
-      if (navSm) {
-        navSm.classList.add('navsmExpands-Active');
-      }
-      
-      activeDropdownNav = dropdownNav;
+      activateDropdown(dropdownNav);
     }
   });
 });
@@ -129,7 +135,6 @@ navContainer.addEventListener('mouseleave', () => {
 document.addEventListener('click', () => {
   closeActiveDropdown();
 });
-
 
 
 // navCanvas

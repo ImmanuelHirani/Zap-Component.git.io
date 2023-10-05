@@ -32,14 +32,14 @@
 <body class="overflow-x-hidden bg-zap-white font-spartanRegular ">
   <header class="relative">
     <!-- Lg nav -->
-    <nav class="bg-zap-white fixed inset-x-0 z-50 top-0 py-8 shadow-md text-base ">
-      <div class="navContainer container relative transition-all ease-in-out duration-300 ">
+    <nav id="navExpand" class="fixed inset-x-0 z-50 top-0 py-8  text-base nav-bg-Gradient">
+      <div class="navContainer container relative transition-all ease-in-out duration-300">
         <ul class="flex justify-between items-center  capitalize font-spartanMedium font-semibold">
           <li><a href="index.html"><img src="temp-asset/statis-asset/Logo-Zap.svg" class="lg:w-28 w-16" alt="zapLogo"></a></li>
           <!-- Dropdown -->
           <span class="flex lg:gap-8 gap-6 items-center">
             <li class="lg:block hidden">
-              <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300" href="#" data-drop-menu="dropTreatment1">treatments
+              <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300 cursor-pointer"  data-drop-menu="dropTreatment1">treatments
                 <!-- Svg -->
                 <span>
                   <svg class="transition ease-in-out duration-100" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -49,7 +49,7 @@
                 </span>
                 <!-- Svg end -->
               </a>
-              <ul id="dropTreatment1" class="h-fit  origin-top translate-y-0 transition-all ease-in-out duration-300  absolute text-zap-text-superGreen  opacity-0  inset-x-0  mt-0  uppercase">
+              <ul id="dropTreatment1" class="h-fit  origin-top translate-y-0 transition-all ease-in-out duration-500  absolute text-zap-text-superGreen  opacity-0  inset-x-0  mt-0  uppercase">
                 <li class="w-full flex items-center gap-4 px-4">
                   <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">face</a>
                   <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">body</a>
@@ -61,7 +61,7 @@
             </li>
             <li class="lg:block hidden"><a href="solution.html" class=" hover:text-zap-text-superGreen transition-all ease-in-out duration-300">solusi kami</a></li>
             <li class="lg:block hidden">
-              <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen" href="#" data-drop-menu="dropTreatment2">promo
+              <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen cursor-pointer transition-all ease-in-out duration-300"  data-drop-menu="dropTreatment2">promo
                 <span>
                   <svg class="transition ease-in-out duration-100" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -69,7 +69,7 @@
                 </svg>
                 </span>
               </a>
-              <ul id="dropTreatment2" class="lg:block hidden h-fit origin-top translate-y-0 transition-all ease-in-out duration-300  absolute text-zap-text-superGreen opacity-0  inset-x-0  mt-0  uppercase">
+              <ul id="dropTreatment2" class="lg:block hidden h-fit origin-top translate-y-0 transition-all ease-in-out duration-500  absolute text-zap-text-superGreen opacity-0  inset-x-0  mt-0  uppercase">
                 <li class="w-full flex items-center gap-4 px-4">
                   <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">promo extra</a>
                   <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">promo mendadak</a>
@@ -78,14 +78,14 @@
               </ul>
             </li> 
             <!-- <li class="lg:block hidden"><a href="#" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">promo</a></li> -->
-            <li class="lg:block hidden"><a href="store.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">e-store</a></li>
-            <li class="lg:block hidden"><a href="lokasi.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">lokasi</a></li>
-            <li class="lg:block hidden"><a href="#" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">artikel</a></li>
-            <li class="lg:block hidden"><a href="about.us.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">tentang ZAP</a></li>
-            <li class="md:block hidden"><button class="bg-zap-SuperGreen px-4 py-2 text-white rounded-lg capitalize font-medium transition-all ease-in-out duration-300 lg:text-base text-xs">online booking</button></li>
+            <li class="lg:block hidden"><a href="store.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300 cursor-pointer">e-store</a></li>
+            <li class="lg:block hidden"><a href="lokasi.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300  cursor-pointer">lokasi</a></li>
+            <li class="lg:block hidden"><a href="#" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300 cursor-pointer">artikel</a></li>
+            <li class="lg:block hidden"><a href="about.us.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300 cursor-pointer">tentang ZAP</a></li>
+            <li class="md:block hidden"><button class="bg-zap-SuperGreen px-4 py-2 text-white rounded-lg capitalize font-medium transition-all ease-in-out duration-300 lg:text-base text-xs cursor-pointer">online booking</button></li>
             <!-- Language -->
             <li class="relative">
-              <a id=""  type="button" class="language transition-all ease-in-out duration-500 cursor-pointer  flex items-center gap-1"><img class="lg:w-fit w-8" src="temp-asset/statis-asset/ID-Bahasa.png"  alt="">
+              <a id=""  type="button" class="language transition-all ease-in-out duration-500 cursor-pointer  flex items-center gap-1"><img class="shadow-lg rounded-full  lg:w-fit w-8" src="temp-asset/statis-asset/ID-Bahasa.png"  alt="">
               <!-- Svg -->
                 <svg class="transition ease-in-out duration-300" xmlns="http://www.w3.org/2000/svg"  width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -138,12 +138,12 @@
       </div>
     </nav>
     <!-- Offcanvas mobile -->
-    <div id="mobileMenu" class="lg:hidden fixed top-24 z-40 left-0 h-screen w-full bg-zap-white transform -translate-x-full ease-in-out transition-transform duration-300">
-      <div class="container nav-wrapper mx-auto py-6 md:text-lg text-xs">
+    <div id="mobileMenu" class="lg:hidden fixed top-16 z-40 left-0 h-screen w-full bg-zap-white transform -translate-x-full ease-in-out transition-transform duration-300">
+      <div class="container nav-wrapper mx-auto py-8 md:text-lg text-xs">
         <div class="bg-nav absolute -z-10 inset-0 h-full bg-no-repeat bg-cover bg-center" style="background-image: url('temp-asset/homepage/Navbar.png'); opacity: 0.1;"></div>
         <ul class="uppercase font-spartanMedium font-semibold flex flex-col gap-8">
           <li class="relative navSm transition-all ease-in-out duration-300">
-            <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300" href="#" data-drop-menu="dropTreatmentSM1">treatments
+            <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300"  data-drop-menu="dropTreatmentSM1">treatments
               <!-- Svg -->
               <span>
                 <svg class="transition ease-in-out duration-100" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -153,18 +153,18 @@
               </span>
               <!-- Svg end -->
             </a>
-            <ul id="dropTreatmentSM1" class="h-fit absolute origin-top translate-y-0 transition-all ease-in-out duration-200  opacity-0  inset-x-0  mt-0  uppercase">
-              <li class="w-full flex flex-col  items-start gap-6 px-4 py-0">
-                <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">face</a>
-                <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">body</a>
-                <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">hair removal</a>
-                <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">drips & health</a>
-                <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">all treatment</a>
+            <ul id="dropTreatmentSM1" class="h-fit absolute origin-top translate-y-0 transition-all ease-in-out duration-300  opacity-0  inset-x-0  mt-0  uppercase">
+              <li class="w-full flex flex-col  items-start gap-6 px-4 md:py-4 py-0 ">
+                <a class="hover:text-zap-text-superGreen scale-0 " href="all-Treatment.html">face</a>
+                <a class="hover:text-zap-text-superGreen scale-0 " href="all-Treatment.html">body</a>
+                <a class="hover:text-zap-text-superGreen scale-0 " href="all-Treatment.html">hair removal</a>
+                <a class="hover:text-zap-text-superGreen scale-0 " href="all-Treatment.html">drips & health</a>
+                <a class="hover:text-zap-text-superGreen scale-0 " href="all-Treatment.html">all treatment</a>
               </li>
             </ul>
           </li>
           <li class="relative navSm transition-all ease-in-out duration-200">
-            <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300" href="#" data-drop-menu="dropTreatmentSM2">treatments2
+            <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300"  data-drop-menu="dropTreatmentSM2">treatments2
               <!-- Svg -->
               <span>
                 <svg class="transition ease-in-out duration-100" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -175,7 +175,7 @@
               <!-- Svg end -->
             </a>
             <ul id="dropTreatmentSM2" class="h-fit absolute origin-top translate-y-0 transition-all ease-in-out duration-200  opacity-0  inset-x-0  mt-0  uppercase">
-              <li class="w-full flex flex-col  items-start gap-6 px-4 py-0">
+              <li class="w-full flex flex-col  items-start gap-6 px-4 md:py-4 py-0">
                 <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">face Wkwkw</a>
                 <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">body</a>
                 <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">hair removal</a>
@@ -184,13 +184,13 @@
               </li>
             </ul>
           </li>
-          <li class="z-10"><a href="#" class="hover:text-zap-text-superGreen">promo</a></li>
-          <li class="z-10"><a href="store.html" class="hover:text-zap-text-superGreen">e-store</a></li>
-          <li class="z-10"><a href="lokasi.html" class="hover:text-zap-text-superGreen">lokasi</a></li>
-          <li class="z-10"><a href="#" class="hover:text-zap-text-superGreen">artikel</a></li>
-          <li class="z-10"><a href="about.us.html" class="hover:text-zap-text-superGreen">tentang zap</a></li>
-          <li class="z-10"><a href="solution.html" class="hover:text-zap-text-superGreen">Solusi kami</a></li>
-          <li class="z-10"><a class="text-zap-text-superGreen scale-0" href="#">online booking</a></li>
+          <li class="z-10"><a href="#" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">promo</a></li>
+          <li class="z-10"><a href="store.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">e-store</a></li>
+          <li class="z-10"><a href="lokasi.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">lokasi</a></li>
+          <li class="z-10"><a href="#" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">artikel</a></li>
+          <li class="z-10"><a href="about.us.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">tentang zap</a></li>
+          <li class="z-10"><a href="solution.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">Solusi kami</a></li>
+          <li class="z-10"><a class="text-zap-text-superGreen scale-0 transition-all ease-in-out duration-300" href="#">online booking</a></li>
         </ul>
       </div>
     </div>

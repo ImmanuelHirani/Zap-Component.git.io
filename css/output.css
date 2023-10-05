@@ -839,6 +839,10 @@ hr {
   top: 3.5rem;
 }
 
+.top-16 {
+  top: 4rem;
+}
+
 .top-24 {
   top: 6rem;
 }
@@ -2094,6 +2098,10 @@ hr {
   opacity: 0;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-inner {
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
@@ -2605,12 +2613,29 @@ body {
   }
 }
 
+.nav-Active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 247 245 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .nav-Active {
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
 .navDrop-Active > span > svg {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 /* Nav End */
+
+.nav-bg-Gradient {
+  background: linear-gradient(180deg, rgba(250, 247, 245, 0.99) 67.48%, rgba(250, 247, 245, 0.77) 79.33%, rgba(250, 247, 245, 0.00) 100%);
+}
 
 .livechat-active {
   --tw-scale-x: 1;

@@ -124,7 +124,11 @@ body {
 }
 
 .navExpands-Active {
-  @apply lg:pb-16  
+  @apply lg:pb-16 
+}
+
+.nav-Active {
+  @apply lg:shadow-lg bg-zap-white
 }
 
 .navDrop-Active > span > svg {
@@ -132,6 +136,9 @@ body {
 }
 /* Nav End */
 
+.nav-bg-Gradient {
+  background: linear-gradient(180deg, rgba(250, 247, 245, 0.99) 67.48%, rgba(250, 247, 245, 0.77) 79.33%, rgba(250, 247, 245, 0.00) 100%);
+}
 
 .livechat-active {
   @apply scale-100 
