@@ -62,12 +62,65 @@ body {
 }
 
 /* Nav */
+
+/* Navburger */
+
+.line-topBottom {
+  @apply w-[30px] h-[2px]   bg-black;
+}
+
+.line-middle {
+  @apply w-[22px] h-[2px] my-2   bg-black;
+}
+  
+
+
+.nav-active > span:nth-child(3) {
+    @apply -rotate-45 bg-red-500
+}
+
+.nav-active > span:nth-child(2)  {
+    @apply scale-0  transition-all 
+}
+
+
+.nav-active > span:nth-child(1)  {
+  @apply  rotate-45 bg-red-500
+}
+
+/* Language */
+.language-Active > svg {
+  @apply rotate-180
+}
+
+.languageBox-Active {
+  @apply scale-100 translate-y-12 z-20
+}
+
+.languageBox-Active > button {
+  @apply scale-100
+}
+/* Language end */
+
+
+/* Navburger end */
+
+
+.navsmExpands-Active {
+  @apply   md:pb-72 pb-60
+}
+
+
+.dropMenu-Active > li > a {
+  @apply scale-100
+}
+
 .navDrop-Active {
   @apply text-zap-text-superGreen
 }
 
 .dropMenu-Active {
-  @apply mt-6 z-10 
+  @apply mt-6 z-10
 }
 
 .navExpands-Active {
