@@ -94,7 +94,7 @@ body {
 }
 
 .languageBox-Active {
-  @apply scale-100 translate-y-12 z-20
+  @apply scale-100 translate-y-12 z-50
 }
 
 .languageBox-Active > button {
@@ -124,7 +124,7 @@ body {
 }
 
 .navExpands-Active {
-  @apply pb-16  
+  @apply lg:pb-16  
 }
 
 .navDrop-Active > span > svg {

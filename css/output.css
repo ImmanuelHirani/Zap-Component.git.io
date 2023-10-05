@@ -795,10 +795,6 @@ hr {
   bottom: 6rem;
 }
 
-.bottom-6 {
-  bottom: 1.5rem;
-}
-
 .bottom-8 {
   bottom: 2rem;
 }
@@ -841,6 +837,10 @@ hr {
 
 .top-14 {
   top: 3.5rem;
+}
+
+.top-24 {
+  top: 6rem;
 }
 
 .top-32 {
@@ -1939,10 +1939,6 @@ hr {
   font-family: spartanRegular;
 }
 
-.font-spartanSemiBold {
-  font-family: spartanSemiBold;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2091,12 +2087,6 @@ hr {
 
 .opacity-0 {
   opacity: 0;
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-inner {
@@ -2561,7 +2551,7 @@ body {
 }
 
 .languageBox-Active {
-  z-index: 20;
+  z-index: 50;
   --tw-translate-y: 3rem;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -2604,8 +2594,10 @@ body {
   margin-top: 1.5rem;
 }
 
-.navExpands-Active {
-  padding-bottom: 4rem;
+@media (min-width: 1024px) {
+  .navExpands-Active {
+    padding-bottom: 4rem;
+  }
 }
 
 .navDrop-Active > span > svg {
@@ -2975,10 +2967,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .md\:bottom-40 {
     bottom: 10rem;
-  }
-
-  .md\:bottom-8 {
-    bottom: 2rem;
   }
 
   .md\:left-0 {
