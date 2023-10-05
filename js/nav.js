@@ -1,3 +1,5 @@
+
+document.addEventListener("DOMContentLoaded", function () {
 // Navburger
 const navBurger = document.getElementById("navbarBurger");
 navBurger.addEventListener('click', () => {
@@ -241,5 +243,5 @@ document.addEventListener('click', () => {
 // Hover End
 // -------------------------------------------------------------------------------------
 
-
+});
 
