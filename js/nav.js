@@ -39,6 +39,11 @@ languageBoxes.forEach(languageBox => {
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
+
+      setTimeout(() => {
+        button.querySelector("svg").classList.add('opacity-100');
+      }, 10);
+      
       // Mengambil teks tombol yang dipilih dari atribut data-lang
       const selectedText = button.getAttribute('data-lang');
       
