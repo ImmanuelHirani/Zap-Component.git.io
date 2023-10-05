@@ -107,7 +107,7 @@ body {
 
 
 .navsmExpands-Active {
-  @apply   md:pb-72 pb-60
+  @apply   md:pb-72 pb-48
 }
 
 

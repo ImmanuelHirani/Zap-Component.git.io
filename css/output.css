@@ -1834,6 +1834,11 @@ hr {
   padding-right: 2.25rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2087,6 +2092,10 @@ hr {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .shadow-inner {
@@ -2569,7 +2578,7 @@ body {
 /* Navburger end */
 
 .navsmExpands-Active {
-  padding-bottom: 15rem;
+  padding-bottom: 12rem;
 }
 
 @media (min-width: 768px) {
