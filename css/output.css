@@ -843,10 +843,6 @@ hr {
   top: 4rem;
 }
 
-.top-24 {
-  top: 6rem;
-}
-
 .top-32 {
   top: 8rem;
 }
@@ -2096,10 +2092,6 @@ hr {
 
 .opacity-0 {
   opacity: 0;
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .shadow-inner {

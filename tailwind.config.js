@@ -6,6 +6,7 @@ module.exports = {
       center: true,
       padding: "16px",
     },
+
     extend: {
       notContainer: {
         center: false,
@@ -39,7 +40,6 @@ module.exports = {
         "zap-pink": "#F8958C",
         "zap-brown": "#C0A279",
         "zap-superBrown": "#8B4328",
-        'bg-gradient': 'linear-gradient(180deg, rgba(250, 247, 245, 0.99) 67.48%, rgba(250, 247, 245, 0.77) 79.33%, rgba(250, 247, 245, 0.00) 100%)',
       },
       colors: {
         "zap-text-superGreen": "#31AB5C",
