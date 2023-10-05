@@ -31,295 +31,172 @@
     }
 </style>
 <body class="overflow-x-hidden font-spartanRegular bg-zap-white ">
-  <header class="font-spartanMedium  fixed w-full lg:top-0 -top-1 z-20">
-    <nav id="navexpand" class="transition-all ease-in-out duration-200 py-7 bg-zap-white shadow-md ">
-      <div class="container lg:text-base">
-        <!-- Desktop -->
-        <ul class="lg:flex hidden justify-between items-center">
-          <li class="flex items-center">
-            <a href="index.html"
-              ><img src="temp-asset/statis-asset/Logo-Zap.svg" class="w-28 z-10 relative" alt=""
-            /></a>
-          </li>
-          <li class="flex justify-center items-center gap-8">
-            <a
-              type="button"
-              id="navDropTreatment"
-              class="z-10 relative hover:text-green-600  cursor-pointer flex items-center"
-              >Treatment<i
-                class="bx bx-chevron-down text-3xl transition ease-in-out duration-75"
-              ></i>
-              <ul
-                id="navmenuTreatment"
-                class="hidden absolute top-0 bottom-0 left-0 right-0"
-              >
-                <li
-                  class="drop-menu  flex items-center container p-0 gap-4  font-spartanBold absolute left-0 right-0 top-0 bottom-0  mt-16 wrapper uppercase "
-                >
-                  <a
-                    href="beuaty-treatment.html"
-                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
-                    style="width: 245px"
-                    >face</a
-                  >
-                  <a
-                    href="body-treatment.html"
-                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
-                    style="width: 245px"
-                    >body</a
-                  >
-                  <a
-                    href="hair-treatment.html"
-                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
-                    style="width: 245px"
-                    >hair removal</a
-                  >
-                  <a
-                    href="Drips&health-treatment.html"
-                    class="rounded-lg block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
-                    style="width: 245px"
-                    >drips & health</a
-                  >
-                  <a
-                    href="all-Treatment.html"
-                    class="rounded-lg mx-2 block text-green-600 px-4 py-4 bg-zap-green hover:bg-green-600 hover:rounded-lg hover:text-white"
-                    style="width: 245px"
-                    >all treatment</a
-                  >
+  <header class="relative">
+    <!-- Lg nav -->
+    <nav class="bg-zap-white fixed inset-x-0 z-20 top-0 py-8 shadow-2xl text-base ">
+      <div class="navContainer container relative transition-all ease-in-out duration-300 ">
+        <ul class="flex justify-between items-center  capitalize font-spartanMedium font-semibold">
+          <li><a href="index.html"><img src="temp-asset/statis-asset/Logo-Zap.svg" class="lg:w-28 w-16" alt="zapLogo"></a></li>
+          <!-- Dropdown -->
+          <span class="flex lg:gap-8 gap-6 items-center">
+            <li class="lg:block hidden">
+              <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300" href="#" data-drop-menu="dropTreatment1">treatments
+                <!-- Svg -->
+                <span>
+                  <svg class="transition ease-in-out duration-100" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M6 9l6 6l6 -6"></path>
+                </svg>
+                </span>
+                <!-- Svg end -->
+              </a>
+              <ul id="dropTreatment1" class="h-fit   origin-top translate-y-0 transition-all ease-in-out duration-300  absolute text-zap-text-superGreen  opacity-0  inset-x-0  mt-0  uppercase">
+                <li class="w-full flex items-center gap-4 px-4">
+                  <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">face</a>
+                  <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">body</a>
+                  <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">hair removal</a>
+                  <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">drips & health</a>
+                  <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">all treatment</a>
                 </li>
               </ul>
-            </a>
-            <a href="solution.html" class="hover:text-green-600 z-10 relative"
-              >Solusi Kami
-            </a>
-            <a href="" class="hover:text-green-600">Promo</a>
-            <a href="store.html" class="hover:text-green-600 z-10 relative">E-Store</a>
-            <a href="lokasi.html" class="hover:text-green-600 z-10 relative">Lokasi</a>
-            <a href="" class="hover:text-green-600 z-10 relative">Artikel</a>
-            <a href="about.us.html" class="hover:text-green-600 z-10 relative"
-              >Tentang ZAP</a
-            >
-          </li>
-          <li class="flex items-center z-10 relative">
-            <a
-              href=""
-              class="bg-green-600 py-2 px-3 rounded-lg font-spartanMedium  text-white"
-              >Online Booking</a
-            >
-            <!-- Language -->
-            <div
-              class="relative cursor-pointer py-2 px-3 rounded-lg font-spartanMedium  text-black"
-              id="Language"
-            >
-              <span class="flex items-center group">
-                <img
-                  src="temp-asset/statis-asset/English-Bahasa.png"
-                  alt=""
-                />
-                <i
-                  class="transition duration-200 ease-in-out bx bx-chevron-down text-2xl"
-                ></i>
-              </span>
-              <div id="LanguageBox" class="transition-all ease-in-out duration-100 scale-0 absolute right-5 top-14">
-                <div
-                  class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg px-3 w-36 rounded-lg py-2 bg-white"
-                >
-                  <button
-                    class="flex cursor-pointer items-center gap-2 font-spartanBold"
-                    onclick="changeLanguage('ENG')"
-                  >
-                    <img
-                      src="temp-asset/statis-asset/English-Bahasa.png"
-                      alt=""
-                    />ENG
-                    <span id="checkENG"><i class="text-2xl bx"></i></span>
-                  </button>
-                  <button
-                    class="flex cursor-pointer items-center gap-2 font-spartanBold"
-                    onclick="changeLanguage('ID')"
-                  >
-                    <img
-                      src="temp-asset/statis-asset/Indo-Bahasa.png"
-                      alt=""
-                    />ID
-                    <span id="checkID"><i class="text-2xl bx"></i></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Language End-->
-            <a href="" class="text-zap-text-superGreen mt-2"
-              ><i class="bx bx-cart-alt text-3xl"></i
-            ></a>
-          </li>
-        </ul>
-        <!-- Desktop End -->
-        <!-- ----------------------------------------------------- -->
-        <!-- mobile and Ipad V -->
-        <ul class="lg:hidden flex justify-between text-xs">
-          <li class="flex items-center z-20">
-            <a href="index.html"
-              ><img
-                src="temp-asset/statis-asset/Logo-Zap.svg"
-                class="w-20"
-                alt=""
-            /></a>
-          </li>
-          <li class="flex md:gap-9 gap-5 items-center z-20">
-            <div class="flex items-center gap-3">
-              <a
-                href=""
-                class="bg-green-600 py-[10px] text-xs px-4 rounded-lg font-spartanMedium  text-white"
-                >Online Booking</a
-              >
-              <!-- Language -->
-              <div
-                class="relative md:block hidden cursor-pointer py-2 px-3 rounded-lg font-spartanMedium  text-black"
-                id="Languagesm"
-              >
-                <span id="masterLang" class="flex items-center">
-                  <img
-                    src="temp-asset/statis-asset/English-Bahasa.png"
-                    alt=""
-                  />
-                  <i class="bx bx-chevron-down text-2xl"></i>
+            </li>
+            <li class="lg:block hidden"><a href="solution.html" class=" hover:text-zap-text-superGreen transition-all ease-in-out duration-300">solusi kami</a></li>
+            <li>
+              <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen" href="#" data-drop-menu="dropTreatment2">promo
+                <span>
+                  <svg class="transition ease-in-out duration-100" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M6 9l6 6l6 -6"></path>
+                </svg>
                 </span>
-                <div
-                  id="LanguageBoxsm"
-                  class="hidden absolute right-5 top-14"
-                >
-                  <div
-                    class="language-Wrapper container flex flex-col gap-y-3 border-2 shadow-lg w-36 rounded-lg py-2 bg-zap-white"
-                  >
-                    <button
-                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
-                      onclick="changeLanguage('ENG')"
-                    >
-                      <img
-                        src="temp-asset/statis-asset/English-Bahasa.png"
-                        alt=""
-                      />ENG
-                      <span id="checkENG"><i class="text-2xl bx"></i></span>
-                    </button>
-                    <button
-                      class="flex cursor-pointer items-center gap-2 font-spartanBold"
-                      onclick="changeLanguage('ID')"
-                    >
-                      <img
-                        src="temp-asset/statis-asset/Indo-Bahasa.png"
-                        alt=""
-                      />ID
-                      <span id="checkID"><i class="text-2xl bx"></i></span>
-                    </button>
-                  </div>
-                </div>
+              </a>
+              <ul id="dropTreatment2" class="lg:block hidden h-fit origin-top translate-y-0 transition-all ease-in-out duration-300  absolute text-zap-text-superGreen opacity-0  inset-x-0  mt-0  uppercase">
+                <li class="w-full flex items-center gap-4 px-4">
+                  <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">promo extra</a>
+                  <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">promo mendadak</a>
+                  <a class="group navlink bg-zap-green w-[245px] hover:bg-zap-SuperGreen hover:text-white cursor-pointer px-4 py-4 rounded-lg scale-0" href="all-Treatment.html">promo vaganza</a>
+                </li>
+              </ul>
+            </li> 
+            <!-- <li class="lg:block hidden"><a href="#" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">promo</a></li> -->
+            <li class="lg:block hidden"><a href="store.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">e-store</a></li>
+            <li class="lg:block hidden"><a href="#" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">lokasi</a></li>
+            <li class="lg:block hidden"><a href="#" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">artikel</a></li>
+            <li class="lg:block hidden"><a href="about.us.html" class="hover:text-zap-text-superGreen transition-all ease-in-out duration-300">tentang ZAP</a></li>
+            <li class="md:block hidden"><button class="bg-zap-SuperGreen px-4 py-2 text-white rounded-lg capitalize font-medium transition-all ease-in-out duration-300 lg:text-base text-xs">online booking</button></li>
+            <!-- Language -->
+            <li class="relative">
+              <a id=""  type="button" class="language transition-all ease-in-out duration-500 cursor-pointer  flex items-center gap-1"><img class="lg:w-fit w-8" src="temp-asset/statis-asset/ID-Bahasa.png"  alt="">
+              <!-- Svg -->
+                <svg class="transition ease-in-out duration-300" xmlns="http://www.w3.org/2000/svg"  width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M6 9l6 6l6 -6"></path>
+              </svg>
+              <!-- Svg end -->
+              </a>
+              <div id="" class="languageBox  md:text-base text-xs transition-all  ease-in-out duration-300 absolute bg-white shadow-xl rounded-lg px-1 py-1 flex flex-col gap-2 md:w-40 w-36 top-0 translate-y-0 -z-20 right-0 scale-0 origin-top-right">
+                <button class="flex gap-3 items-center justify-between hover:bg-zap-green px-4 py-2 rounded-lg scale-0" data-lang="ID">
+                  <img src="temp-asset/statis-asset/ID-Bahasa.png" class="md:w-fit w-6" alt="">ID
+                  <svg xmlns="http://www.w3.org/2000/svg" class="opacity-0 text-zap-text-superGreen" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                </svg>                
+                </button>
+                <button class="flex gap-3 items-center justify-between hover:bg-zap-green px-4 py-2 rounded-lg scale-0" data-lang="ENG">
+                  <img src="temp-asset/statis-asset/ENG-Bahasa.png" class="md:w-fit w-6" alt="">ENG
+                  <svg xmlns="http://www.w3.org/2000/svg" class="opacity-0 text-zap-text-superGreen" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l5 5l10 -10"></path>
+                  </svg>                
+                </button>
               </div>
-              <!-- Language End -->
-              <a href="" class="text-zap-text-superGreen mt-2"
-                ><i class="bx bx-cart-alt text-3xl"></i
-              ></a>
-            </div>
-            <button
-              class="nav-sm relative"
-              id="navBurger"
-              name="mobileMenuButton"
-            >
-              <span
-                class="navBurger-line duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="navBurger-line-middle duration-300 ease-in-out"
-              ></span>
-              <span
-                class="navBurger-line duration-300 ease-in-out origin-bottom-left"
-              ></span>
-            </button>
-          </li>
+            </li>
+            <!-- Language End -->
+            <!-- Cart  -->
+            <li class="relative">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                  <path d="M24 3H4.242L4.2 2.649C4.11405 1.91942 3.76338 1.24673 3.21449 0.758478C2.6656 0.270223 1.95663 0.000341793 1.222 0L0 0V2H1.222C1.46693 2.00003 1.70334 2.08996 1.88637 2.25272C2.06941 2.41547 2.18634 2.63975 2.215 2.883L3.8 16.351C3.88595 17.0806 4.23662 17.7533 4.78551 18.2415C5.3344 18.7298 6.04337 18.9997 6.778 19H20V17H6.778C6.53291 16.9999 6.29638 16.9099 6.11333 16.7469C5.93027 16.5839 5.81343 16.3594 5.785 16.116L5.654 15H21.836L24 3ZM20.164 13H5.419L4.478 5H21.607L20.164 13Z" fill="#31AB5C"/>
+                  <path d="M7 24.0007C8.10456 24.0007 8.99999 23.1053 8.99999 22.0007C8.99999 20.8962 8.10456 20.0007 7 20.0007C5.89543 20.0007 5 20.8962 5 22.0007C5 23.1053 5.89543 24.0007 7 24.0007Z" fill="#31AB5C"/>
+                  <path d="M17 24.0007C18.1046 24.0007 19 23.1053 19 22.0007C19 20.8962 18.1046 20.0007 17 20.0007C15.8954 20.0007 15 20.8962 15 22.0007C15 23.1053 15.8954 24.0007 17 24.0007Z" fill="#31AB5C"/>
+                </svg>
+                <span class="badge absolute flex items-center justify-center text-[10px] text-white -top-2 -right-2 bg-zap-SuperGreen md:w-5 md:h-5 w-4 h-4 rounded-full">1</span>
+              </a>
+            </li>
+            <!-- Cart End -->
+            <!-- Navburger -->
+            <li class="lg:hidden block">
+              <button class="flex flex-col items-end justify-end" id="navbarBurger" name="mobileMenuButton">
+                <span class="line-topBottom origin-top-left ease-in-out duration-300 "></span>
+                <span class="line-middle ease-in-out duration-300 "></span>
+                <span class="line-topBottom origin-bottom-left ease-in-out duration-300 "></span>
+              </button>
+            </li>
+            <!-- Navburger End-->
+          </span>
+          <!-- Dropdown End-->
         </ul>
-        <!-- mobile and Ipad V End -->
-        <!-- Offcanvas mobile -->
-        <div
-          id="mobileMenu"
-          class="lg:hidden fixed top z-10 left-0 h-[1250px] w-full -top-2 bg-white transform -translate-x-full ease-in-out transition-transform duration-300"
-        >
-          <div class="container nav-wrapper mx-auto py-6 md:text-2xl text-sm">
-            <div
-              class="bg-nav absolute -z-10` inset-0 h-full bg-no-repeat bg-cover bg-center"
-              style="
-                background-image: url('temp-asset/homepage/Navbar.png');
-                opacity: 0.1;
-              "
-            ></div>
-            <ul
-              class="uppercase font-spartanMedium  flex flex-col gap-y-10 mt-20 z-30"
-              style="letter-spacing: 1.4px"
-            >
-              <li id="btn-treatmentSM" class="z-30 w-fit">
-                <a
-                  class="hover:text-zap-text-superGreen cursor-pointer flex items-center "
-                  type="button"
-                  >Treatment
-                  <i
-                    id="treatbtnSM"
-                    class="transition duration-200 ease-in-out bx bx-chevron-down relative bottom-[2px] md:text-5xl text-2xl"
-                  ></i>
-                </a>
-                <ul
-                  id="treatbtnlink"
-                  class="lg:flex hidden mt-5 uppercase ml-5"
-                >
-                  <li
-                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
-                  >
-                    <a href="all-Treatment.html">All Treatment</a>
-                  </li>
-                  <li
-                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
-                  >
-                    <a href="hair-treatment.html">Hair Removal</a>
-                  </li>
-                  <li
-                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
-                  >
-                    <a href="beuaty-treatment.html">Face</a>
-                  </li>
-                  <li
-                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
-                  >
-                    <a href="body-treatment.html">Body</a>
-                  </li>
-                  <li
-                    class="py-3 md:py-6 w-fit hover:text-zap-text-superGreen"
-                  >
-                    <a href="Drips&health-treatment.html">DRIPS & HEALTH</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="z-30 w-fit hover:text-zap-text-superGreen">
-                <a href="">Promo</a>
-              </li>
-              <li class="z-30 w-fit hover:text-zap-text-superGreen">
-                <a href="store.html">E-Store</a>
-              </li>
-              <li class="z-30 w-fit hover:text-zap-text-superGreen">
-                <a href="lokasi.html">Lokasi</a>
-              </li>
-              <li class="z-30 w-fit hover:text-zap-text-superGreen">
-                <a href="">Artikel</a>
-              </li>
-              <li class="z-30 w-fit hover:text-zap-text-superGreen">
-                <a href="solution.html">Solusi kami</a>
-              </li>
-              <li class="z-30 w-fit hover:text-zap-text-superGreen">
-                <a href="about.us.html">Tentang ZAP</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- Offcanvas mobile End -->
       </div>
     </nav>
+  <!-- Offcanvas mobile -->
+  <div id="mobileMenu" class="lg:hidden fixed top z-50 left-0 h-screen w-full bg-zap-white transform -translate-x-full ease-in-out transition-transform duration-300">
+    <div class="container nav-wrapper mx-auto py-6 md:text-xl text-sm">
+      <div class="bg-nav absolute -z-10 inset-0 h-full bg-no-repeat bg-cover bg-center" style="background-image: url('temp-asset/homepage/Navbar.png'); opacity: 0.1;"></div>
+      <ul class="uppercase font-spartanMedium font-semibold flex flex-col gap-8">
+        <li class="relative navSm transition-all ease-in-out duration-300">
+          <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300" href="#" data-drop-menu="dropTreatmentSM1">treatments
+            <!-- Svg -->
+            <span>
+              <svg class="transition ease-in-out duration-100" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            </span>
+            <!-- Svg end -->
+          </a>
+          <ul id="dropTreatmentSM1" class="h-fit absolute origin-top translate-y-0 transition-all ease-in-out duration-200  opacity-0  inset-x-0  mt-0  uppercase">
+            <li class="w-full flex flex-col  items-start gap-6 px-4 py-4">
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">face</a>
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">body</a>
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">hair removal</a>
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">drips & health</a>
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">all treatment</a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative navSm transition-all ease-in-out duration-200">
+          <a class="dropdownNav flex items-center gap-2 hover:text-zap-text-superGreen transition-all ease-in-out duration-300" href="#" data-drop-menu="dropTreatmentSM2">treatments2
+            <!-- Svg -->
+            <span>
+              <svg class="transition ease-in-out duration-100" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+            </span>
+            <!-- Svg end -->
+          </a>
+          <ul id="dropTreatmentSM2" class="h-fit absolute origin-top translate-y-0 transition-all ease-in-out duration-200  opacity-0  inset-x-0  mt-0  uppercase">
+            <li class="w-full flex flex-col  items-start gap-6 px-4 py-4">
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">face Wkwkw</a>
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">body</a>
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">hair removal</a>
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">drips & health</a>
+              <a class="hover:text-zap-text-superGreen scale-0" href="all-Treatment.html">all treatment</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:text-zap-text-superGreen">promo</a></li>
+        <li><a href="#" class="hover:text-zap-text-superGreen">e-store</a></li>
+        <li><a href="#" class="hover:text-zap-text-superGreen">lokasi</a></li>
+        <li><a href="#" class="hover:text-zap-text-superGreen">artikel</a></li>
+        <li><a href="#" class="hover:text-zap-text-superGreen">tentang zap</a></li>
+        <li><a href="#" class="hover:text-zap-text-superGreen">Solusi kami</a></li>
+        <li><a class="text-zap-text-superGreen scale-0" href="#">online booking</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Offcanvas mobile End -->
+    <!-- Lg nav end -->
   </header>
   <main>
       <section class="hero-banner lg:mt-44 mt-[130px]">
