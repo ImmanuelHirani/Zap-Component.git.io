@@ -211,26 +211,26 @@
           </div>
           <div class="grid lg:grid-cols-4 grid-cols-2 gap-x-10 gap-y-10 mt-10">
              <div class="face-care flex flex-col items-center gap-y-8 treatment-choise">
-                 <img src="temp-asset/Solutions/Maskgroup-1.png" class="treatment-choose w-48 hover:border-4 hover:border-zap-text-superGreen rounded-full cursor-pointer"  alt="">
+                 <img src="temp-asset/Solutions/Maskgroup-1.png" class="treatment-choose w-48 hover:border-4 hover:border-zap-text-superGreen rounded-full cursor-pointer"  data-drop-menu="face" alt="">
                  <span class="capitalize font-spartanMedium lg:text-base md:text-sm text-xs">face-care</span>
              </div>
              <div class="body-care flex flex-col items-center gap-y-8 treatment-choise">
-               <img src="temp-asset/Solutions/Maskgroup-2.png"   class="treatment-choose w-48 hover:border-4 hover:border-zap-text-superGreen rounded-full cursor-pointer"  alt="">
+               <img src="temp-asset/Solutions/Maskgroup-2.png"   class="treatment-choose w-48 hover:border-4 hover:border-zap-text-superGreen rounded-full cursor-pointer" data-drop-menu="body"  alt="">
                  <span class="capitalize font-spartanMedium lg:text-base md:text-sm text-xs">body-care</span>
              </div>
              <div class="hair-&-scalp-hair flex flex-col items-center gap-y-8 treatment-choise">
-               <img src="temp-asset/Solutions/Maskgroup-3.png"   class="treatment-choose w-48 hover:border-4 hover:border-zap-text-superGreen rounded-full cursor-pointer"  alt="">
+               <img src="temp-asset/Solutions/Maskgroup-3.png"   class="treatment-choose w-48 hover:border-4 hover:border-zap-text-superGreen rounded-full cursor-pointer" data-drop-menu="hair"  alt="">
                  <span class="capitalize font-spartanMedium lg:text-base md:text-sm text-xs">Hair & Scalp Hair</span>
              </div>
              <div class="hair-removal flex flex-col items-center gap-y-8 treatment-choise">
-               <img src="temp-asset/Solutions/Maskgroup-4.png"   class="treatment-choose w-48 hover:border-4 hover:border-zap-text-superGreen rounded-full cursor-pointer"  alt="">
+               <img src="temp-asset/Solutions/Maskgroup-4.png"   class="treatment-choose w-48 hover:border-4 hover:border-zap-text-superGreen rounded-full cursor-pointer" data-drop-menu="hairGrowth"  alt="">
                  <span class="capitalize font-spartanMedium lg:text-base md:text-sm text-xs">hair-removal</span>
              </div>
           </div>
-          <div class="box-choise-wrapper transition-all ease-in-out duration-300 relative">
+          <div id="face" class="box-choise-wrapper transition-all ease-in-out duration-300 relative">
             <div class="treatment-choise-box max-w-screen-md transition-all ease-in-out duration-300 mx-auto flex flex-col gap-y-10 mt-10 capitalize absolute origin-top inset-x-0  scale-0  ">
               <h5 class="text-center font-spartanMedium font-bold">apa permasalahan yang kamu hadapi? (bisa pilih lebih dari satu)</h5>
-              <div class="box-choise-lg md:flex flex-col gap-y-2  hidden lg:text-base md:text-sm text-xs">
+              <div class="box-choise-lg md:flex flex-col gap-y-2   lg:text-base md:text-sm text-xs">
                 <span class="flex  capitalize justify-center item-center gap-3 ">
                   <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">berjerawat</button>
                   <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">kusam</button>
@@ -250,30 +250,7 @@
                   <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">noda bekas jerawat/luka</button>
                 </span>
               </div>
-              <div class="box-choise-sm md:hidden flex-col gap-y-2  flex lg:text-base md:text-sm text-xs">
-                <span class="flex  capitalize justify-center item-center gap-3 ">
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">berjerawat</button>
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">kusam</button>
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">kulit kering</button>
-                </span>
-                <span class="flex gap-3 justify-center item-center">
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">kulit berminyak</button>
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">kulit sensitif</button>
-                </span>
-                <span class="flex capitalize justify-center item-center gap-3">
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">garis halus</button>
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">pori-pori besar</button>
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">bopeng</button>
-                </span>
-                <span class="flex gap-3 justify-center item-center">
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">warna tidak merata</button>
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">flex/bintik hitam</button>
-                </span>
-                <span class="flex capitalize justify-center item-center gap-3">
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">bruntusan</button>
-                  <button class="myButton bg-zap-green px-2 py-2 capitalize rounded-lg">noda bekas jerawat/luka</button>
-                </span>
-              </div>
+
               <button  class="find-fit-treatment bg-gray-200 px-3 py-3 text-gray-400 capitalize rounded-lg w-fit mx-auto lg:text-base md:text-sm text-xs" disabled>cari treatment yang tepat</button>
             </div>
           </div>

@@ -169,10 +169,6 @@ body {
   @apply rotate-180;
 }
 
-.language-box-active {
-  @apply transform scale-100 
-}
-
 .navexpand-active {
   @apply  pb-24;
 }
@@ -201,10 +197,6 @@ body {
     @apply lg:hover:text-green-500 cursor-pointer font-spartanMedium 
 }
 
-.treatment-active {
-  @apply border-zap-text-superGreen border-4
-}
-
 .box-active {
   @apply md:pb-80 pb-96 
 }
@@ -231,7 +223,6 @@ body {
 .accordion-body {
     @apply  max-h-0 overflow-hidden transition-all duration-200 ease-in-out
 }
-
 
 }
 
