@@ -143,7 +143,6 @@ const mobileMenuButton = document.getElementById("navbarBurger");
 const mobileMenu = document.getElementById("mobileMenu");
 
 mobileMenuButton.addEventListener("click", () => {
-  mobileMenu.classList.toggle("translate-x-0");
   mobileMenu.classList.toggle("-translate-x-full");
 });
 
