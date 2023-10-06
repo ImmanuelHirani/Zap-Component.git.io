@@ -139,11 +139,14 @@ document.addEventListener('click', () => {
 
 // navCanvas
 
-  var mobileMenuButton = document.getElementById("navbarBurger");
-  var mobileMenu = document.getElementById("mobileMenu"); // Updated to the correct ID
-  mobileMenuButton.addEventListener("click", function () {
-    mobileMenu.classList.toggle("translate-x-0");
-  });
+const mobileMenuButton = document.getElementById("navbarBurger");
+const mobileMenu = document.getElementById("mobileMenu");
+
+mobileMenuButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("translate-x-0");
+  mobileMenu.classList.toggle("-translate-x-full");
+});
+
 
 // navCanvas end
 
