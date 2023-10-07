@@ -1,11 +1,23 @@
 const treatmentChoose = document.querySelectorAll(".treatment-choose");
 const box = document.getElementById("box-choise-wrapper");
 const myButtons = document.querySelectorAll('.myButton');
-const findFitTreatmentButtons = document.querySelector('.find-fit-treatment');
-const treatmentFit = document.querySelectorAll('.treatment-fit');
+const findFitTreatmentButtons = document.getElementById('findfitTreatment'); // Corrected variable name
+const treatmentFit = document.getElementById('treatmentFit');
+
+findFitTreatmentButtons.addEventListener('click', () => {
+  if (findFitTreatmentButtons.classList.contains('fit-treatment-tracker-Active')) {
+    treatmentFit.classList.remove('hidden');
+    // Gulirkan ke elemen treatmentFit
+    treatmentFit.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    treatmentFit.classList.add('hidden');
+  }
+});
+
 
 let activeTreatmentChoose = null; // Variable to track the currently active element
 let timeoutId = null; // Variable to store the timeout ID
+
 
 // Function to close the active treatmentChoose and hide its content
 function closeActiveTreatmentChoose() {
@@ -29,6 +41,13 @@ function activateTreatmentChoose(othertreatment) {
   // Your added code to find the activeDropMenu
   const activeDropMenuId = othertreatment.getAttribute('data-drop-Choose');
   const activeDropMenu = document.getElementById(activeDropMenuId);
+
+  // Remove 'btn-active' class from all buttons
+  myButtons.forEach((mybtn) => {
+    mybtn.classList.remove('btn-active');
+  });
+
+  findFitTreatmentButtons.classList.remove('fit-treatment-tracker-Active');
 
   // Show the content of the active treatmentChoose
   activeDropMenu.classList.remove('hidden');
@@ -55,4 +74,26 @@ treatmentChoose.forEach((othertreatment) => {
     }
   });
 });
+
+
+// My button : 
+let anyButtonActive = false;
+
+myButtons.forEach((mybtn) => {
+  mybtn.addEventListener('click', () => {
+    mybtn.classList.toggle('btn-active');
+
+    if (mybtn.classList.contains('btn-active')) {
+      anyButtonActive = true;
+    } else {
+      anyButtonActive = Array.from(myButtons).some((btn) => btn.classList.contains('btn-active'));
+    }
+    if (anyButtonActive) {
+      findFitTreatmentButtons.classList.add('fit-treatment-tracker-Active'); // Corrected variable name
+    } else {
+      findFitTreatmentButtons.classList.remove('fit-treatment-tracker-Active'); // Corrected variable name
+    }
+  });
+});
+// My button End
 
