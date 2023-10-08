@@ -1342,12 +1342,12 @@ hr {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .cursor-not-allowed {
   cursor: not-allowed;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .list-inside {
@@ -2874,6 +2874,16 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
+.before\:bg-transparent::before {
+  content: var(--tw-content);
+  background-color: transparent;
+}
+
+.after\:bg-transparent::after {
+  content: var(--tw-content);
+  background-color: transparent;
+}
+
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2930,6 +2940,10 @@ input[type="number"]::-webkit-outer-spin-button {
 .hover\:text-zap-text-superGreen:hover {
   --tw-text-opacity: 1;
   color: rgb(49 171 92 / var(--tw-text-opacity));
+}
+
+.focus\:bg-none:focus {
+  background-image: none;
 }
 
 .focus\:outline-none:focus {

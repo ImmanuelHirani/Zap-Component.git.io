@@ -14,7 +14,6 @@ findFitTreatmentButtons.addEventListener('click', () => {
   }
 });
 
-
 let activeTreatmentChoose = null; // Variable to track the currently active element
 let timeoutId = null; // Variable to store the timeout ID
 
