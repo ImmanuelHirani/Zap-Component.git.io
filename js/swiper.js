@@ -293,4 +293,20 @@ let TestimonialSwiper = new Swiper(".testimonial-content ", {
     }
   });
 
+  let locationSwiper = new Swiper(".location-slider", {
+    slidesPerView: 1.1,
+    spaceBetween:20,
+    grabCursor: true,
+    loop:true,
+    // If we need pagination
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.caraKerja-button-next',
+      prevEl: '.caraKerja-button-prev',
+    },
+
+  });
+
+
 
