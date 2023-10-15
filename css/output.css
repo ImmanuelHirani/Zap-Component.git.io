@@ -1141,10 +1141,6 @@ hr {
   height: 1250px;
 }
 
-.h-\[375px\] {
-  height: 375px;
-}
-
 .h-\[414px\] {
   height: 414px;
 }
@@ -1236,10 +1232,6 @@ hr {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .w-64 {
@@ -1538,6 +1530,10 @@ hr {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .rounded-2xl {
@@ -3098,6 +3094,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .md\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .md\:mt-32 {
+    margin-top: 8rem;
   }
 
   .md\:mt-36 {
