@@ -1,3 +1,13 @@
+function toggleElement(element, elements) {
+    elements.forEach(el => el.classList.add('opacity-25'));
+    element.classList.remove('opacity-25');
+}
+
+function toggleLocation(location, locations) {
+    locations.forEach(loc => loc.classList.add('hidden'));
+    location.classList.remove('hidden');
+}
+
 const zap = document.getElementById("zap");
 const zapPremire = document.getElementById("zapPremiere");
 const zapManlogy = document.getElementById("zapManlogy");
@@ -5,29 +15,17 @@ const zapLoc = document.getElementById("zapLoc");
 const zapPremireLoc = document.getElementById("zapPremierLoc");
 const zapManlogyLoc = document.getElementById("zapManlogyLoc");
 
-zap.addEventListener('click',()=> {
-    zap.classList.remove('opacity-25')
-    zapPremire.classList.add('opacity-25')
-    zapManlogy.classList.add('opactiy-25')
-    zapLoc.classList.remove('hidden')
-    zapPremireLoc.classList.add('hidden')
-    zapManlogyLoc.classList.add('hidden')
-})
+zap.addEventListener('click', () => {
+    toggleElement(zap, [zapPremire, zapManlogy]);
+    toggleLocation(zapLoc, [zapPremireLoc, zapManlogyLoc]);
+});
 
-zapPremire.addEventListener('click',()=> {
-    zap.classList.add('opacity-25')
-    zapPremire.classList.remove('opacity-25')
-    zapManlogy.classList.add('opactiy-25')
-    zapLoc.classList.add('hidden')
-    zapPremireLoc.classList.remove('hidden')
-    zapManlogyLoc.classList.add('hidden')
-})
+zapPremire.addEventListener('click', () => {
+    toggleElement(zapPremire, [zap, zapManlogy]);
+    toggleLocation(zapPremireLoc, [zapLoc, zapManlogyLoc]);
+});
 
-zapManlogy.addEventListener('click',()=> {
-    zap.classList.add('opacity-25')
-    zapPremire.classList.add('opacity-25')
-    zapManlogy.classList.remove('opactiy-25')
-    zapLoc.classList.add('hidden')
-    zapPremireLoc.classList.add('hidden')
-    zapManlogyLoc.classList.remove('hidden')
-})
+zapManlogy.addEventListener('click', () => {
+    toggleElement(zapManlogy, [zap, zapPremire]);
+    toggleLocation(zapManlogyLoc, [zapLoc, zapPremireLoc]);
+});
