@@ -1053,6 +1053,14 @@ hr {
   margin-top: 90px;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -1139,6 +1147,10 @@ hr {
 
 .h-\[1250px\] {
   height: 1250px;
+}
+
+.h-\[375px\] {
+  height: 375px;
 }
 
 .h-\[414px\] {
@@ -1530,10 +1542,6 @@ hr {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
 }
 
 .rounded-2xl {
@@ -2123,6 +2131,14 @@ hr {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-25 {
+  opacity: 0.25;
 }
 
 .shadow-inner {
@@ -2797,6 +2813,10 @@ body {
 
 .tabel-wrapper::-webkit-scrollbar  {
   display: none;
+}
+
+.chooseby::-webkit-scrollbar {
+  display:none;
 }
 
 @media (min-width: 1024px) {

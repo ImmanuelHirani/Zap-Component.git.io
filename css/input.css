@@ -229,6 +229,10 @@ body {
   display: none;
 }
 
+.chooseby::-webkit-scrollbar {
+  display:none;
+}
+
 @layer utilities {
 
   .before-after-btn {
