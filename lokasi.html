@@ -205,17 +205,25 @@
         <h5>Menampilkan <span class="font-spartanBold">6</span> lokasi outlet ZAP Clinic untuk “Jakarta Barat”</h5>
       </div>
       <!-- Input Search -->
-      <div class="mx-auto container  mt-4 flex md:flex-row flex-col items-center justify-center gap-3">
+      <div class="mx-auto  w-fit  mt-4 flex md:flex-row flex-col items-center justify-center gap-3 relative ">
         <div class="search relative">
           <img
           class="md:w-7 w-6 absolute md:top-2 top-1.5 left-2 md:left-4"
           src="temp-asset/Lokasi/home-search.svg"
           alt=""
         />
-          <input type="text" class="uppercase lg:text-sm md:text-base text-sm font-spartanMedium bg-zap-white outline outline-2 md:px-14 px-12 md:w-96 w-64 md:h-12 h-10  rounded-md outline-neutral-300" placeholder="jakarta barat">
+          <input id="inputBox" type="text"  autocomplete="off" class="lg:text-sm md:text-base text-sm font-spartanMedium bg-zap-white outline outline-2 md:px-14 px-12 md:w-96 w-64 md:h-12 h-10  rounded-md outline-neutral-300" placeholder="JAKARTA BARAT">
         </div>
         <button class="bg-zap-SuperGreen rounded-md md:px-12 px-6 text-white font-spartanMedium md:h-12 h-9 md:text-base text-sm">Cari outlet</button>
-      </div>  
+        <div
+        class="search-box w-full rounded-lg bg-zap-white shadow-xl absolute md:top-14 top-12 hidden z-50"
+      >
+        <!-- Tambahkan class "hidden" untuk menyembunyikan secara default -->
+        <ul class="flex flex-col gap-4 py-2 px-2" id="resultList">
+          <!-- lokasi data dari available keywords -->
+        </ul>
+      </div>
+      </div>
       <!-- Input Search end -->
       <!-- Main content lg & md-->
       <div class="container mt-20 lg:flex md:grid grid-cols-2 md:flex-row flex-col justify-center lg:gap-3 md:gap-14 hidden">
@@ -1268,6 +1276,7 @@
     </section>
   </footer>
 </body>
+<script src="js/auto-complate.js"></script>
 <script src="js/locations.js"></script>
 <script src="js/accordian.js"></script>
 <script src="js/nav.js"></script>
