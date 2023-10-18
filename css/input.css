@@ -365,3 +365,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* Solutions end */
+
+
+/*  */
+.ModalActive > .modal > .modal-content {
+  @apply scale-100
+}
+
+/*  */
